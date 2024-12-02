@@ -47,6 +47,7 @@ body {
     letter-spacing: .0em;
     display: flex;
     flex-direction: column;
+    background: transparent;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -154,15 +155,15 @@ button {
 .swiper-button-next, .swiper-button-prev {
     
 }
-.swiper-button-next {
-    right: -40px;
-}
 .swiper-button-next__img-wrap {
 }
-.swiper-button-prev {
-    left: -40px;
-}
 .swiper-button-prev__img-wrap {
+}
+
+@media (max-width: 715px) {
+    .swiper-button-next, .swiper-button-prev {
+        display: none;
+    }
 }
 
 .block-title {

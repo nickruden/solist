@@ -10,24 +10,33 @@
 
 
     <link rel="stylesheet" href="./style/reset.css">
-    <link rel="stylesheet" href="./style/pages/main.css">
     <link rel="stylesheet" href="./style/UI/button.css">
+    <link rel="stylesheet" href="./style/UI/input.css">
+    <link rel="stylesheet" href="./style/components/feedback-block.css">
+
+    <link rel="stylesheet" href="./style/pages/main.css">
 
 </head>
 
 <body>
     <header class="header">
-        <div class="my-container header__container"></div>
+        <div class="my-container header__container">
+            <div class="header__desctop">
+                <div class="header__top"></div>
+                <div class="header__nav"></div>
+            </div>
+            <div class="header__mobile"></div>
+        </div>
     </header>
     <main>
-        <!-- <section class="top-block">
+        <section class="top-block">
             <div class="my-container top-block__container">
                 <div class="top-block__title">
                     <div class="top-block__title-text">для детей и взрослых</div>
                     <div class="top-block__title-img">
                         <img src="./assets/images/pages/main/top-block/desktop-title-img.png" alt=""
                             class="top-block__title-img-desktop">
-                        <img src="" alt="" class="top-block__title-img-mobile">
+                        <img src="./assets/images/logo-orange.svg" alt="" class="top-block__title-img-mobile">
                     </div>
                 </div>
                 <div class="top-block__body">
@@ -37,21 +46,21 @@
                                 <img src="./assets/images/pages/main/top-block/image-music.png" alt=""
                                     class="top-block__img">
                             </div>
-                            <div class="top-block__img-title">музыка</div>
+                            <div class="top-block__img-text">музыка</div>
                         </div>
                         <div class="top-block__image-content">
                             <div class="top-block__img-wrap">
                                 <img src="./assets/images/pages/main/top-block/image-dancing.png" alt=""
                                     class="top-block__img">
                             </div>
-                            <div class="top-block__img-title">танцы</div>
+                            <div class="top-block__img-text">танцы</div>
                         </div>
                         <div class="top-block__image-content">
                             <div class="top-block__img-wrap">
                                 <img src="./assets/images/pages/main/top-block/image-creation.png   " alt=""
                                     class="top-block__img">
                             </div>
-                            <div class="top-block__img-title">творчество</div>
+                            <div class="top-block__img-text">творчество</div>
                         </div>
                     </div>
                     <div class="top-block__buttons">
@@ -61,7 +70,7 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
         <section class="directions">
             <div class="my-container directions__container">
                 <div class="directions__slider">
@@ -152,7 +161,7 @@
                 <div class="block-title every-lesson__title">каждое занятие <br> заряжает <br> эмоциями</div>
             </div>
         </section>
-        <!-- <section class="every-quarter">
+        <section class="every-quarter">
             <div class="my-container every-quarter__container">
                 <div class="block-title every-quarter__title">каждый квартал — атмосферный концерт-встреча для взрослых в уютной
                     обстановке</div>
@@ -162,26 +171,51 @@
                             <div class="swiper-slide every-quarter__swiper-slide">
                                 <div class="every-quarter__slide">
                                     <div class="every-quarter__slide-img-wrap">
-                                        .learn-from-us__title {
-        margin-bottom: 62px;
-        max-width: 370px;
-    }
+                                        <svg viewBox="0 0 560 390" xmlns="http://www.w3.org/2000/svg">
+                                            <defs>
+                                                <clipPath id="clipPath">
+                                                    <path d="M8.09266 46.8077C8.69455 25.7548 25.5184 8.77528 46.5648 7.9794L257.574 0L504.673 11.3456C526.493 12.3475 543.475 30.6684 542.821 52.5016L534.581 327.499C533.951 348.528 517.139 365.474 496.116 366.272L266.231 375L38.5986 366.358C16.6692 365.526 -0.494698 347.18 0.13244 325.244L8.09266 46.8077Z"/>
+                                                </clipPath>
+                                            </defs>
+                                            <g transform="translate(15, 15)">
+                                                <rect width="560" height="390" fill="#FF9900" clip-path="url(#clipPath)"/>
+                                            </g>
+                                            <image href="./assets/images/pages/main/every-quarter/slide-1.jpg" width="100%" height="100%" clip-path="url(#clipPath)" preserveAspectRatio="xMidYMid slice"/>
+                                        </svg>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide every-quarter__swiper-slide">
                                 <div class="every-quarter__slide">
                                     <div class="every-quarter__slide-img-wrap">
-                                        <img src="./assets/images/pages/main/every-quarter/slide-2.jpg" alt=""
-                                            class="every-quarter__slide-img">
+                                        <svg viewBox="0 0 560 390" xmlns="http://www.w3.org/2000/svg">
+                                            <defs>
+                                                <clipPath id="clipPath">
+                                                    <path d="M8.09266 46.8077C8.69455 25.7548 25.5184 8.77528 46.5648 7.9794L257.574 0L504.673 11.3456C526.493 12.3475 543.475 30.6684 542.821 52.5016L534.581 327.499C533.951 348.528 517.139 365.474 496.116 366.272L266.231 375L38.5986 366.358C16.6692 365.526 -0.494698 347.18 0.13244 325.244L8.09266 46.8077Z"/>
+                                                </clipPath>
+                                            </defs>
+                                            <g transform="translate(15, 15)">
+                                                <rect width="560" height="390" fill="#FF9900" clip-path="url(#clipPath)"/>
+                                            </g>
+                                            <image href="./assets/images/pages/main/every-quarter/slide-2.jpg" width="100%" height="100%" clip-path="url(#clipPath)" preserveAspectRatio="xMidYMid slice"/>
+                                        </svg>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide every-quarter__swiper-slide">
                                 <div class="every-quarter__slide">
                                     <div class="every-quarter__slide-img-wrap">
-                                        <img src="./assets/images/pages/main/every-quarter/slide-3.jpg" alt=""
-                                            class="every-quarter__slide-img">
+                                        <svg viewBox="0 0 560 390" xmlns="http://www.w3.org/2000/svg">
+                                            <defs>
+                                                <clipPath id="clipPath">
+                                                    <path d="M8.09266 46.8077C8.69455 25.7548 25.5184 8.77528 46.5648 7.9794L257.574 0L504.673 11.3456C526.493 12.3475 543.475 30.6684 542.821 52.5016L534.581 327.499C533.951 348.528 517.139 365.474 496.116 366.272L266.231 375L38.5986 366.358C16.6692 365.526 -0.494698 347.18 0.13244 325.244L8.09266 46.8077Z"/>
+                                                </clipPath>
+                                            </defs>
+                                            <g transform="translate(15, 15)">
+                                                <rect width="560" height="390" fill="#FF9900" clip-path="url(#clipPath)"/>
+                                            </g>
+                                            <image href="./assets/images/pages/main/every-quarter/slide-3.jpg" width="100%" height="100%" clip-path="url(#clipPath)" preserveAspectRatio="xMidYMid slice"/>
+                                        </svg>
                                     </div>
                                 </div>
                             </div>
@@ -208,7 +242,94 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
+        <section class="every-six-months">
+            <div class="my-container every-six-months__container">
+                <div class="block-title every-six-months__title">каждые полгода — выездной гала-концерт на большой сцене</div>
+                <div class="every-six-months__slider">
+                    <div class="swiper every-six-months__swiper">
+                        <div class="swiper-wrapper every-six-months__swiper-wraper">
+                            <div class="swiper-slide every-six-months__swiper-slide">
+                                <div class="every-six-months__slide">
+                                    <div class="every-six-months__slide-img-wrap">
+                                        <svg viewBox="0 0 560 390" xmlns="http://www.w3.org/2000/svg">
+                                            <defs>
+                                                <clipPath id="clipPath">
+                                                    <path
+                                                        d="M8.09266 46.8077C8.69455 25.7548 25.5184 8.77528 46.5648 7.9794L257.574 0L504.673 11.3456C526.493 12.3475 543.475 30.6684 542.821 52.5016L534.581 327.499C533.951 348.528 517.139 365.474 496.116 366.272L266.231 375L38.5986 366.358C16.6692 365.526 -0.494698 347.18 0.13244 325.244L8.09266 46.8077Z" />
+                                                </clipPath>
+                                            </defs>
+                                            <g transform="translate(15, 15)">
+                                                <rect width="560" height="390" fill="#FF9900" clip-path="url(#clipPath)" />
+                                            </g>
+                                            <image href="./assets/images/pages/main/every-quarter/slide-1.jpg" width="100%"
+                                                height="100%" clip-path="url(#clipPath)" preserveAspectRatio="xMidYMid slice" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide every-six-months__swiper-slide">
+                                <div class="every-six-months__slide">
+                                    <div class="every-six-months__slide-img-wrap">
+                                        <svg viewBox="0 0 560 390" xmlns="http://www.w3.org/2000/svg">
+                                            <defs>
+                                                <clipPath id="clipPath">
+                                                    <path
+                                                        d="M8.09266 46.8077C8.69455 25.7548 25.5184 8.77528 46.5648 7.9794L257.574 0L504.673 11.3456C526.493 12.3475 543.475 30.6684 542.821 52.5016L534.581 327.499C533.951 348.528 517.139 365.474 496.116 366.272L266.231 375L38.5986 366.358C16.6692 365.526 -0.494698 347.18 0.13244 325.244L8.09266 46.8077Z" />
+                                                </clipPath>
+                                            </defs>
+                                            <g transform="translate(15, 15)">
+                                                <rect width="560" height="390" fill="#FF9900" clip-path="url(#clipPath)" />
+                                            </g>
+                                            <image href="./assets/images/pages/main/every-quarter/slide-2.jpg" width="100%"
+                                                height="100%" clip-path="url(#clipPath)" preserveAspectRatio="xMidYMid slice" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide every-six-months__swiper-slide">
+                                <div class="every-six-months__slide">
+                                    <div class="every-six-months__slide-img-wrap">
+                                        <svg viewBox="0 0 560 390" xmlns="http://www.w3.org/2000/svg">
+                                            <defs>
+                                                <clipPath id="clipPath">
+                                                    <path
+                                                        d="M8.09266 46.8077C8.69455 25.7548 25.5184 8.77528 46.5648 7.9794L257.574 0L504.673 11.3456C526.493 12.3475 543.475 30.6684 542.821 52.5016L534.581 327.499C533.951 348.528 517.139 365.474 496.116 366.272L266.231 375L38.5986 366.358C16.6692 365.526 -0.494698 347.18 0.13244 325.244L8.09266 46.8077Z" />
+                                                </clipPath>
+                                            </defs>
+                                            <g transform="translate(15, 15)">
+                                                <rect width="560" height="390" fill="#FF9900" clip-path="url(#clipPath)" />
+                                            </g>
+                                            <image href="./assets/images/pages/main/every-quarter/slide-3.jpg" width="100%"
+                                                height="100%" clip-path="url(#clipPath)" preserveAspectRatio="xMidYMid slice" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination every-six-months__pagination"></div>
+                    <div class="swiper-button-next every-six-months__slider-button-next">
+                        <div class="swiper-button-next__img-wrap">
+                            <svg width="37" height="49" viewBox="0 0 37 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 43.5401V5.14669C0 0.999702 4.7577 -1.34474 8.04621 1.18177L34.5244 21.5245C37.2234 23.5981 37.1068 27.7037 34.2946 29.6208L7.8164 47.6714C4.49733 49.9341 0 47.557 0 43.5401Z"
+                                    fill="#FF9900" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev every-six-months__slider-button-prev">
+                        <div class="swiper-button-prev__img-wrap">
+                            <svg width="37" height="49" viewBox="0 0 37 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M37 43.5401V5.14669C37 0.999702 32.2423 -1.34474 28.9538 1.18177L2.47559 21.5245C-0.223362 23.5981 -0.106831 27.7037 2.70539 29.6208L29.1836 47.6714C32.5027 49.9341 37 47.557 37 43.5401Z"
+                                    fill="#FF9900" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="learn-from-us">
             <div class="my-container learn-from-us__container">
                 <div class="block-title learn-from-us__title">у нас учатся и дети, и взрослые!</div>
@@ -283,6 +404,152 @@
                 </div>
             </div>
         </section>
+        <section class="much-attention">
+            <div class="my-container much-attention__container">
+                <div class="block-title much-attention__title">не любите избыток внимания?</div>
+                <div class="much-attention__slider">
+                    <div class="swiper much-attention__swiper">
+                        <div class="swiper-wrapper much-attention__swiper-wrapper">
+                            <div class="swiper-slide much-attention__swiper-slide">
+                                <div class="much-attention__slide">
+                                    <div class="much-attention__slide-img-wrap">
+                                        <svg viewBox="0 0 560 390" xmlns="http://www.w3.org/2000/svg">
+                                            <defs>
+                                                <clipPath id="clipPath">
+                                                    <path d="M9.73391 48.4358C10.3353 27.383 27.1586 10.4031 48.205 9.60663L302.06 0L598.563 13.624C620.383 14.6265 637.363 32.9466 636.709 54.779L626.65 390.741C626.02 411.77 609.209 428.716 588.186 429.515L312.21 440L38.4843 429.601C16.5557 428.767 -0.607404 410.423 0.0192546 388.487L9.73391 48.4358Z" fill="#FF9900"/>
+                                                </clipPath>
+                                            </defs>
+                                            <g transform="translate(15, 15)">
+                                                <rect width="659" height="462" fill="#FF9900" clip-path="url(#clipPath)" />
+                                            </g>
+                                            <image href="./assets/images/pages/main/every-quarter/slide-1.jpg" width="100%"
+                                                height="100%" clip-path="url(#clipPath)" preserveAspectRatio="xMidYMid slice" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide much-attention__swiper-slide">
+                                <div class="much-attention__slide">
+                                    <div class="much-attention__slide-img-wrap">
+                                        <svg viewBox="0 0 560 390" xmlns="http://www.w3.org/2000/svg">
+                                            <defs>
+                                                <clipPath id="clipPath">
+                                                    <path d="M9.73391 48.4358C10.3353 27.383 27.1586 10.4031 48.205 9.60663L302.06 0L598.563 13.624C620.383 14.6265 637.363 32.9466 636.709 54.779L626.65 390.741C626.02 411.77 609.209 428.716 588.186 429.515L312.21 440L38.4843 429.601C16.5557 428.767 -0.607404 410.423 0.0192546 388.487L9.73391 48.4358Z" fill="#FF9900"/>
+                                                </clipPath>
+                                            </defs>
+                                            <g transform="translate(15, 15)">
+                                                <rect width="659" height="462" fill="#FF9900" clip-path="url(#clipPath)" />
+                                            </g>
+                                            <image href="./assets/images/pages/main/every-quarter/slide-1.jpg" width="100%"
+                                                height="100%" clip-path="url(#clipPath)" preserveAspectRatio="xMidYMid slice" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide much-attention__swiper-slide">
+                                <div class="much-attention__slide">
+                                    <div class="much-attention__slide-img-wrap">
+                                        <svg viewBox="0 0 560 390" xmlns="http://www.w3.org/2000/svg">
+                                            <defs>
+                                                <clipPath id="clipPath">
+                                                    <path d="M9.73391 48.4358C10.3353 27.383 27.1586 10.4031 48.205 9.60663L302.06 0L598.563 13.624C620.383 14.6265 637.363 32.9466 636.709 54.779L626.65 390.741C626.02 411.77 609.209 428.716 588.186 429.515L312.21 440L38.4843 429.601C16.5557 428.767 -0.607404 410.423 0.0192546 388.487L9.73391 48.4358Z" fill="#FF9900"/>
+                                                </clipPath>
+                                            </defs>
+                                            <g transform="translate(15, 15)">
+                                                <rect width="659" height="462" fill="#FF9900" clip-path="url(#clipPath)" />
+                                            </g>
+                                            <image href="./assets/images/pages/main/every-quarter/slide-1.jpg" width="100%"
+                                                height="100%" clip-path="url(#clipPath)" preserveAspectRatio="xMidYMid slice" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination much-attention__swiper-pagination"></div>
+                </div>
+                <div class="block-title much-attention__title-2">поможем реализоваться для себя!</div>
+            </div>
+        </section>
+        <section class="develop-talents">
+            <div class="my-container develop-talents__container">
+                <div class="block-title develop-talents__title">мы бережно развиваем таланты в каждом</div>
+                <div class="develop-talents__buttons">
+                    <div class="develop-talents__button-wrap">
+                        <button class="my-button develop-talents__button">
+                            <span class="my-button__text develop-talents__button-text">стать солистом своей мечты</span>
+                        </button>
+                        <img src="./assets/images/pages/main/develop-talents/button-block-img-1.png" alt=""
+                            class="develop-talents__button-image-1">
+                        <img src="./assets/images/pages/main/develop-talents/button-block-img-2.png" alt=""
+                            class="develop-talents__button-image-2">
+                    </div>
+                </div>
+                <div class="develop-talents__background-images">
+                    <img src="./assets/images/pages/main/develop-talents/block-img-1.png" alt=""
+                        class="develop-talents__background-image-1">
+                    <img src="./assets/images/pages/main/develop-talents/block-img-2.png" alt=""
+                        class="develop-talents__background-image-2">
+                    <img src="./assets/images/pages/main/develop-talents/block-img-3.png" alt=""
+                        class="develop-talents__background-image-3">
+                    <img src="./assets/images/pages/main/develop-talents/block-img-4.png" alt=""
+                        class="develop-talents__background-image-4">
+                </div>
+            </div>
+        </section>
+        <section class="arts-centers">
+            <div class="my-container arts-centers__container">
+                <div class="block-title arts-centers__title">два полностью <br> укомплектованных <br> центра искусств</div>
+                <div class="arts-centers__body">
+                    <div class="arts-centers__video-wrap">
+                        <div class="arts-centers__video-posrter">
+                            <svg viewBox="0 0 560 390" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <clipPath id="clipPath">
+                                        <path
+                                            d="M8.09266 46.8077C8.69455 25.7548 25.5184 8.77528 46.5648 7.9794L257.574 0L504.673 11.3456C526.493 12.3475 543.475 30.6684 542.821 52.5016L534.581 327.499C533.951 348.528 517.139 365.474 496.116 366.272L266.231 375L38.5986 366.358C16.6692 365.526 -0.494698 347.18 0.13244 325.244L8.09266 46.8077Z" />
+                                    </clipPath>
+                                </defs>
+                                <g transform="translate(15, 15)">
+                                    <rect width="560" height="390" fill="#FF9900" clip-path="url(#clipPath)" />
+                                </g>
+                                <image href="./assets/images/pages/main/every-quarter/slide-1.jpg" width="100%" height="100%"
+                                    clip-path="url(#clipPath)" preserveAspectRatio="xMidYMid slice" />
+                            </svg>
+                            <div class="play-button">
+                                <svg width="87" height="87" viewBox="0 0 87 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M43.3333 86.6667C67.2655 86.6667 86.6667 67.2655 86.6667 43.3333C86.6667 19.401 67.2655 0 43.3333 0C19.401 0 0 19.401 0 43.3333C0 67.2655 19.401 86.6667 43.3333 86.6667ZM37.6718 59.9985L58.126 47.9223C61.5134 45.9221 61.5134 40.7446 58.126 38.7443L37.6718 26.6682C34.3794 24.7243 30.3333 27.2544 30.3333 31.257V55.4095C30.3333 59.4122 34.3794 61.9424 37.6718 59.9985Z" fill="#E7E7E7" fill-opacity="0.87"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="arts-centers__video-title">павшинская пойма</div>
+                    </div>
+                    <div class="arts-centers__video-wrap">
+                        <div class="arts-centers__video-posrter">
+                            <svg viewBox="0 0 560 390" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <clipPath id="clipPath">
+                                        <path
+                                            d="M8.09266 46.8077C8.69455 25.7548 25.5184 8.77528 46.5648 7.9794L257.574 0L504.673 11.3456C526.493 12.3475 543.475 30.6684 542.821 52.5016L534.581 327.499C533.951 348.528 517.139 365.474 496.116 366.272L266.231 375L38.5986 366.358C16.6692 365.526 -0.494698 347.18 0.13244 325.244L8.09266 46.8077Z" />
+                                    </clipPath>
+                                </defs>
+                                <g transform="translate(15, 15)">
+                                    <rect width="560" height="390" fill="#FF9900" clip-path="url(#clipPath)" />
+                                </g>
+                                <image href="./assets/images/pages/main/every-quarter/slide-1.jpg" width="100%" height="100%"
+                                    clip-path="url(#clipPath)" preserveAspectRatio="xMidYMid slice" />
+                            </svg>
+                            <div class="play-button">
+                                <svg width="87" height="87" viewBox="0 0 87 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M43.3333 86.6667C67.2655 86.6667 86.6667 67.2655 86.6667 43.3333C86.6667 19.401 67.2655 0 43.3333 0C19.401 0 0 19.401 0 43.3333C0 67.2655 19.401 86.6667 43.3333 86.6667ZM37.6718 59.9985L58.126 47.9223C61.5134 45.9221 61.5134 40.7446 58.126 38.7443L37.6718 26.6682C34.3794 24.7243 30.3333 27.2544 30.3333 31.257V55.4095C30.3333 59.4122 34.3794 61.9424 37.6718 59.9985Z" fill="#E7E7E7" fill-opacity="0.87"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="arts-centers__video-title">сабурово</div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="professional-teachers">
             <div class="my-container professional-teachers__container">
                 <div class="block-title professional-teachers__title">занятия ведут педагоги, <br> влюбленные в свое дело</div>
@@ -317,6 +584,89 @@
                     </div>
                 </ul>
             </div>
+            </div>
+        </section>
+        <section class="trial-lesson">
+            <div class="my-container trial-lesson__container">
+                <div class="trial-lesson__titles">
+                    <div class="block-title trial-lesson__title-1">хочется воплотить <br> мечты в жизнь?</div>
+                    <div class="block-title trial-lesson__title-2">запишитесь <br> на пробный урок!</div>
+                </div>
+                <div class="trial-lesson__body">
+                    <div class="feedback-block trial-lesson__feedback-block">
+                        <div class="feedback-block__title">оставьте ваши контактные данные, и мы ответим на все ваши вопросы
+                        </div>
+                        <form action="" class="feedback-form feedback-block__form">
+                            <input type="text" name="name-input" id="nameInput" class="my-input feedback-form__input" placeholder="Имя">
+                            <input type="tel" name="phone-input" id="phoneInput" class="my-input feedback-form__input" placeholder="+7 (999) 999-99-99">
+                            <button class="my-button feedback-form__button">отправить заявку</button>
+                        </form>
+                        <div class="feedback-block__text">Если вы сразу оплачиваете абонемент, то первое пробное занятие в
+                            группе дарим в подарок</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="my-container reviews__container">
+                <div class="block-title reviews__title">отзывы</div>
+                <div class="reviews__slider">
+                    <div class="swiper reviews__swiper">
+                        <div class="swiper-wrapper reviews__swiper-wrapper">
+                            <div class="swiper-slide reviews__swiper-slide">
+                                <div class="reviews__slide">
+                                    <div class="reviews__slide-img-wrap">
+                                        <img src="./assets/images/pages/main/reviews/slide-img-1.png" alt=""
+                                            class="reviews__slide-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide reviews__swiper-slide">
+                                <div class="reviews__slide">
+                                    <div class="reviews__slide-img-wrap">
+                                        <img src="./assets/images/pages/main/reviews/slide-img-2.png" alt=""
+                                            class="reviews__slide-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide reviews__swiper-slide">
+                                <div class="reviews__slide">
+                                    <div class="reviews__slide-img-wrap">
+                                        <img src="./assets/images/pages/main/reviews/slide-img-3.png" alt=""
+                                            class="reviews__slide-img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide reviews__swiper-slide">
+                                <div class="reviews__slide">
+                                    <div class="reviews__slide-img-wrap">
+                                        <img src="./assets/images/pages/main/reviews/slide-img-3.png" alt=""
+                                            class="reviews__slide-img">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination reviews__swiper-pagination"></div>
+                    <div class="swiper-button-next reviews__slider-button-next">
+                        <div class="swiper-button-next__img-wrap">
+                            <svg width="37" height="49" viewBox="0 0 37 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 43.5401V5.14669C0 0.999702 4.7577 -1.34474 8.04621 1.18177L34.5244 21.5245C37.2234 23.5981 37.1068 27.7037 34.2946 29.6208L7.8164 47.6714C4.49733 49.9341 0 47.557 0 43.5401Z"
+                                    fill="#FF9900" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev reviews__slider-button-prev">
+                        <div class="swiper-button-prev__img-wrap">
+                            <svg width="37" height="49" viewBox="0 0 37 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M37 43.5401V5.14669C37 0.999702 32.2423 -1.34474 28.9538 1.18177L2.47559 21.5245C-0.223362 23.5981 -0.106831 27.7037 2.70539 29.6208L29.1836 47.6714C32.5027 49.9341 37 47.557 37 43.5401Z"
+                                    fill="#FF9900" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -358,9 +708,68 @@
                 prevEl: '.every-quarter__slider-button-prev',
             },
             breakpoints: {
-                632: {
+                715: {
                     slidesPerView: 2,
-                    spaceBetween: 55,
+                    spaceBetween: 40,
+                },
+            }
+        });
+
+        const everySixMonthsSwiper = new Swiper('.every-six-months__swiper', {
+            direction: 'horizontal',
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            pagination: {
+                el: '.every-six-months__pagination',
+            },
+            navigation: {
+                nextEl: '.every-six-months__slider-button-next',
+                prevEl: '.every-six-months__slider-button-prev',
+            },
+            breakpoints: {
+                715: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+            }
+        });
+
+        const muchAttentionSwiper = new Swiper('.much-attention__swiper', {
+            direction: 'horizontal',
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            pagination: {
+                el: '.much-attention__swiper-pagination',
+            },
+            breakpoints: {
+                715: {
+                    spaceBetween: 40,
+                },
+            }
+        });
+
+        const reviewsSwiper = new Swiper('.reviews__swiper', {
+            direction: 'horizontal',
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            pagination: {
+                el: '.reviews__swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.reviews__slider-button-next',
+                prevEl: '.reviews__slider-button-prev',
+            },
+            breakpoints: {
+                571: {
+                    slidesPerView: 2,
+                    spaceBetween: 32,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
                 },
             }
         });

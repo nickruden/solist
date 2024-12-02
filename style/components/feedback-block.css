@@ -1,0 +1,149 @@
+.feedback-block {
+    max-width: 430px;
+}
+.feedback-block__title {
+    font-size: 18px;
+    margin-bottom: 46px;
+    text-transform: uppercase;
+}
+.feedback-form {
+    max-width: 430px;
+}
+.feedback-block__form {
+    margin-bottom: 65px;
+}
+.feedback-form__input {
+}
+.feedback-form__input[name="phone-input"] {
+    margin-bottom: 56px;
+}
+.feedback-form__button {
+}
+.feedback-block__text {
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1317px) {
+    .feedback-block {
+        max-width: 351px;
+    }
+    .feedback-block__title {
+        font-size: 15px;
+        margin-bottom: 40px;
+        max-width: 351px;
+    }
+    .feedback-form {
+        max-width: 351px;
+    }
+    .feedback-block__form {
+        margin-bottom: 31px;
+    }
+    .feedback-form__input[name="phone-input"] {
+        margin-bottom: 51px;
+    }
+    .feedback-form__button {
+        width: 338px;
+        height: 77px;
+        font-size: 17px;
+    }
+    .feedback-block__text {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 991px) {
+    .feedback-block {
+        max-width: 314px;
+    }
+    .feedback-block__title {
+        font-size: 14px;
+        margin-bottom: 30px;
+        max-width: 266px;
+    }
+    .feedback-form {
+        max-width: 314px;
+    }
+    .feedback-block__form {
+        margin-bottom: 31px;
+    }
+    .feedback-form__input {
+    }
+    .feedback-form__input[name="phone-input"] {
+        margin-bottom: 42px;
+    }
+    .feedback-form__button {
+        width: 305px;
+        height: 71px;
+        font-size: 14px;
+    }
+    .feedback-block__text {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .feedback-block {
+        max-width: none;
+        width: 100%;
+    }
+    .feedback-block__title {
+        font-size: 16px;
+        margin-bottom: 35px;
+        max-width: 374px;
+    }
+    .feedback-form {
+        max-width: 80%;
+    }
+    .feedback-block__form {
+        margin-bottom: 31px;
+    }
+    .feedback-form__input {
+    }
+    .feedback-form__input[name="phone-input"] {
+        margin-bottom: 42px;
+    }
+    .feedback-form__button {
+        width: 322px;
+        height: 75px;
+        font-size: 15px;
+    }
+    .feedback-block__text {
+        font-size: 16px;
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 570px) {
+
+}
+
+@media (max-width: 431px) {
+    .feedback-block {
+        max-width: 314px;
+    }
+    .feedback-block__title {
+        font-size: 14px;
+        margin-bottom: 30px;
+        max-width: 266px;
+    }
+    .feedback-form {
+        max-width: 314px;
+    }
+    .feedback-block__form {
+        margin-bottom: 31px;
+    }
+    .feedback-form__input {
+    }
+    .feedback-form__input[name="phone-input"] {
+        margin-bottom: 42px;
+    }
+    .feedback-form__button {
+        width: 305px;
+        height: 71px;
+        font-size: 14px;
+    }
+    .feedback-block__text {
+        font-size: 14px;
+    }
+}
