@@ -1,0 +1,305 @@
+.header {
+    padding: 28px 0px 25px 0px;
+    background: #FF9900;
+}
+.header__container {
+}
+.header__desktop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 31px;
+}
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.header__contacts {
+    max-width: 218px;
+    width: 100%;
+}
+.header__contacts:nth-of-type(2) {
+    order: 3;
+}
+.header__phone {
+    font-size: 16px;
+    font-weight: 700;
+    position: relative;
+}
+.header__phone::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.header__adress {
+    font-size: 14px;
+    font-weight: 700;
+}
+.header__logo-link {
+    display: block;
+    max-width: 145px;
+    max-height: 59px;
+}
+.header__logo {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.header__nav {
+}
+.header__menu {
+}
+.header__menu-list {
+    display: flex;
+    gap: 15px;
+}
+.header__menu-item {
+}
+.header__menu-link {
+    font-size: 14px;
+    font-weight: 700;
+}
+.header__mobile {
+    display: none;
+}
+
+@media (max-width: 1318px) {
+    
+}
+
+@media (max-width: 991px) {
+    .header__contacts {
+        max-width: 188px;
+        width: auto;
+    }
+    .header__adress {
+        font-size: 12px;
+    }
+    .header__menu-link {
+        font-size: 13px;
+        font-weight: 700;
+    }
+    .header__logo-link {
+        display: block;
+        max-width: 117px;
+        max-height: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__desktop {
+        display: none;
+    }
+    .header__mobile {
+        display: flex;
+    }
+    .header {
+        padding: 18px 10px 25px 10px;
+        background: #FF9900;
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+    }
+    .header__mobile-main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+    }
+    .header__main-mobile-addresses {
+        display: flex;
+        gap: 23px;
+    }
+    .header__main-mobile-adress {
+        font-size: 12px;
+        font-weight: 600;
+    }
+    .header__mobile-burger-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 25px;
+        height: 18px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        padding: 0;
+        z-index: 10;
+    }
+    
+    .header__mobile-burger-button span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background: #FFF;
+        transition: all 0.3s linear;
+        position: relative;
+    }
+    
+    .header__mobile-burger-button.open span:first-child {
+        transform: translateY(8px) rotate(45deg);
+    }
+    
+    .header__mobile-burger-button.open span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .header__mobile-burger-button.open span:last-child {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .header__mobile-content {
+        padding: 10px 10px 40px 10px;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 0px 10px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+    .header__mobile-content.open {
+        display: block;
+    }
+    .header__mobile-body {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .header__mobile-menu-list {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .header__mobile-menu-link {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .header__mobile-addresses {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .header__mobile-address {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .header__mobile-address-text {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .header__mobile-address-phone {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .header__mobile-smd {
+        display: flex;
+        gap: 10px;
+    }
+    .header__mobile-smd-link {
+        display: inline-block;
+        max-width: 30px;
+        max-height: 30px;
+    }
+    .header__mobile-smd-icon {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+    }
+    .header__mobile-adress {
+    }
+    .header__mobile-burger-button {
+    }
+    .header__mobile-content {
+        display: none;
+        background: #FF9900;
+    }
+    .header__mobile-body {
+    }
+    .header__mobile-menu {
+    }
+    .header__mobile-menu-list {
+    }
+    .header__mobile-menu-item {
+    }
+    .header__mobile-menu-link {
+    }
+    .header__mobile-addresses {
+    }
+    .header__mobile-address {
+    }
+    .header__mobile-address-text {
+    }
+    .header__mobile-address-phone {
+    }
+    .header__mobile-smd {
+    }
+    .header__mobile-smd-link {
+    }
+    .header__mobile-smd-icon {
+    }
+}
+
+@media (max-width: 570px) {
+    .header {
+        padding: 16px 10px 20px 10px;
+    }
+    .header__main-mobile-adress {
+        font-size: 10px;
+    }
+    .header__mobile-burger-button {
+        width: 22px;
+        height: 15px;
+    }
+    .header__mobile-burger-button.open span:first-child {
+        transform: translateY(6px) rotate(45deg);
+    }
+    
+    .header__mobile-burger-button.open span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    .header__mobile-burger-button.open span:last-child {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+    .header__mobile-content {
+        padding: 12px 10px 40px 10px;
+    }
+    .header__mobile-body {
+        gap: 30px;
+    }
+    .header__mobile-menu-link {
+        font-size: 14px;
+    }
+    .header__mobile-addresses {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    .header__mobile-address {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .header__mobile-address-text {
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .header__mobile-address-phone {
+        font-size: 16px;
+        font-weight: 700;
+    }
+}
+
+@media (max-width: 431px) {
+    .header__mobile-burger-button {
+        width: 18px;
+    }
+    .header__mobile-content {
+        padding: 16px 10px 40px 10px;
+    }
+}

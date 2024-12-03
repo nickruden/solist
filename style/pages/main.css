@@ -261,7 +261,7 @@
 
 @media (max-width: 768px) {
     .top-block {
-        padding: 71px 0px 133px 0px;
+        padding: calc(71px + 50px) 0px 133px 0px;
     }
     .top-block__title {
         margin-bottom: 63px;
@@ -340,7 +340,7 @@
 
 @media (max-width: 570px) {
     .top-block {
-        padding: 40px 0px 80px 0px;
+        padding: calc(60px + 40px) 0px 80px 0px;
     }
     .top-block__title {
         margin-left: 0px;
@@ -420,7 +420,7 @@
 
 @media (max-width: 431px) {
     .top-block {
-        padding: 40px 0px 80px 0px;
+        padding: calc(60px + 40px) 0px 80px 0px;
     }
     .top-block__title {
         margin-left: 0px;

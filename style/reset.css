@@ -18,6 +18,13 @@
 @font-face {
     font-family: 'Montserrat';
     font-style: normal;
+    font-weight: 600;
+    src: url("../assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
     font-weight: 700;
     src: url("../assets/fonts/Montserrat-Bold.ttf") format("truetype");
 }
@@ -217,3 +224,17 @@ button {
     }
 }
 
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 5;
+}
+
+.overlay.open {
+    display: block;
+}
