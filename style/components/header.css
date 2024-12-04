@@ -1,6 +1,7 @@
 .header {
     padding: 28px 0px 25px 0px;
     background: #FF9900;
+    overflow: visible;
 }
 .header__container {
 }
@@ -22,16 +23,22 @@
 .header__contacts:nth-of-type(2) {
     order: 3;
 }
+
+.header__phone-wrapper {
+    position: relative;
+}
+
 .header__phone {
     font-size: 16px;
     font-weight: 700;
-    position: relative;
 }
-.header__phone::after {
-    position: absolute;
-    right: 0;
-    top: 0;
+
+.header__dropdown {
 }
+
+.header__dropdown-item {
+}
+
 .header__adress {
     font-size: 14px;
     font-weight: 700;

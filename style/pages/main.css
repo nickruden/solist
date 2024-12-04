@@ -109,34 +109,34 @@
 }
 
 .top-block__button {
-    width: 440px;
-    height: 77px;
-    background: url('../../assets/images/button-orange.svg');
-    background-size: cover;
-    font-family: "Montserrat";
-    font-size: 18px;
-    font-weight: 800;
-    line-height: 18px;
-    letter-spacing: .04em;
-    color: white;
-    text-transform: uppercase;
-    display: flex;
+    cursor: pointer;
+    display: inline-flex;
     align-items: center;
-    justify-content: center;
-    position: relative;
-    transition: transform 0.3s ease, filter 0.3s ease;
-    filter: drop-shadow(3px 6px 0px rgba(255, 198, 113, 1));
+    max-width: 300px;
+}
+.top-block__button:first-child {
+    transform: rotate(180deg) scaleY(-1);
+}
+.top-block__button:first-child .top-block__button-text {
+    transform: translate(-50%, -50%) rotate(180deg) scaleY(-1);
+}
+.top-block__button:first-child:hover {
+    transform: translate(-3px, 6px) rotate(180deg) scaleY(-1);
+    filter: drop-shadow(0px 0px 0px #FFC671);
 }
 
-.top-block__button:hover {
-    transform: translate(3px, 6px);
-    filter: drop-shadow(0px 0px 0px rgba(255, 198, 113, 1));
-    color: #ededed;
+.top-block__button:last-child .custom-button-text {
+    left: 40%;
 }
+
 .top-block__button-text {
-    display: block;
-    transform: rotate(-0.78deg);
+
 }
+
+.top-block__button-play {
+
+}
+
 .top-block__background {
 
 }
@@ -190,12 +190,6 @@
     .top-block__img-text {
         font-size: 68px;
         line-height: 61px;
-    }
-    .top-block__button {
-        width: 408px;
-        height: 70px;
-        font-size: 17px;
-        line-height: 17px;
     }
 }
 
@@ -251,12 +245,6 @@
     }
     .top-block__body {
         gap: 83px;
-    }
-    .top-block__button {
-        width: 372px;
-        height: 65px;
-        font-size: 16px;
-        line-height: 16px;
     }
 }
 
@@ -331,9 +319,11 @@
     .top-block__body {
         gap: 93px;
     }
-    .top-block__button {
-        width: 330px;
-        height: 58px;
+    .top-block__buttons {
+        display: flex;
+        flex-direction: column;
+    }
+    .top-block__button-text {
         font-size: 13px;
         line-height: 1.2;
     }
@@ -342,6 +332,8 @@
 @media (max-width: 570px) {
     .top-block {
         padding: calc(60px + 40px) 0px 80px 0px;
+        background: url('../../assets/images/pages/main/top-block/background-mobile-img.svg');
+        background-size: cover;
     }
     .top-block__title {
         margin-left: 0px;
@@ -412,10 +404,10 @@
         gap: 58px;
     }
     .top-block__button {
-        width: 306px;
-        height: 53px;
+        max-width: 264px;
+    }
+    .top-block__button-text {
         font-size: 12px;
-        line-height: 1.2;
     }
 }
 
@@ -501,12 +493,6 @@
     }
     .top-block__body {
         gap: 58px;
-    }
-    .top-block__button {
-        width: 306px;
-        height: 53px;
-        font-size: 12px;
-        line-height: 1.2;
     }
 }
 
@@ -607,7 +593,7 @@
 /* ТРЕТИЙ БЛОК */
 .learning-pace {
     padding: 215px 0px 233px 0px;
-    background: url("../../assets/images/pages/main/learning-pace/background.svg");
+    background: url("../../assets/images/pages/main/learning-pace/background-img.svg");
     background-size: cover;
 }
 .learning-pace__container {
@@ -680,6 +666,8 @@
 @media (max-width: 570px) {
     .learning-pace {
         padding: 102px 0px 105px 0px;
+        background: url("../../assets/images/pages/main/learning-pace/background-mobile-img.svg");
+        background-size: cover;
     }
     .learning-pace__img-wrap {
         max-width: 263px;
@@ -902,6 +890,8 @@
 @media (max-width: 570px) {
     .every-quarter {
         padding: 95px 0px 74px 0px;
+        background: url("../../assets/images/pages/main/every-quarter/background-mobile-img.svg");
+        background-size: cover;
     }
     .every-quarter__slider {
         padding: 0px 0px;
@@ -1270,6 +1260,8 @@
 @media (max-width: 570px) {
     .learn-from-us {
         padding: 79px 0px 91px 0px;
+        background: url("../../assets/images/pages/main/learn-from-us/background-mobile-img.svg");
+        background-size: cover;
     }
     .learn-from-us__title {
         margin-bottom: 56px;
@@ -1635,6 +1627,8 @@
 @media (max-width: 570px) {
     .active-students {
         padding: 61px 0px 65px 0px;
+        background: url("../../assets/images/pages/main/active-students/background-mobile-img.svg");
+        background-size: cover;
     }
     .active-students__title {
         margin-bottom: 26px;

@@ -162,6 +162,8 @@
 @media (max-width: 570px) {
     .footer {
         padding: 122px 0px 54px 0px;
+        background: url('../../assets/images/components/footer/background-mobile-img.svg');
+        background-size: cover;
     }
     .footer__addresses {
         flex-direction: column;
