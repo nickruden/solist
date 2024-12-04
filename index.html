@@ -136,8 +136,8 @@
                 <div class="top-block__title">
                     <div class="top-block__title-text">для детей и взрослых</div>
                     <div class="top-block__title-img">
-                        <img src="./assets/images/pages/main/top-block/desktop-title-img.png" alt=""
-                            class="top-block__title-img-desktop">
+                        <!-- <img src="./assets/images/pages/main/top-block/desktop-title-img.png" alt=""
+                            class="top-block__title-img-desktop"> -->
                         <img src="./assets/images/logo-orange.svg" alt="" class="top-block__title-img-mobile">
                     </div>
                 </div>
@@ -566,6 +566,42 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="swiper-slide much-attention__swiper-slide">
+                                <div class="much-attention__slide">
+                                    <div class="much-attention__slide-img-wrap">
+                                        <svg viewBox="0 0 560 390" xmlns="http://www.w3.org/2000/svg">
+                                            <defs>
+                                                <clipPath id="clipPath">
+                                                    <path d="M9.73391 48.4358C10.3353 27.383 27.1586 10.4031 48.205 9.60663L302.06 0L598.563 13.624C620.383 14.6265 637.363 32.9466 636.709 54.779L626.65 390.741C626.02 411.77 609.209 428.716 588.186 429.515L312.21 440L38.4843 429.601C16.5557 428.767 -0.607404 410.423 0.0192546 388.487L9.73391 48.4358Z" fill="#FF9900"/>
+                                                </clipPath>
+                                            </defs>
+                                            <g transform="translate(15, 15)">
+                                                <rect width="659" height="462" fill="#FF9900" clip-path="url(#clipPath)" />
+                                            </g>
+                                            <image href="./assets/images/pages/main/every-quarter/slide-1.jpg" width="100%"
+                                                height="100%" clip-path="url(#clipPath)" preserveAspectRatio="xMidYMid slice" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide much-attention__swiper-slide">
+                                <div class="much-attention__slide">
+                                    <div class="much-attention__slide-img-wrap">
+                                        <svg viewBox="0 0 560 390" xmlns="http://www.w3.org/2000/svg">
+                                            <defs>
+                                                <clipPath id="clipPath">
+                                                    <path d="M9.73391 48.4358C10.3353 27.383 27.1586 10.4031 48.205 9.60663L302.06 0L598.563 13.624C620.383 14.6265 637.363 32.9466 636.709 54.779L626.65 390.741C626.02 411.77 609.209 428.716 588.186 429.515L312.21 440L38.4843 429.601C16.5557 428.767 -0.607404 410.423 0.0192546 388.487L9.73391 48.4358Z" fill="#FF9900"/>
+                                                </clipPath>
+                                            </defs>
+                                            <g transform="translate(15, 15)">
+                                                <rect width="659" height="462" fill="#FF9900" clip-path="url(#clipPath)" />
+                                            </g>
+                                            <image href="./assets/images/pages/main/every-quarter/slide-1.jpg" width="100%"
+                                                height="100%" clip-path="url(#clipPath)" preserveAspectRatio="xMidYMid slice" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="swiper-pagination much-attention__swiper-pagination"></div>
@@ -615,7 +651,7 @@
                                 <g transform="translate(15, 15)">
                                     <rect width="560" height="390" fill="#FF9900" clip-path="url(#clipPath)" />
                                 </g>
-                                <image href="./assets/images/pages/main/every-quarter/slide-1.jpg" width="100%" height="100%"
+                                <image href="./assets/images/pages/main/arts-centers/video-img-1.jpg" width="100%" height="100%"
                                     clip-path="url(#clipPath)" preserveAspectRatio="xMidYMid slice" />
                             </svg>
                             <div class="play-button">
@@ -638,7 +674,7 @@
                                 <g transform="translate(15, 15)">
                                     <rect width="560" height="390" fill="#FF9900" clip-path="url(#clipPath)" />
                                 </g>
-                                <image href="./assets/images/pages/main/every-quarter/slide-1.jpg" width="100%" height="100%"
+                                <image href="./assets/images/pages/main/arts-centers/video-img-2.jpg" width="100%" height="100%"
                                     clip-path="url(#clipPath)" preserveAspectRatio="xMidYMid slice" />
                             </svg>
                             <div class="play-button">
@@ -871,6 +907,9 @@
             direction: 'horizontal',
             slidesPerView: 2,
             spaceBetween: 14,
+            initialSlide: 1,
+            loop: false,
+            centeredSlides: false,
             pagination: {
                 el: '.directions__swiper-pagination',
             },
@@ -930,6 +969,7 @@
             direction: 'horizontal',
             slidesPerView: 1,
             spaceBetween: 24,
+            initialSlide: 1,
             loop: true,
             pagination: {
                 el: '.much-attention__swiper-pagination',
@@ -937,6 +977,7 @@
             breakpoints: {
                 715: {
                     spaceBetween: 40,
+                    loop: false,
                 },
             }
         });

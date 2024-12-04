@@ -105,8 +105,9 @@
 .top-block__buttons {
     display: flex;
     align-items: center;
-    justify-content: center;
+    gap: 20px;
 }
+
 .top-block__button {
     width: 440px;
     height: 77px;
@@ -2119,10 +2120,7 @@
     display: block;
 }
 .arts-centers__video-posrter:hover .play-button path {
-    fill: #cbcbcb;
-}
-.arts-centers__video-posrter:hover + .arts-centers__video-title {
-    color: #c17400;
+    fill: #d8d8d8;
 }
 .arts-centers__video-posrter svg {
     position: relative;
@@ -2374,6 +2372,9 @@
 .advantages__list-item:nth-of-type(even) {
     align-self: flex-end;
 }
+.advantages__list-item:nth-of-type(odd) .advantages__advantages-list-item-img {
+    margin-right: 50px;
+}
 .advantages__list-item:nth-of-type(even) .advantages__advantages-list-item-img {
     order: 2;
     margin-left: 60px;
@@ -2388,7 +2389,7 @@
     max-width: 448px;
 }
 .advantages__list-item:nth-of-type(3) .advantages__advantages-list-item-img {
-    max-width: 403px;
+    max-width: 427px;
 }
 .advantages__list-item:nth-of-type(4) .advantages__advantages-list-item-img {
     max-width: 545px;
@@ -2480,6 +2481,9 @@
         padding-top: 17px;
         background: none;
     }
+    .advantages__list-item:nth-of-type(odd) .advantages__advantages-list-item-img {
+        margin-right: 30px;
+    }
     .advantages__list-item:nth-of-type(even) .advantages__advantages-list-item-img {
         margin-left: 10px;
     }
@@ -2507,6 +2511,9 @@
 @media (max-width: 570px) {
     .advantages {
         padding-top: 25px;
+    }
+    .advantages__list-item:nth-of-type(odd) .advantages__advantages-list-item-img {
+        margin-right: 15px;
     }
     .advantages__list-item:nth-of-type(1) .advantages__advantages-list-item-img {
         max-width: 186px;
@@ -2536,7 +2543,7 @@
         margin-bottom: 0px;
     }
     .advantages__list-item:nth-of-type(even) .advantages__advantages-list-item-img {
-        margin-left: 5px;
+        margin-left: 10px;
     }
     .advantages__list-item:nth-of-type(1) .advantages__advantages-list-item-img {
         max-width: 149px;
