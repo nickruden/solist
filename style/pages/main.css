@@ -146,6 +146,9 @@
         top: 14px;
         margin-bottom: 30px;
     }
+    .top-block__img-text {
+        text-shadow: #FFF 0px -6px, #FFF 4px 3px, #FFF -5px -6px, #FFF -6px 1px, #FFF -2px 3px, #FFF 2px -4px, #FFF 3px 0px, #FFF 4px -5px, #FFF -6px 3px;
+    }
     .top-block__title-text {
         font-size: 30px;
         line-height: 29px;
@@ -194,7 +197,7 @@
         padding: 25px 0px 119px 0px;
     }
     .top-block__img-text {
-        text-shadow: #FFF 0px -3px, #FFF 0px 0px, #FFF -2px -3px, #FFF -2px 1px, #FFF -2px 2px, #FFF 4px -3px, #FFF 4px 2px, #FFF 1px 2px;;
+        text-shadow: #FFF -1px -3px, #FFF 0px 3px, #FFF -2px -2px, #FFF -2px 2px, #FFF 1px 3px, #FFF 3px -3px, #FFF 3px 3px, #FFF 3px -3px;
     }
     .top-block__title {
         margin-left: 32px;
