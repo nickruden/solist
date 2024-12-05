@@ -22,7 +22,6 @@
 .my-button:hover {
     transform: translate(3px, 6px);
     filter: drop-shadow(0px 0px 0px #FFE9C8);
-    color: #aa6907;
 }
 .my-button__text {
     display: block;

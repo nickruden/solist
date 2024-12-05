@@ -518,6 +518,8 @@
     max-width: 290px;
     aspect-ratio: 290 / 482;
 }
+.directions__slider-link {
+}
 .directions__slide {
     text-align: center;
     display: flex;
