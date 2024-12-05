@@ -7,6 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
         mobileMenu.classList.toggle('open');
         burgerButton.classList.toggle('open');
         overlay.classList.toggle('open');
+        document.querySelector('.header').classList.toggle('open');
 
         if (mobileMenu.classList.contains('open')) {
             document.body.style.overflow = 'hidden';

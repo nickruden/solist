@@ -1,4 +1,5 @@
 .my-button {
+    display: block;
     width: 407px;
     height: 94px;
     background: url('../../assets/images/button-white.svg');
