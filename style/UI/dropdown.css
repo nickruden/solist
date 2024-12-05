@@ -18,14 +18,6 @@
     border-top: 7px solid #FFF;
 }
 
-.my-dropdown-control:hover {
-    color: #e1e1e1;
-}
-
-.my-dropdown-control:hover::after {
-    border-top: 7px solid #e1e1e1;
-}
-
 .my-dropdown-control.open::after {
     top: auto;
     bottom: 50%;

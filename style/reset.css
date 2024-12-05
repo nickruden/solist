@@ -67,10 +67,6 @@ a {
     cursor: pointer;
 }
 
-a:hover {
-    color: #e1e1e1;
-}
-
 ol,
 ul {
     padding: 0;
