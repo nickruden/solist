@@ -35,6 +35,7 @@
 }
 
 .header__dropdown {
+    border-radius: 0px 0px 10px 10px;
 }
 
 .header__dropdown-item {
@@ -70,6 +71,11 @@
 }
 .header__mobile {
     display: none;
+}
+
+.header__mobile-smd {
+    display: flex;
+    gap: 8px;
 }
 
 @media (max-width: 1318px) {
@@ -227,7 +233,6 @@
         font-weight: 700;
     }
     .header__mobile-smd {
-        display: flex;
         gap: 10px;
     }
     .header__mobile-smd-link {

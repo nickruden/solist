@@ -2346,7 +2346,7 @@
 .advantages {
     padding-bottom: 35px;
     background: url("../../assets/images/pages/main/advantages/background-img.svg");
-    background-size: cover;
+    background-size: 100% 100%;
 }
 .advantages__container {
     display: flex;
@@ -2766,7 +2766,7 @@
 .reviews__swiper {
 }
 .reviews__swiper-wrapper {
-    align-items: flex-start;
+    dlign-items: flex-start;
 }
 .reviews__swiper-slide {
     max-width: 375px;
