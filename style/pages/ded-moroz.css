@@ -993,6 +993,209 @@
 
 
 /* ШЕСТОЙ БЛОК */
+.price-list {
+    padding: 77px 0px 134px 0px;
+    background: url("../../assets/images/pages/ded-moroz/price-list/background-img.svg");
+    background-size: cover;
+}
+.price-list__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 30px;
+}
+.price-list__item {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.price-list__item:not(:nth-of-type(2)) {
+    margin-bottom: 166px;
+}
+.price-list__title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.price-list__tables {
+    max-width: 1115px;
+    width: 100%;
+}
+.price-list__tables th, .price-list__tables td {
+    color: #000;
+    line-height: 130%;
+    font-weight: 400;
+}
+.price-list__table-desktop {
+    max-width: 1100px;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 24px;
+    box-shadow: 15px 15px 0px 0px #01AED8;
+    background: #FFF;
+}
+th, td {
+    border: 1px solid #B9B9B9;
+    padding: 10px;
+}
+.price-list__table-desktop > thead > tr:first-child > th {
+    padding: 22px 12px;
+}
+.price-list__table-desktop > thead > tr:first-child > th:first-child {
+    border: none;
+}
+.price-list__table-desktop > thead > tr:first-child > th:nth-of-type(2) {
+    border-top-left-radius: 24px;
+}
+.price-list__table-desktop > thead > tr:first-child > th:nth-of-type(3) {
+    border-top-right-radius: 24px;
+}
+.price-list__table-desktop > thead > tr:last-child > th {
+    text-align: start;
+}
+.price-list__table-desktop > thead > tr:last-child > th:first-child {
+    border-top-left-radius: 24px;
+}
+.price-list__table-desktop > tbody > tr:last-child > td:first-child {
+    border-bottom-left-radius: 24px;
+}
+.price-list__tables-mobile {
+    display: none;
+}
+.price-list__pre-text {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 130%;
+    color: #000;
+    text-align: center;
+    margin-top: 66px;
+}
+
+@media (max-width: 1318px) {
+    .price-list {
+        padding: 72px 0px 105px 0px;
+    }
+    .price-list__title {
+        margin-bottom: 45px;
+    }
+    .price-list__tables {
+        max-width: 1010px;
+        width: 100%;
+    }
+    .price-list__tables th, .price-list__tables td {
+        font-size: 16px;
+    }
+    .price-list__item:not(:nth-of-type(2)) {
+        margin-bottom: 134px;
+    }
+    .price-list__pre-text {
+        max-width: 500px;
+        margin-top: 60px;
+    }
+}
+
+@media (max-width: 991px) {
+    .price-list {
+        padding: 68px 0px 84px 0px;
+    }
+    .price-list__item:not(:nth-of-type(2)) {
+        margin-bottom: 102px;
+    }
+    .price-list__pre-text {
+        max-width: 500px;
+        margin-top: 55px;
+    }
+    .price-list__tables {
+        max-width: 800px;
+        width: 100%;
+    }
+    .price-list__tables th, .price-list__tables td {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .price-list {
+        padding: 73px 0px;
+    }
+    .price-list__title {
+        margin-bottom: 40px;
+    }
+    .price-list__item:not(:nth-of-type(2)) {
+        margin-bottom: 94px;
+    }
+    .price-list__pre-text {
+        max-width: 400px;
+    }
+    .price-list__tables {
+        max-width: none;
+    }
+    .price-list__table-desktop {
+        display: none;
+    }
+    .price-list__tables-mobile {
+        display: block;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+    .price-list__table-mobile {
+        max-width: 500px;
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        border-radius: 16px;
+        box-shadow: 10px 10px 0px 0px #01AED8;
+        background: #FFF;
+        table-layout: fixed; 
+    }
+    .price-list__table-mobile th, .price-list__table-mobile td {
+        word-wrap: break-word;
+        white-space: normal;
+    }
+    .price-list__table-mobile > thead th {
+        border-radius: 16px 16px 0px 0px;
+    }
+    .price-list__table-mobile > thead > tr:first-child > th {
+        padding: 10px;
+    }
+    .price-list__table-mobile > tbody > tr:last-child > td:first-child {
+        border-radius: 0px 0px 0px 16px;
+    }
+    .price-list__table-mobile > tbody > tr:last-child > td:last-child {
+        border-radius: 0px 0px 16px 0px;
+    }
+}
+
+@media (max-width: 570px) {
+    .price-list {
+        padding: 67px 0px;
+        background: none;
+    }
+    .price-list__title > br {
+       display: none;
+    }
+    .price-list__item:not(:nth-of-type(2)) {
+        margin-bottom: 82px;
+    }
+    .price-list__pre-text {
+        max-width: 320px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 431px) {
+    .price-list {
+        padding: 56px 0px;
+    }
+    .price-list__item:not(:nth-of-type(2)) {
+        margin-bottom: 70px;
+    }
+}
 
 
 
