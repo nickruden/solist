@@ -1,0 +1,1384 @@
+/* ИЗМНЕНИЕ ХЕДЕРА И ФУТЕРА */
+.header {
+    padding: 85px 0px 25px 0px;
+    background: #01AED8;
+    position: relative;
+}
+.header::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 125px;
+    background: url('../../assets/images/components/header/ded-moroz/christmas-wreath-img.png');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.header__container {
+    position: relative;
+    z-index: 10;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 76px 10px 25px 10px;
+        position: fixed;
+        z-index: 1000;
+        width: 100%;
+    }
+
+    .header::after {
+        height: 79px;
+        background-position-x: -30px;
+    }
+
+    .header.open {
+       padding: 0px;
+    }
+
+    .header.open .header__mobile-main {
+        padding: 30px 10px 0px 10px;
+    }
+}
+
+.footer {
+    background: url('../../assets/images/components/footer/ded-moroz/background-img-blue.svg');
+    background-size: cover;
+}
+
+@media (max-width: 570px) {
+    .footer {
+        background: url('../../assets/images/components/footer/ded-moroz/background-mobile-img-blue.svg');
+        background-size: cover;
+    }
+}
+
+.block-title {
+    color: #01AED8;
+}
+
+
+/* ПЕРВЫЙ БЛОК */
+.hero-section {
+    padding: 18px 0px 152px 0px;
+    background: url('../../assets/images/pages/ded-moroz/hero-section/background-img.svg');
+    background-size: cover;
+}
+.hero-section__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 30px;
+}
+.hero-section__title {
+    margin-bottom: 50px;
+    max-width: 825px;
+}
+.hero-section__body {
+}
+.hero-section__items {
+    display: flex;
+    gap: 103px;
+    margin-bottom: 63px;
+}
+.hero-section__item {
+    max-width: 230px;
+    max-height: 299px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.hero-section__item-img-wrap {
+    max-width: 230px;
+    max-height: 230px;
+}
+.hero-section__item:nth-of-type(2) {
+    max-width: 203px;
+    max-height: 269px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.hero-section__item:nth-of-type(2) .hero-section__item-img-wrap {
+    max-width: 203px;
+    max-height: 200px;
+}
+.hero-section__item-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.hero-section__item-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    max-width: 194px;
+}
+.hero-section__buttons {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+.hero-section__button {
+}
+.hero-section__button {
+    filter: drop-shadow(4px 8px 0px #BDF2FF);
+}
+
+.hero-section__button:hover {
+    filter: drop-shadow(0px 0px 0px #BDF2FF);
+}
+
+.hero-section__button:first-child {
+    transform: rotate(180deg) scaleY(-1);
+}
+.hero-section__button:first-child .hero-section__button-text {
+    transform: translate(-50%, -50%) rotate(180deg) scaleY(-1);
+}
+.hero-section__button:first-child:hover {
+    transform: translate(-3px, 6px) rotate(180deg) scaleY(-1);
+}
+.hero-section__button-text {
+    color: #01AED8;
+}
+.hero-section__button:last-child {
+    position: relative;
+}
+.hero-section__button-play {
+    display: inline-block;
+	position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+}
+.hero-section__button:last-child .custom-button-text {
+    left: 40%;
+}
+
+@media (max-width: 1317px) {
+    .hero-section {
+        padding: 28px 0px 134px 0px;
+    }
+    .hero-section__title {
+        margin-bottom: 56px;
+    }
+    .hero-section__items {
+        display: flex;
+        gap: 76px;
+        margin-bottom: 85px;
+    }
+    .hero-section__item-img-wrap {
+        max-width: 217px;
+    }
+    .hero-section__item-title {
+        max-width: 194px;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero-section {
+        padding: 46px 0px 110px 0px;
+    }
+    .hero-section__title {
+        margin-bottom: 47px;
+    }
+    .hero-section__items {
+        display: flex;
+        gap: 76px;
+        margin-bottom: 55px;
+    }
+    .hero-section__item-img-wrap {
+        max-width: 205px;
+    }
+    .hero-section__item-title {
+        max-width: 194px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: calc(50px + 129px) 0px 94px 0px;
+    }
+    .hero-section__title {
+        margin-bottom: 72px;
+        max-width: 617px;
+    }
+    .hero-section__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-section__items {
+        flex-direction: column;
+        gap: 55px;
+        margin-bottom: 62px;
+    }
+    .hero-section__item-img-wrap {
+        max-width: 230px;
+        max-height: 230px;
+    }
+    .hero-section__item-title {
+        max-width: 194px;
+    }
+    .hero-section__buttons {
+        flex-direction: column;
+        gap: 26px;
+    }
+}
+
+@media (max-width: 570px) {
+    .hero-section {
+        padding: calc(30px + 125px) 0px 80px 0px;
+        background: url('../../assets/images/pages/ded-moroz/hero-section/background-mobile-img.svg');
+        background-size: cover;
+    }
+    .hero-section__button:last-child::after {
+        content: '';
+	    display: inline-block;
+	    position: absolute;
+	    top: 50%;
+        transform: translateY(-50%);
+        right: 64px;
+        border: 7px solid transparent;
+        border-left: 10px solid #01AED8;
+    }
+    .hero-section__button-play {
+        display: none;
+    }
+    .hero-section__button:last-child .custom-button-text {
+        left: 45%;
+    }
+    .hero-section__title {
+        margin-bottom: 50px;
+        max-width: 310px;
+    }
+    .hero-section__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-section__items {
+        flex-direction: column;
+        gap: 50px;
+        margin-bottom: 53px;
+    }
+    .hero-section__buttons {
+        flex-direction: column;
+        gap: 26px;
+    }
+}
+
+@media (max-width: 431px) {
+    .hero-section {
+        padding: calc(30px + 125px) 0px 80px 0px;
+    }
+    .hero-section__title {
+        margin-bottom: 50px;
+        max-width: 310px;
+    }
+    .hero-section__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-section__items {
+        flex-direction: column;
+        gap: 50px;
+        margin-bottom: 53px;
+    }
+    .hero-section__buttons {
+        flex-direction: column;
+        gap: 26px;
+    }
+}
+
+
+/* ВТОРОЙ БЛОК */
+.new-years-magic {
+    padding: 40px 0px 84px 0px;
+    background: url('../../assets/images/pages/ded-moroz/new-years-magic/background-img.svg');
+    background-size: cover;
+}
+.new-years-magic__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.new-years-magic__top {
+    margin-bottom: -294px;
+    display: flex;
+    /* width: 100%; */
+    position: relative;
+}
+.new-years-magic__top .new-years-magic__title {
+    margin-top: 75px;
+    /* margin-left: 67px; */
+}
+/* .new-years-magic__top .new-years-magic__img-wrap {
+    position: absolute;
+    top: 0;
+    right: 37px;
+} */
+.new-years-magic__title {
+}
+.new-years-magic__img-wrap {
+    max-width: 656px;
+    max-height: 656px;
+}
+.new-years-magic__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.new-years-magic__bottom {
+    display: flex;
+    align-items: flex-end;
+    gap: 63px;
+}
+.new-years-magic__bottom .new-years-magic__title {
+    order: 2;
+}
+.new-years-magic__bottom .new-years-magic__img-wrap {
+    order: 1;
+    max-width: 691px;
+    max-height: 614px;
+}
+
+.new-years-magic__top .new-years-magic__title > br:last-child {
+    display: none;
+}
+
+@media (min-width: 1318px) {
+    .new-years-magic__img-wrap {
+        max-width: 656px;
+        max-height: 656px;
+    }
+
+    .new-years-magic__bottom .new-years-magic__img-wrap {
+        max-width: 691px;
+        max-height: 614px;
+    }
+}
+
+@media (max-width: 1317px) {
+    .new-years-magic {
+        padding: 56px 0px 60px 0px;
+    }
+
+    .new-years-magic__top {
+        margin-bottom: -147px;
+    }
+
+    .new-years-magic__img-wrap {
+        max-width: 452px;
+        margin-left: 30px;
+    }
+
+    .new-years-magic__bottom .new-years-magic__img-wrap {
+        max-width: 473px;
+        margin-left: 0px;
+    }
+
+    .new-years-magic__img {
+        aspect-ratio: 656 / 656;
+    }
+
+    .new-years-magic__bottom .new-years-magic__img {
+        aspect-ratio: 691 / 614;
+    }
+
+}
+
+@media (max-width: 991px) {
+    .new-years-magic {
+        padding: 56px 0px 60px 0px;
+    }
+    .new-years-magic__top .new-years-magic__title {
+        margin-top: 46px;
+    }
+    .every-lesson__img-wrap {
+        max-width: 420px;
+        align-self: flex-end;
+    }
+    .new-years-magic__top {
+        margin-bottom: -117px;
+    }
+
+    .new-years-magic__img-wrap {
+        max-width: 352px;
+        margin-left: 30px;
+    }
+
+    .new-years-magic__bottom .new-years-magic__img-wrap {
+        max-width: 376px;
+    }
+}
+
+@media (max-width: 768px) {
+    .new-years-magic {
+        padding: 56px 0px 60px 0px;
+    }
+    .new-years-magic__top {
+        margin-bottom: 54px;
+        flex-direction: column;
+        width: 100%;
+        padding: 0px 10px;
+    }
+    .new-years-magic__bottom {
+        align-items: baseline;
+        flex-direction: column;
+        gap: 0px;
+        width: 100%;
+        padding: 0px 10px;
+    }
+    .new-years-magic__title {
+        margin-bottom: 30px;
+    }
+    .new-years-magic__img-wrap {
+        align-self: flex-end;
+        max-width: 392px!important;
+    }
+    .new-years-magic__top .new-years-magic__title > br:first-child {
+        display: none;
+    }
+    .new-years-magic__top .new-years-magic__title > br:last-child {
+        display: block;
+    }
+    .new-years-magic__top .new-years-magic__title {
+        margin-top: 0px;
+    }
+    .new-years-magic__bottom .new-years-magic__title {
+        order: 1;
+    }
+    .new-years-magic__bottom .new-years-magic__img-wrap {
+        order: 2;
+    }
+}
+
+@media (max-width: 570px) {
+    .new-years-magic {
+        padding: 56px 0px 60px 0px;
+        background: none;
+    }
+    .new-years-magic__title {
+        margin-bottom: 20px;
+    }
+    .new-years-magic__top {
+        margin-bottom: 41px;
+    }
+    .new-years-magic__img-wrap {
+        align-self: flex-end;
+        max-width: 356px!important;;
+    }
+}
+
+@media (max-width: 431px) {
+    .new-years-magic {
+        padding: 56px 0px 60px 0px;
+    }
+    .new-years-magic__top {
+        margin-bottom: 32px;
+    }
+    .new-years-magic__img-wrap {
+        align-self: flex-end;
+        max-width: 316px!important;;
+    }
+}
+
+
+/* ТРЕТИЙ БЛОК */
+.where-work {
+    padding: 206px 0px 193px 0px;
+    background: url('../../assets/images/pages/ded-moroz/where-work/background-img.svg');
+    background-size: cover;
+}
+.where-work__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 30px;
+}
+.where-work__title {
+    margin-bottom: 50px;
+    max-width: 978px;
+    text-align: center;
+    color: #FFF;
+}
+.where-work__locations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 30px;
+    column-gap: 34px;
+}
+.where-work__location {
+    flex: 1 1 33.333%;
+    max-width: 376px;
+    padding: 23px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 24px;
+    letter-spacing: .04em;
+    color: #01AED8;
+    text-transform: uppercase;
+    background: #FFF;
+    border-radius: 50px;
+}
+
+.where-work__title > br {
+    display: none;
+}
+
+@media (max-width: 1317px) {
+    .where-work {
+        padding: 184px 0px 170px 0px;
+    }
+    .where-work__title {
+        margin-bottom: 50px;
+        max-width: 978px;
+    }
+    .where-work__locations {
+        column-gap: 30px;
+    }
+}
+
+@media (max-width: 991px) {
+    .where-work {
+        padding: 155px 0px 148px 0px;
+    }
+    .where-work__title {
+        margin-bottom: 45px;
+    }
+    .where-work__locations {
+        row-gap: 27px;
+        column-gap: 27px;
+    }
+}
+
+@media (max-width: 768px) {
+    .where-work {
+        padding: 180px 0px 117px 0px;
+    }
+    .where-work__title {
+        margin-bottom: 50px;
+    }
+    .where-work__locations {
+        row-gap: 30px;
+        column-gap: 0px;
+    }
+    .where-work__location {
+        flex: 1 1 100%;
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 570px) {
+    .where-work {
+        padding: 107px 0px 96px 0px;
+        background: url('../../assets/images/pages/ded-moroz/where-work/background-mobile-img.svg');
+        background-size: cover;
+    }
+    .where-work__locations {
+        row-gap: 20px;
+        column-gap: 0px;
+    }
+}
+
+@media (max-width: 431px) {
+    .where-work {
+        padding: 89px 0px 84px 0px;
+    }
+    .where-work__title {
+        margin-bottom: 40px;
+        max-width: 270px;
+    }
+    .where-work__title > br {
+        display: block;
+    }
+}
+
+
+/* ЧЕТВЁРТЫЙ БЛОК */
+.congratulation-look {
+    padding: 140px 0px 89px 0px;
+    background: url('../../assets/images/pages/ded-moroz/congratulation-look/background-img.svg');
+    background-size: cover;
+}
+.congratulation-look__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 30px;
+}
+.congratulation-look__title {
+    margin-bottom: 135px;
+    text-align: center;
+}
+.congratulation-look__list {
+    display: flex;
+    flex-direction: column;
+}
+.congratulation-look__list-item {
+    display: flex;
+    align-items: center;
+}
+.congratulation-look__list-item:nth-of-type(2n) {
+    align-self: flex-end;
+}
+.congratulation-look__list-item:nth-of-type(odd) .congratulation-look__list-item-img {
+    margin-right: 54px;
+}
+.congratulation-look__list-item:nth-of-type(even) .congratulation-look__list-item-img {
+    order: 2;
+    margin-left: 60px;
+}
+.congratulation-look__list-item:nth-of-type(even) .congratulation-look__list-item-img {
+    order: 2;
+    margin-left: 60px;
+}
+.congratulation-look__list-item-img {
+}
+.congratulation-look__list-item:not(:last-child) {
+    margin-bottom: 125px;
+}
+.congratulation-look__list-item:nth-of-type(3) {
+    margin-bottom: 230px;
+}
+.congratulation-look__list-item:nth-of-type(4) {
+}
+.congratulation-look__list-item:nth-of-type(1) .congratulation-look__list-item-img {
+    max-width: 397px;
+}
+.congratulation-look__list-item:nth-of-type(2) .congratulation-look__list-item-img {
+    max-width: 475px;
+}
+.congratulation-look__list-item:nth-of-type(3) .congratulation-look__list-item-img {
+    max-width: 394px;
+}
+.congratulation-look__list-item:nth-of-type(4) .congratulation-look__list-item-img {
+    max-width: 485px;
+}
+.congratulation-look__list-item-text {
+    font-family: 'Nozhik';
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: .04em;
+    color: #01AED8;
+    text-transform: uppercase;
+    max-width: 750px;
+    position: relative; 
+    padding-left: 70px;
+}
+
+@media (max-width: 1317px) {
+    .congratulation-look {
+        padding: 124px 0px 81px 0px;
+    }
+    .congratulation-look__title {
+        margin-bottom: 107px;
+    }
+    .congratulation-look__list-item:nth-of-type(even) .congratulation-look__list-item-img {
+        margin-left: 30px;
+    }
+    .congratulation-look__list-item:not(:last-child) {
+        margin-bottom: 105px;
+    }
+    .congratulation-look__list-item:nth-of-type(3) {
+        margin-bottom: 170px;
+    }
+    .congratulation-look__list-item:nth-of-type(1) .congratulation-look__list-item-img {
+        max-width: 375px;
+    }
+    .congratulation-look__list-item:nth-of-type(2) .congratulation-look__list-item-img {
+        max-width: 417px;
+    }
+    .congratulation-look__list-item:nth-of-type(3) .congratulation-look__list-item-img {
+        max-width: 378px;
+    }
+    .congratulation-look__list-item:nth-of-type(4) .congratulation-look__list-item-img {
+        max-width: 427px;
+    }
+    .congratulation-look__list-item-text {
+        font-size: 73px;
+        line-height: 73px;
+        max-width: 640px;
+    }
+}
+
+@media (min-width: 992px) {
+    .congratulation-look__list-item-text::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 25%;
+        transform: translateY(-25%);
+        width: 23px;
+        height: 23px;
+        background-color: #01AED8;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 991px) {
+    .congratulation-look {
+        padding: 105px 0px 75px 0px;
+    }
+    .congratulation-look__title {
+        margin-bottom: 87px;
+    }
+    .congratulation-look__list-item:not(:last-child) {
+        margin-bottom: 81px;
+    }
+    .congratulation-look__list-item:nth-of-type(3) {
+        margin-bottom: 81px;
+    }
+    .congratulation-look__list-item:nth-of-type(even) .congratulation-look__list-item-img {
+        margin-left: 40px;
+    }
+    .congratulation-look__list-item:nth-of-type(1) .congratulation-look__list-item-img {
+        max-width: 292px;
+    }
+    .congratulation-look__list-item:nth-of-type(2) .congratulation-look__list-item-img {
+        max-width: 254px;
+    }
+    .congratulation-look__list-item:nth-of-type(3) .congratulation-look__list-item-img {
+        max-width: 283px;
+    }
+    .congratulation-look__list-item:nth-of-type(4) .congratulation-look__list-item-img {
+        max-width: 254px;
+    }
+    .congratulation-look__list-item-text {
+        font-size: 58px;
+        line-height: 58px;
+        max-width: 400px;
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .congratulation-look {
+        padding: 87px 0px 68px 0px;
+    }
+    .congratulation-look__title {
+        margin-bottom: 58px;
+    }
+    .congratulation-look__list-item:not(:last-child) {
+        margin-bottom: 50px;
+    }
+    .congratulation-look__list-item:nth-of-type(odd) .congratulation-look__list-item-img {
+        margin-right: 60px;
+    }
+    .advantages__list-item:nth-of-type(even) .advantages__advantages-list-item-img {
+        margin-left: 10px;
+    }
+    .congratulation-look__list-item:nth-of-type(1) .congratulation-look__list-item-img {
+        max-width: 244px;
+    }
+    .congratulation-look__list-item:nth-of-type(2) .congratulation-look__list-item-img {
+        max-width: 220px;
+    }
+    .congratulation-look__list-item:nth-of-type(3) .congratulation-look__list-item-img {
+        max-width: 257px;
+    }
+    .congratulation-look__list-item:nth-of-type(4) .congratulation-look__list-item-img {
+        max-width: 220px;
+    }
+    .congratulation-look__list-item-text {
+        font-family: 'Montserrat';
+        font-size: 18px;
+        line-height: 1.2;
+        padding-left: 5px;
+    }
+}
+
+@media (max-width: 570px) {
+    .congratulation-look {
+        padding: 74px 0px 62px 0px;
+        background: none;
+    }
+    .congratulation-look__title {
+        margin-bottom: 47px;
+    }
+    .congratulation-look__list-item:not(:last-child) {
+        margin-bottom: 27px;
+    }
+    .congratulation-look__list-item:nth-of-type(3) {
+        margin-bottom: 35px;
+    }
+    .congratulation-look__list-item:nth-of-type(odd) .congratulation-look__list-item-img {
+        margin-right: 15px;
+    }
+    .congratulation-look__list-item:nth-of-type(1) .congratulation-look__list-item-img {
+        max-width: 205px;
+    }
+    .congratulation-look__list-item:nth-of-type(2) .congratulation-look__list-item-img {
+        max-width: 184px;
+    }
+    .congratulation-look__list-item:nth-of-type(3) .congratulation-look__list-item-img {
+        max-width: 197px;
+    }
+    .congratulation-look__list-item:nth-of-type(4) .congratulation-look__list-item-img {
+        max-width: 184px;
+    }
+    .congratulation-look__list-item-text {
+        font-size: 16px;
+        line-height: 1.2;
+        max-width: 640px;
+        padding-left: 5px;
+    }
+}
+
+@media (max-width: 431px) {
+    .congratulation-look {
+        padding: 56px 0px 55px 0px;
+    }
+    .congratulation-look__title {
+        margin-bottom: 40px;
+    }
+    .congratulation-look__list-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .congratulation-look__list-item:nth-of-type(3) {
+        margin-bottom: 30px;
+    }
+    .congratulation-look__list-item:nth-of-type(even) .congratulation-look__list-item-img {
+        margin-left: 10px;
+    }
+    .congratulation-look__list-item:nth-of-type(1) .congratulation-look__list-item-img {
+        max-width: 147px;
+    }
+    .congratulation-look__list-item:nth-of-type(2) .congratulation-look__list-item-img {
+        max-width: 163px;
+    }
+    .congratulation-look__list-item:nth-of-type(3) .congratulation-look__list-item-img {
+        max-width: 130px;
+    }
+    .congratulation-look__list-item:nth-of-type(4) .congratulation-look__list-item-img {
+        max-width: 163px;
+    }
+    .congratulation-look__list-item-text {
+        font-size: 14px;
+        max-width: 640px;
+        padding-left: 5px;
+    }
+}
+
+
+/* ПЯТЫЙ БЛОК */
+.children-happy {
+    padding: 37px 0px 351px 0px;
+    background: url('../../assets/images/pages/ded-moroz/children-happy/background-img.svg');
+    background-size: cover;
+}
+.children-happy__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 30px;
+}
+.children-happy__title {
+    margin-bottom: 100px;
+}
+.children-happy__slider {
+    max-height: 391px;
+    max-width: 1280px;
+    position: relative;
+    padding: 0px 60px;
+    width: 100%;
+}
+.children-happy__swiper {
+}
+.children-happy__swiper-wrapper {
+}
+.children-happy__swiper-slide {
+    max-width: 551px;
+}
+.children-happy__slide {
+    height: 100%;
+}
+.children-happy__slide-img-wrap {
+    width: 100%;
+    max-width: 551px;
+    height: auto;
+    position: relative;
+}
+.children-happy__slide-img-wrap svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.children-happy__pagination {
+}
+.children-happy__slider-button-next {
+}
+.children-happy__slider-button-prev {
+}
+.swiper-pagination-bullet {
+    background: #E3E3E3;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #01AED8;
+}
+
+@media (max-width: 1318px) {
+    .children-happy {
+        padding: 46px 0px 286px 0px;
+    }
+    .children-happy__slider {
+        padding: 0px 60px;
+    }
+}
+
+@media (max-width: 991px) {
+    .children-happy {
+        padding: 53px 0px 232px 0px;
+    }
+    .children-happy__slider {
+        padding: 0px 20px;
+    }
+    .children-happy__title {
+        max-width: 900px;
+        margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .children-happy {
+        padding: 67px 0px 185px 0px;
+    }
+    .children-happy__title {
+        margin-bottom: 54px;
+    }
+}
+
+@media (max-width: 715px) {
+    .children-happy__slider {
+        padding: 0px 60px;
+    }
+}
+
+@media (max-width: 570px) {
+    .children-happy {
+        padding: 74px 0px 136px 0px;
+        background: url('../../assets/images/pages/ded-moroz/children-happy/background-mobile-img.svg');
+        background-size: cover;
+    }
+    .children-happy__title {
+        max-width: 200px;
+    }
+    .children-happy__slider {
+        padding: 0px 0px;
+    }
+}
+
+@media (max-width: 431px) {
+    .children-happy {
+        padding: 80px 0px 95px 0px;
+    }
+    .children-happy__title {
+        text-align: center;
+        max-width: 174px;
+        margin-bottom: 30px;
+    }
+}
+
+
+/* ШЕСТОЙ БЛОК */
+
+
+
+/* СЕДЬМОЙ БЛОК */
+.trial-lesson {
+    padding: 165px 0px 180px 0px;
+    background: url("../../assets/images/pages/ded-moroz/trial-lesson/background-img.svg");
+    background-size: cover;
+    background-position-x: right;
+}
+.trial-lesson__container {
+    display: flex;
+    gap: 110px;
+    justify-content: flex-end;
+}
+.trial-lesson__title {
+    color: #FFF;
+    padding-top: 6px;
+    max-width: 651px;
+}
+.trial-lesson__body {
+    margin: 6px 0px 5px 0px;
+    padding-right: 30px;
+}
+.trial-lesson__feedback-block {
+}
+
+.feedback-form__button {
+    color: #01AED8;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: drop-shadow(3px 6px 0px #D7F7FF);
+}
+
+.feedback-form__button:hover {
+    transform: translate(3px, 6px);
+    filter: drop-shadow(0px 0px 0px #D7F7FF);
+}
+
+@media (max-width: 1318px) {
+    .trial-lesson {
+        padding: 102px 0px 175px 0px;
+    }
+    .trial-lesson__container {
+        gap: 78px;
+    }
+    .trial-lesson__title {
+        font-size: 78px;
+        line-height: 78px;
+        max-width: 510px;
+        margin-bottom: 0!important;
+    }
+    .trial-lesson__body {
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .trial-lesson {
+        padding: 97px 0px 162px 0px;
+    }
+    .trial-lesson__container {
+        gap: 51px;
+    }
+    .trial-lesson__title {
+        font-size: 62px;
+        line-height: 62px;
+        max-width: 417px;
+    }
+}
+
+@media (max-width: 768px) {
+    .trial-lesson {
+        padding: 93px 0px 158px 0px;
+        background-position-x: right;
+    }
+    .trial-lesson__container {
+        gap: 58px;
+        flex-direction: column;
+    }
+    .trial-lesson__title {
+        align-self: flex-end;
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .trial-lesson__title > br {
+        display: none;
+    }
+    .trial-lesson__body {
+        margin: 0px;
+        width: 100%;
+    }
+    .trial-lesson__feedback-block {
+        margin-left: 20px;
+    }
+    .feedback-block__title {
+        max-width: 329px;
+    }
+}
+
+@media (max-width: 570px) {
+    .trial-lesson {
+        padding: 86px 0px 143px 0px;
+        background: url("../../assets/images/pages/ded-moroz/trial-lesson/background-mobile-img.svg");
+    background-size: cover;
+    }
+    .trial-lesson__container {
+        gap: 50px;
+    }
+    .trial-lesson__title  {
+        font-size: 52px;
+        line-height: 50px;
+    }
+    .trial-lesson__body {
+        position: relative;
+        z-index: 10;
+    }
+    .trial-lesson__feedback-block {
+        margin-left: 10px;
+        position: relative;
+        z-index: 5;
+    }
+}
+
+@media (max-width: 431px) {
+    .trial-lesson {
+        padding: 80px 0px 135px 0px;
+    }
+    .trial-lesson__container {
+        gap: 40px;
+    }
+    .trial-lesson__title  {
+        font-size: 44px;
+        line-height: 42px;
+    }
+    .feedback-block__title {
+        max-width: 280px;
+    }
+}
+
+
+/* ВОСЬМОЙ БЛОК */
+.reviews {
+    padding: 104px 0px 152px 0px;
+    background: url("../../assets/images/pages/ded-moroz/reviews/background-img.svg");
+    background-size: cover;
+}
+.reviews__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reviews__title {
+    margin-bottom: 100px;
+}
+.reviews__slider {
+    max-height: 600px;
+    max-width: 1280px;
+    position: relative;
+    padding: 0px 60px;
+    width: 100%;
+}
+.reviews__swiper {
+}
+.reviews__swiper-wrapper {
+    align-items: flex-start;
+}
+.reviews__swiper-slide {
+    max-width: 360px;
+    border: 1px solid #E8E8E8;
+    border-radius: 24px;
+    background: #FFF;
+}
+.reviews__slide {
+    display: flex;
+    align-items: center;
+    padding: 25px;
+    height: auto;
+}
+.reviews__slide-img-wrap {
+    max-width: 310px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+.reviews__slide-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.reviews__swiper-pagination {
+}
+.reviews__slider-button-prev {
+}
+
+@media (max-width: 1318px) {
+    .reviews {
+        padding: 92px 0px 131px 0px;
+    }
+    .reviews__title {
+        margin-bottom: 82px;
+    }
+}
+
+@media (max-width: 991px) {
+    .reviews {
+        padding: 78px 0px 118px 0px;
+    }
+    .reviews__title {
+        margin-bottom: 67px;
+    }
+    .reviews__slider {
+        padding: 0px 98px;
+    }
+}
+
+@media (max-width: 768px) {
+    .reviews {
+        padding: 71px 0px  82px 0px;
+    }
+    .reviews__title {
+        margin-bottom: 46px;
+    }
+}
+
+@media (max-width: 715px) {
+    .reviews {
+        padding: 63px 0px;
+    }
+    .reviews__title {
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 570px) {
+    .reviews {
+        padding: 63px 0px;
+        background: none;
+    }
+    .reviews__title {
+        margin-bottom: 30px;
+    }
+    .reviews__slider {
+        padding: 0px 0px;
+    }
+}
+
+@media (max-width: 431px) {
+    .reviews {
+        padding: 56px 0px;
+    }
+}
+
+
+/* ДЕВЯТЫЙ БЛОК */
+.photo-gallery {
+    padding: 60px 0px 162px 0px;
+    background: url('../../assets/images/pages/ded-moroz/photo-gallery/background-img.svg');
+    background-size: cover;
+}
+.photo-gallery__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 30px;
+}
+.photo-gallery__title {
+    margin-bottom: 153px;
+    text-align: center;
+}
+.photo-gallery__slider {
+    position: relative;
+    max-width: 1280px;
+    max-height: 510px;
+    height: 100%;
+    padding: 0px 60px;
+    width: 100%;
+}
+.photo-gallery__swiper {
+    max-width: 1100px;
+}
+.photo-gallery__swiper-wrapper {
+}
+.photo-gallery__swiper-slide {
+    max-height: 510px;
+    max-width: 510px;
+    border-radius: 48px;
+    overflow: hidden;
+}
+.photo-gallery__slide {
+}
+.photo-gallery__slide > a {
+    display: block;
+    max-width: 500px;
+    max-height: 500px;
+}
+.photo-gallery__slide-img-wrap {
+    border-radius: 48px;
+    overflow: hidden;
+    position: relative;
+    z-index: 10;
+    box-shadow: 10px 10px 0px 0px #01AED8;
+}
+.photo-gallery__slide-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.photo-gallery__pagination {
+}
+.photo-gallery__slider-button-next {
+}
+.photo-gallery__slider-button-prev {
+}
+
+@media (min-width: 1318px) {
+    .photo-gallery__slide {
+        height: 510px;
+    }
+    .photo-gallery__slide-img-wrap {
+        width: 500px;
+        height: 500px;
+    }
+}
+@media (max-width: 1318px) {
+    .photo-gallery {
+        padding: 67px 0px 145px 0px;
+    }
+    .photo-gallery__title {
+        margin-bottom: 127px;
+    }
+    .photo-gallery__slide {
+        aspect-ratio: 510 / 510;
+        padding: 0px 10px 10px 0px;
+    }
+    .photo-gallery__slide-img {
+        aspect-ratio: 500 / 500;
+        max-width: 500px;
+        max-height: 500px;
+    }
+}
+
+@media (max-width: 991px) {
+    .photo-gallery {
+        padding: 74px 0px 117px 0px;
+    }
+    .photo-gallery__slider {
+        padding: 0px 20px;
+    }
+    .photo-gallery__title {
+        margin-bottom: 105px;
+    }
+}
+
+@media (max-width: 768px) {
+    .photo-gallery {
+        padding: 82px 0px 83px 0px;
+    }
+    .photo-gallery__title {
+        margin-bottom: 86px;
+    }
+}
+
+@media (max-width: 715px) {
+    .photo-gallery__slider {
+        padding: 0px 82px;
+    }
+}
+
+@media (max-width: 570px) {
+    .photo-gallery {
+        padding: 89px 0px 74px 0px;
+        background: url('../../assets/images/pages/ded-moroz/photo-gallery/background-mobile-img.svg');
+        background-size: cover;
+    }
+    .photo-gallery__title {
+        margin-bottom: 52px;
+    }
+    .photo-gallery__slider {
+        padding: 0px 0px;
+    }
+}
+
+@media (max-width: 431px) {
+    .photo-gallery {
+        padding: 94px 0px 45px 0px;
+    }
+    .photo-gallery__title {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+}

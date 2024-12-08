@@ -1,5 +1,5 @@
 .header {
-    padding: 28px 0px 25px 0px;
+    padding: 18px 0px 25px 0px;
     background: #FF9900;
     overflow: visible;
 }
@@ -19,6 +19,7 @@
 .header__contacts {
     max-width: 218px;
     width: 100%;
+    padding-top: 5px;
 }
 .header__contacts:nth-of-type(2) {
     order: 3;
@@ -103,13 +104,15 @@
     }
     .header {
         padding: 18px 10px 25px 10px;
-        background: #FF9900;
         position: fixed;
         z-index: 1000;
         width: 100%;
     }
     .header.open {
         padding-top: 30px;
+    }
+    .header__contacts {
+        padding-top: 0px;
     }
     .header__mobile-main {
         display: flex;

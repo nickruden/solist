@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Солист</title>
+
+    <link rel="stylesheet" href="../assets/libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/libs/fancybox/fancybox.css">
+
+
+    <link rel="stylesheet" href="../style/reset.css">
+    <link rel="stylesheet" href="../style/UI/button.css">
+    <link rel="stylesheet" href="../style/UI/input.css">
+    <link rel="stylesheet" href="../style/UI/dropdown.css">
+    <link rel="stylesheet" href="../style/components/feedback-block.css">
+    <link rel="stylesheet" href="../style/components/footer.css">
+    <link rel="stylesheet" href="../style/components/header.css">
+    <link rel="stylesheet" href="../style/components/modal.css">
+
+    <link rel="stylesheet" href="../style/pages/ded-moroz.css">
+</head>
+
+<body>
+    <div class="my-modal" id="videoModal1">
+        <div class="my-modal__body">
+            <div class="my-modal__header"><span class="close">&times;</span></div>
+            <div class="my-modal__content">
+                <video controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="my-container header__container">
+            <div class="header__desktop">
+                <div class="header__top">
+                    <div class="header__contacts">
+                        <div class="my-dropdown header__phone-wrapper">
+                            <a href="" id="header-dropdown-1" class="my-dropdown-control header__phone">8 (495) 766-18-23</a>
+                            <ul class="my-dropdown-menu header__dropdown" data-id="header-dropdown-1">
+                                <li class="my-dropdown-item header__dropdown-item">Чёт тут будет</li>
+                                <li class="my-dropdown-item header__dropdown-item">Чёт тут будет</li>
+                                <li class="my-dropdown-item header__dropdown-item">Чёт тут будет</li>
+                            </ul>
+                        </div>
+                        <div class="header__adress">Павшинская пойма, Подмосковный бульвар, д.6</div>
+                    </div>
+                    <div class="header__contacts">
+                        <div class="my-dropdown header__phone-wrapper">
+                            <a href="" id="header-dropdown-2" class="my-dropdown-control header__phone">8 (977) 897-22-45</a>
+                            <ul class="my-dropdown-menu header__dropdown" data-id="header-dropdown-2">
+                                <li class="my-dropdown-item header__dropdown-item">Чёт тут будет</li>
+                                <li class="my-dropdown-item header__dropdown-item">Чёт тут будет</li>
+                                <li class="my-dropdown-item header__dropdown-item">Чёт тут будет</li>
+                            </ul>
+                        </div>
+                        <div class="header__adress">Сабурово Парк, <br> ул. Южная д.9, 2 этаж</div>
+                    </div>
+                    <a href="" class="header__logo-link"><img src="../assets/images/logo.svg" alt=""
+                            class="header__logo"></a>
+                </div>
+                <div class="header__nav">
+                    <nav class="header__menu">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item"><a href="" class="header__menu-link">Направления</a></li>
+                            <li class="header__menu-item"><a href="./ded-moroz.html" class="header__menu-link">Мероприятия</a></li>
+                            <li class="header__menu-item"><a href="" class="header__menu-link">Наши звезды</a></li>
+                            <li class="header__menu-item"><a href="" class="header__menu-link">Организация праздников</a>
+                            </li>
+                            <li class="header__menu-item"><a href="" class="header__menu-link">О нас</a></li>
+                            <li class="header__menu-item"><a href="" class="header__menu-link">Вакансии</a></li>
+                            <li class="header__menu-item"><a href="" class="header__menu-link">Блог</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="header__mobile">
+                <div class="header__mobile-main">
+                    <div class="header__main-mobile-addresses">
+                        <a href="" class="header__main-mobile-adress">Филиал <br> в Павшинской пойме</a>
+                        <a href="" class="header__main-mobile-adress">Филиал <br> в Сабурово Парк</a>
+                    </div>
+                    <button class="header__mobile-burger-button" data-id="mobile-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="header__mobile-content" id="mobile-menu">
+                    <div class="my-container header__mobile-container">
+                    <div class="header__mobile-body">
+                        <nav class="header__mobile-menu">
+                            <ul class="header__mobile-menu-list">
+                                <li class="header__mobile-menu-item"><a href="" class="header__mobile-menu-link">Направления</a>
+                                </li>
+                                <li class="header__mobile-menu-item"><a href="./ded-moroz.html" class="header__mobile-menu-link">Мероприятия</a>
+                                </li>
+                                <li class="header__mobile-menu-item"><a href="" class="header__mobile-menu-link">Наши звезды</a>
+                                </li>
+                                <li class="header__mobile-menu-item"><a href="" class="header__mobile-menu-link">Организация праздников</a>
+                                </li>
+                                <li class="header__mobile-menu-item"><a href="" class="header__mobile-menu-link">О нас</a>
+                                </li>
+                                <li class="header__mobile-menu-item"><a href="" class="header__mobile-menu-link">Вакансии</a>
+                                </li>
+                                <li class="header__mobile-menu-item"><a href="" class="header__mobile-menu-link">Блог</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__mobile-addresses">
+                            <div class="header__mobile-address">
+                                <a href="tel:+74957661823" class="header__mobile-address-phone">8 (495) 766-18-23</a>
+                                <span class="header__mobile-address-text">Павшинская пойма, <br> Подмосковный бульвар,
+                                    д.68</span>
+                                <div class="header__mobile-smd">
+                                    <a href="" class="header__mobile-smd-link"><img
+                                            src="../assets/images/social-media-icons/whatsapp-icon-logo.svg" alt=""
+                                            class="header__mobile-smd-icon"></a>
+                                    <a href="" class="header__mobile-smd-link"><img
+                                            src="../assets/images/social-media-icons/telegram-logo.svg" alt=""
+                                            class="header__mobile-smd-icon"></a>
+                                    <a href="" class="header__mobile-smd-link"><img
+                                            src="../assets/images/social-media-icons/vkcom-logo.svg" alt=""
+                                            class="header__mobile-smd-icon"></a>
+                                    <a href="" class="header__mobile-smd-link"><img
+                                            src="../assets/images/social-media-icons/page-icon.svg" alt=""
+                                            class="header__mobile-smd-icon"></a>
+                                </div>
+                            </div>
+                            <div class="header__mobile-address">
+                                <a href="tel:+79778972245" class="header__mobile-address-phone">8 (977) 897-22-45</a>
+                                <span class="header__mobile-address-text">Сабурово Парк, <br> ул. Южная д.9, 2 этаж</span>
+                                <div class="header__mobile-smd">
+                                    <a href="" class="header__mobile-smd-link"><img
+                                            src="../assets/images/social-media-icons/whatsapp-icon-logo.svg" alt=""
+                                            class="header__mobile-smd-icon"></a>
+                                    <a href="" class="header__mobile-smd-link"><img
+                                            src="../assets/images/social-media-icons/telegram-logo.svg" alt=""
+                                            class="header__mobile-smd-icon"></a>
+                                    <a href="" class="header__mobile-smd-link"><img
+                                            src="../assets/images/social-media-icons/vkcom-logo.svg" alt=""
+                                            class="header__mobile-smd-icon"></a>
+                                    <a href="" class="header__mobile-smd-link"><img
+                                            src="../assets/images/social-media-icons/page-icon.svg" alt=""
+                                            class="header__mobile-smd-icon"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="overlay"></div>
+    <main class="main">
+        <section class="hero-section">
+            <div class="my-container hero-section__container">
+                <div class="hero-section-title hero-section__title">дед мороз и снегурочка на дом в москве и подмосковье</div>
+                <div class="hero-section__body">
+                    <div class="hero-section__items">
+                        <div class="hero-section__item">
+                            <div class="hero-section__item-img-wrap">
+                                <img src="../assets/images/pages/ded-moroz/hero-section/item-img-1.svg" alt=""
+                                    class="hero-section__item-img">
+                            </div>
+                            <div class="hero-section__item-title">Профессиональные актеры со своей программой</div>
+                        </div>
+                        <div class="hero-section__item">
+                            <div class="hero-section__item-img-wrap">
+                                <img src="../assets/images/pages/ded-moroz/hero-section/item-img-2.svg" alt=""
+                                    class="hero-section__item-img">
+                            </div>
+                            <div class="hero-section__item-title">преподнесут подарки и поиграют с детьми</div>
+                        </div>
+                        <div class="hero-section__item">
+                            <div class="hero-section__item-img-wrap">
+                                <img src="../assets/images/pages/ded-moroz/hero-section/item-img-3.svg" alt=""
+                                    class="hero-section__item-img">
+                            </div>
+                            <div class="hero-section__item-title">устроят волшебное шоу с нетающим снегом</div>
+                        </div>
+                    </div>
+                    <div class="hero-section__buttons">
+                        <button class="custom-button hero-section__button">
+                            <svg viewBox="0 0 292 78" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <clipPath id="buttonClipPath">
+                                        <path
+                                            d="M284.383 16.1751C276.736 5.47651 264.158 -0.578906 251.026 0.116704L207.645 2.41463L157.339 6.63636L102.294 8.81818L29.5495 9.81471C13.1647 10.0392 0 23.3855 0 39.7718C0 56.3182 13.4135 69.7317 29.9599 69.7317H103.211L157.339 72.4545L211.983 76.0732L250.05 77.9262C263.752 78.5933 276.815 72.0848 284.534 60.7443L284.888 60.2254C293.967 46.8871 293.766 29.3021 284.383 16.1751Z"
+                                            fill="#FFF" />
+                                    </clipPath>
+                                </defs>
+                                <rect width="292" height="78" fill="#FFF" clip-path="url(#buttonClipPath)" />
+                            </svg>
+                            <span class="custom-button-text hero-section__button-text">пробное занятие</span>
+                        </button>
+                        <button class="custom-button hero-section__button" data-modal-target="#videoModal1">
+                            <svg viewBox="0 0 292 78" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <clipPath id="buttonClipPath">
+                                        <path
+                                            d="M284.383 16.1751C276.736 5.47651 264.158 -0.578906 251.026 0.116704L207.645 2.41463L157.339 6.63636L102.294 8.81818L29.5495 9.81471C13.1647 10.0392 0 23.3855 0 39.7718C0 56.3182 13.4135 69.7317 29.9599 69.7317H103.211L157.339 72.4545L211.983 76.0732L250.05 77.9262C263.752 78.5933 276.815 72.0848 284.534 60.7443L284.888 60.2254C293.967 46.8871 293.766 29.3021 284.383 16.1751Z"
+                                            fill="#FFF" />
+                                    </clipPath>
+                                </defs>
+                                <rect width="292" height="78" fill="#FFF" clip-path="url(#buttonClipPath)" />
+                            </svg>
+                            <span class="custom-button-text hero-section__button-text">СМОТРЕТЬ ВИДЕО</span>
+                            <span class="hero-section__button-play">
+                                <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="25.3068" cy="25.3068" r="25" transform="rotate(-0.707499 25.3068 25.3068)" fill="#BDF2FF"/>
+                                    <path d="M33.0568 21.6722C34.8998 22.8187 35.8211 23.3919 36.1473 24.1415C36.432 24.7959 36.4457 25.5426 36.185 26.2071C35.8864 26.968 34.9866 27.5745 33.1868 28.7875L24.7335 34.4847C22.7359 35.831 21.7371 36.5042 20.9018 36.4498C20.1736 36.4025 19.5001 36.032 19.0542 35.433C18.5425 34.746 18.52 33.5107 18.4749 31.0402L18.2725 19.9582C18.2274 17.4877 18.2048 16.2524 18.6911 15.5471C19.1149 14.9323 19.7743 14.5373 20.5003 14.4635C21.3331 14.3788 22.3558 15.015 24.4012 16.2874L33.0568 21.6722Z" stroke="white" stroke-width="3" stroke-linejoin="round"/>
+                                </svg>                                     
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="new-years-magic">
+            <div class="my-container new-years-magic__container">
+                <div class="new-years-magic__top">
+                    <div class="block-title new-years-magic__title">подарите <br> своему <br> ребенку</div>
+                    <div class="new-years-magic__img-wrap">
+                        <img src="../assets/images/pages/ded-moroz/new-years-magic/block-img-1.png" alt=""
+                            class="new-years-magic__img">
+                    </div>
+                </div>
+                <div class="new-years-magic__bottom">
+                    <div class="block-title new-years-magic__title">новогоднее <br> волшебство!</div>
+                    <div class="new-years-magic__img-wrap">
+                        <img src="../assets/images/pages/ded-moroz/new-years-magic/block-img-2.png" alt=""
+                            class="new-years-magic__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="where-work">
+            <div class="my-container where-work__container">
+                <div class="block-title where-work__title">куда приезжают дед мороз <br> и снегурочка?</div>
+                <div class="where-work__locations">
+                    <div class="where-work__location">павшинская пойма</div>
+                    <div class="where-work__location">красногорск</div>
+                    <div class="where-work__location">мякинино</div>
+                    <div class="where-work__location">митино</div>
+                    <div class="where-work__location">микрогород в лесу</div>
+                    <div class="where-work__location">поселок отрада</div>
+                    <div class="where-work__location">зеленоград</div>
+                    <div class="where-work__location">ангелово</div>
+                    <div class="where-work__location">светлые горы</div>
+                    <div class="where-work__location">аристово</div>
+                    <div class="where-work__location">новое аристово</div>
+                    <div class="where-work__location">пятницкие кварталы</div>
+                    <div class="where-work__location">замитино</div>
+                    <div class="where-work__location">сабурово</div>
+                    <div class="where-work__location">сабурово парк</div>
+                    <div class="where-work__location">брёхово</div>
+                    <div class="where-work__location">коростово</div>
+                </div>
+            </div>
+        </section>
+        <section class="congratulation-look">
+            <div class="my-container congratulation-look__container">
+                <div class="block-title congratulation-look__title">как выглядит поздравление?</div>
+                <ul class="congratulation-look__list">
+                    <div class="congratulation-look__list-item">
+                        <img src="../assets/images/pages/ded-moroz/congratulation-look/item-img-1.png" alt=""
+                            class="congratulation-look__list-item-img">
+                        <li class="congratulation-look__list-item-text">можно заказать деда мороза и/или снегурочку</li>
+                    </div>
+                    <div class="congratulation-look__list-item">
+                        <img src="../assets/images/pages/ded-moroz/congratulation-look/item-img-2.png" alt=""
+                            class="congratulation-look__list-item-img">
+                        <li class="congratulation-look__list-item-text">в программе — игры <br> и конкурсы <br> по возрасту
+                            ребёнка</li>
+                    </div>
+                    <div class="congratulation-look__list-item">
+                        <img src="../assets/images/pages/ded-moroz/congratulation-look/item-img-3.png" alt=""
+                            class="congratulation-look__list-item-img">
+                        <li class="congratulation-look__list-item-text">поздравление <br> от 15 до 30 минут</li>
+                    </div>
+                    <div class="congratulation-look__list-item">
+                        <img src="../assets/images/pages/ded-moroz/congratulation-look/item-img-4.png" alt=""
+                            class="congratulation-look__list-item-img">
+                        <li class="congratulation-look__list-item-text">изобилие реквизита <br> и волшебное шоу</li>
+                    </div>
+                </ul>
+            </div>
+        </section>
+        <section class="children-happy">
+            <div class="my-container children-happy__container">
+                <div class="block-title children-happy__title">ДЕТИ ВСЕГДА В ВОСТОРГЕ!</div>
+                <div class="children-happy__slider">
+                    <div class="swiper children-happy__swiper">
+                        <div class="swiper-wrapper children-happy__swiper-wrapper">
+                            <div class="swiper-slide children-happy__swiper-slide">
+                                <div class="children-happy__slide">
+                                    <a href="../assets/images/pages/main/every-quarter/slide-1.jpg"
+                                        data-fancybox="children-happy-gallery">
+                                        <div class="children-happy__slide-img-wrap">
+                                            <svg viewBox="0 0 551 391" xmlns="http://www.w3.org/2000/svg">
+                                                <defs>
+                                                    <clipPath id="clipPath">
+                                                        <path
+                                                            d="M8.09266 46.8077C8.69455 25.7548 25.5184 8.77528 46.5648 7.9794L257.574 0L504.673 11.3456C526.493 12.3475 543.475 30.6684 542.821 52.5016L534.581 327.499C533.951 348.528 517.139 365.474 496.116 366.272L266.231 375L38.5986 366.358C16.6692 365.526 -0.494698 347.18 0.13244 325.244L8.09266 46.8077Z">
+                                                    </clipPath>
+                                                </defs>
+                                                <g transform="translate(15, 15)">
+                                                    <rect width="551" height="391" fill="#01AED8" clip-path="url(#clipPath)" />
+                                                </g>
+                                                <image href="../assets/images/pages/main/every-quarter/slide-1.jpg" width="100%"
+                                                    height="100%" clip-path="url(#clipPath)"
+                                                    preserveAspectRatio="xMidYMid slice" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide children-happy__swiper-slide">
+                                <div class="children-happy__slide">
+                                    <a href="../assets/images/pages/main/every-quarter/slide-1.jpg"
+                                        data-fancybox="children-happy-gallery">
+                                        <div class="children-happy__slide-img-wrap">
+                                            <svg viewBox="0 0 551 391" xmlns="http://www.w3.org/2000/svg">
+                                                <defs>
+                                                    <clipPath id="clipPath">
+                                                        <path
+                                                            d="M8.09266 46.8077C8.69455 25.7548 25.5184 8.77528 46.5648 7.9794L257.574 0L504.673 11.3456C526.493 12.3475 543.475 30.6684 542.821 52.5016L534.581 327.499C533.951 348.528 517.139 365.474 496.116 366.272L266.231 375L38.5986 366.358C16.6692 365.526 -0.494698 347.18 0.13244 325.244L8.09266 46.8077Z">
+                                                    </clipPath>
+                                                </defs>
+                                                <g transform="translate(15, 15)">
+                                                    <rect width="551" height="391" fill="#01AED8" clip-path="url(#clipPath)" />
+                                                </g>
+                                                <image href="../assets/images/pages/main/every-quarter/slide-1.jpg" width="100%"
+                                                    height="100%" clip-path="url(#clipPath)"
+                                                    preserveAspectRatio="xMidYMid slice" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide children-happy__swiper-slide">
+                                <div class="children-happy__slide">
+                                    <a href="../assets/images/pages/main/every-quarter/slide-1.jpg"
+                                        data-fancybox="children-happy-gallery">
+                                        <div class="children-happy__slide-img-wrap">
+                                            <svg viewBox="0 0 551 391" xmlns="http://www.w3.org/2000/svg">
+                                                <defs>
+                                                    <clipPath id="clipPath">
+                                                        <path
+                                                            d="M8.09266 46.8077C8.69455 25.7548 25.5184 8.77528 46.5648 7.9794L257.574 0L504.673 11.3456C526.493 12.3475 543.475 30.6684 542.821 52.5016L534.581 327.499C533.951 348.528 517.139 365.474 496.116 366.272L266.231 375L38.5986 366.358C16.6692 365.526 -0.494698 347.18 0.13244 325.244L8.09266 46.8077Z">
+                                                    </clipPath>
+                                                </defs>
+                                                <g transform="translate(15, 15)">
+                                                    <rect width="551" height="391" fill="#01AED8" clip-path="url(#clipPath)" />
+                                                </g>
+                                                <image href="../assets/images/pages/main/every-quarter/slide-1.jpg" width="100%"
+                                                    height="100%" clip-path="url(#clipPath)"
+                                                    preserveAspectRatio="xMidYMid slice" />
+                                            </svg>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination children-happy__pagination"></div>
+                    <div class="swiper-button-next children-happy__slider-button-next">
+                        <div class="swiper-button-next__img-wrap">
+                            <svg width="37" height="49" viewBox="0 0 37 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 43.5401V5.14669C0 0.999702 4.7577 -1.34474 8.04621 1.18177L34.5244 21.5245C37.2234 23.5981 37.1068 27.7037 34.2946 29.6208L7.8164 47.6714C4.49733 49.9341 0 47.557 0 43.5401Z"
+                                    fill="#01AED8" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev children-happy__slider-button-prev">
+                        <div class="swiper-button-prev__img-wrap">
+                            <svg width="37" height="49" viewBox="0 0 37 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M37 43.5401V5.14669C37 0.999702 32.2423 -1.34474 28.9538 1.18177L2.47559 21.5245C-0.223362 23.5981 -0.106831 27.7037 2.70539 29.6208L29.1836 47.6714C32.5027 49.9341 37 47.557 37 43.5401Z" fill="#01AED8"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="trial-lesson">
+            <div class="my-container trial-lesson__container">
+                <div class="block-title trial-lesson__title">позаботьтесь <br> о своём празднике заранее!</div>
+                <div class="trial-lesson__body">
+                    <div class="feedback-block trial-lesson__feedback-block">
+                        <div class="feedback-block__title">закажите услугу «дедушка мороз на дому» прямо сейчас!
+                        </div>
+                        <form action="" class="feedback-form feedback-block__form">
+                            <input type="text" name="name-input" id="nameInput" class="my-input feedback-form__input" placeholder="Имя">
+                            <input type="tel" name="phone-input" id="phoneInput" class="my-input feedback-form__input" placeholder="+7 (999) 999-99-99">
+                            <button class="my-button feedback-form__button">отправить заявку</button>
+                        </form>
+                        <div class="feedback-block__text">чем раньше планируется праздник, тем меньше стоимость услуги</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <div class="my-container reviews__container">
+                <div class="block-title reviews__title">отзывы</div>
+                <div class="reviews__slider">
+                    <div class="swiper reviews__swiper">
+                        <div class="swiper-wrapper reviews__swiper-wrapper">
+                            <div class="swiper-slide reviews__swiper-slide">
+                                <div class="reviews__slide">
+                                    <a href="../assets/images/pages/ded-moroz/reviews/slide-img-1.png" data-fancybox="reviews-gallery">
+                                    <div class="reviews__slide-img-wrap">
+                                        <img src="../assets/images/pages/ded-moroz/reviews/slide-img-1.png" alt=""
+                                            class="reviews__slide-img">
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide reviews__swiper-slide">
+                                <div class="reviews__slide">
+                                    <a href="../assets/images/pages/ded-moroz/reviews/slide-img-1.png" data-fancybox="reviews-gallery">
+                                    <div class="reviews__slide-img-wrap">
+                                        <img src="../assets/images/pages/ded-moroz/reviews/slide-img-1.png" alt=""
+                                            class="reviews__slide-img">
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide reviews__swiper-slide">
+                                <div class="reviews__slide">
+                                    <a href="../assets/images/pages/ded-moroz/reviews/slide-img-1.png" data-fancybox="reviews-gallery">
+                                    <div class="reviews__slide-img-wrap">
+                                        <img src="../assets/images/pages/ded-moroz/reviews/slide-img-1.png" alt=""
+                                            class="reviews__slide-img">
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide reviews__swiper-slide">
+                                <div class="reviews__slide">
+                                    <a href="../assets/images/pages/ded-moroz/reviews/slide-img-1.png" data-fancybox="reviews-gallery">
+                                    <div class="reviews__slide-img-wrap">
+                                        <img src="../assets/images/pages/ded-moroz/reviews/slide-img-1.png" alt=""
+                                            class="reviews__slide-img">
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination reviews__swiper-pagination"></div>
+                    <div class="swiper-button-next reviews__slider-button-next">
+                        <div class="swiper-button-next__img-wrap">
+                            <svg width="37" height="49" viewBox="0 0 37 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 43.5401V5.14669C0 0.999702 4.7577 -1.34474 8.04621 1.18177L34.5244 21.5245C37.2234 23.5981 37.1068 27.7037 34.2946 29.6208L7.8164 47.6714C4.49733 49.9341 0 47.557 0 43.5401Z"
+                                    fill="#FF9900" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev reviews__slider-button-prev">
+                        <div class="swiper-button-prev__img-wrap">
+                            <svg width="37" height="49" viewBox="0 0 37 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M37 43.5401V5.14669C37 0.999702 32.2423 -1.34474 28.9538 1.18177L2.47559 21.5245C-0.223362 23.5981 -0.106831 27.7037 2.70539 29.6208L29.1836 47.6714C32.5027 49.9341 37 47.557 37 43.5401Z"
+                                    fill="#FF9900" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="photo-gallery">
+            <div class="my-container photo-gallery__container">
+                <div class="block-title photo-gallery__title">И ЕЩЕ НЕМНОГО ФОТО!</div>
+                <div class="photo-gallery__slider">
+                    <div class="swiper photo-gallery__swiper">
+                        <div class="swiper-wrapper photo-gallery__swiper-wrapper">
+                            <div class="swiper-slide photo-gallery__swiper-slide">
+                                <div class="photo-gallery__slide">
+                                    <a href="../assets/images/pages/main/every-quarter/slide-1.jpg"
+                                        data-fancybox="photo-gallery-gallery">
+                                        <div class="photo-gallery__slide-img-wrap">
+                                            <img src="../assets/images/pages/main/every-quarter/slide-1.jpg" alt=""
+                                                class="photo-gallery__slide-img">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide photo-gallery__swiper-slide">
+                                <div class="photo-gallery__slide">
+                                    <a href="../assets/images/pages/main/every-quarter/slide-1.jpg"
+                                        data-fancybox="photo-gallery-gallery">
+                                        <div class="photo-gallery__slide-img-wrap">
+                                            <img src="../assets/images/pages/main/every-quarter/slide-1.jpg" alt=""
+                                                class="photo-gallery__slide-img">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide photo-gallery__swiper-slide">
+                                <div class="photo-gallery__slide">
+                                    <a href="../assets/images/pages/main/every-quarter/slide-1.jpg"
+                                        data-fancybox="photo-gallery-gallery">
+                                        <div class="photo-gallery__slide-img-wrap">
+                                            <img src="../assets/images/pages/main/every-quarter/slide-1.jpg" alt=""
+                                                class="photo-gallery__slide-img">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination photo-gallery__pagination"></div>
+                    <div class="swiper-button-next photo-gallery__slider-button-next">
+                        <div class="swiper-button-next__img-wrap">
+                            <svg width="37" height="49" viewBox="0 0 37 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0 43.5401V5.14669C0 0.999702 4.7577 -1.34474 8.04621 1.18177L34.5244 21.5245C37.2234 23.5981 37.1068 27.7037 34.2946 29.6208L7.8164 47.6714C4.49733 49.9341 0 47.557 0 43.5401Z"
+                                    fill="#01AED8" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev photo-gallery__slider-button-prev">
+                        <div class="swiper-button-prev__img-wrap">
+                            <svg width="37" height="49" viewBox="0 0 37 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M37 43.5401V5.14669C37 0.999702 32.2423 -1.34474 28.9538 1.18177L2.47559 21.5245C-0.223362 23.5981 -0.106831 27.7037 2.70539 29.6208L29.1836 47.6714C32.5027 49.9341 37 47.557 37 43.5401Z"
+                                    fill="#01AED8" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="my-container footer__container">
+            <div class="footer__left">
+                <a href="" class="footer__logo"><img src="../assets/images/logo.svg" alt="" class="footer__logo-icon"></a>
+                <div class="footer__addresses">
+                    <div class="footer__address">
+                        <span class="footer__address-text">Павшинская пойма, <br> Подмосковный бульвар,
+                            д.68</span>
+                        <a href="tel:+74957661823" class="footer__address-phone">8 (495) 766-18-23</a>
+                        <div class="footer__smd">
+                            <a href="" class="footer__smd-link"><img
+                                    src="../assets/images/social-media-icons/whatsapp-icon-logo.svg" alt=""
+                                    class="footer__smd-icon"></a>
+                            <a href="" class="footer__smd-link"><img
+                                    src="../assets/images/social-media-icons/telegram-logo.svg" alt=""
+                                    class="footer__smd-icon"></a>
+                            <a href="" class="footer__smd-link"><img src="../assets/images/social-media-icons/vkcom-logo.svg"
+                                    alt="" class="footer__smd-icon"></a>
+                            <a href="" class="footer__smd-link"><img src="../assets/images/social-media-icons/page-icon.svg"
+                                    alt="" class="footer__smd-icon"></a>
+                        </div>
+                    </div>
+                    <div class="footer__address">
+                        <span class="footer__address-text">Сабурово Парк, <br> ул. Южная д.9, 2 этаж</span>
+                        <a href="tel:+79778972245" class="footer__address-phone">8 (977) 897-22-45</a>
+                        <div class="footer__smd">
+                            <a href="" class="footer__smd-link"><img
+                                    src="../assets/images/social-media-icons/whatsapp-icon-logo.svg" alt=""
+                                    class="footer__smd-icon"></a>
+                            <a href="" class="footer__smd-link"><img
+                                    src="../assets/images/social-media-icons/telegram-logo.svg" alt=""
+                                    class="footer__smd-icon"></a>
+                            <a href="" class="footer__smd-link"><img src="../assets/images/social-media-icons/vkcom-logo.svg"
+                                    alt="" class="footer__smd-icon"></a>
+                            <a href="" class="footer__smd-link"><img src="../assets/images/social-media-icons/page-icon.svg"
+                                    alt="" class="footer__smd-icon"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="footer__menu">
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-item"><a href="" class="footer__menu-link">вокал</a></li>
+                    <li class="footer__menu-item"><a href="" class="footer__menu-link">фортепиано</a></li>
+                    <li class="footer__menu-item"><a href="" class="footer__menu-link">гитара</a></li>
+                    <li class="footer__menu-item"><a href="" class="footer__menu-link">барабаны</a></li>
+                    <li class="footer__menu-item"><a href="" class="footer__menu-link">брейк-данс</a></li>
+                    <li class="footer__menu-item"><a href="" class="footer__menu-link">актерское мастерство</a></li>
+                    <li class="footer__menu-item"><a href="" class="footer__menu-link">танцы</a></li>
+                    <li class="footer__menu-item"><a href="" class="footer__menu-link">изобразительное искусство</a></li>
+                    <li class="footer__menu-item"><a href="" class="footer__menu-link">шахматы</a></li>
+                    <li class="footer__menu-item"><a href="" class="footer__menu-link">флейта</a></li>
+                    <li class="footer__menu-item"><a href="" class="footer__menu-link">балет</a></li>
+                </ul>
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-link"><a href="" class="footer__menu-link">о центре</a></li>
+                    <li class="footer__menu-link"><a href="./ded-moroz.html" class="footer__menu-link">мероприятия</a></li>
+                    <li class="footer__menu-link"><a href="" class="footer__menu-link">наши звезды</a></li>
+                    <li class="footer__menu-link"><a href="" class="footer__menu-link">вакансии</a></li>
+                    <li class="footer__menu-link"><a href="" class="footer__menu-link">блог</a></li>
+                </ul>
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-item"><a href="" class="footer__menu-link">политика обработки персональных
+                            данных</a></li>
+                    <li class="footer__menu-item"><a href="" class="footer__menu-link">наш INSTAGRAM*</a> <span class="footer__inst-text">*продукт
+                        компании Meta, организации, признанной экстремистской и запрещенной в Российской Федерации.</span></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="../assets/libs/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/libs/fancybox/fancybox.umd.js"></script>
+    
+
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/dropdown.js"></script>
+    <script src="../assets/js/phone-mask.js"></script>
+    <script src="../assets/js/modal.js"></script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            Fancybox.bind('[data-fancybox="children-happy-gallery"]', {
+                
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            Fancybox.bind('[data-fancybox="reviews-gallery"]', {
+                
+            });
+        });
+        document.addEventListener('DOMContentLoaded', function() {
+            Fancybox.bind('[data-fancybox="photo-gallery-gallery"]', {
+                
+            });
+        });
+        </script>
+    
+        <script>
+            const childrenHappySwiper = new Swiper('.children-happy__swiper', {
+                direction: 'horizontal',
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            pagination: {
+                el: '.children-happy__pagination',
+            },
+            navigation: {
+                nextEl: '.children-happy__slider-button-next',
+                prevEl: '.children-happy__slider-button-prev',
+            },
+            breakpoints: {
+                715: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+            }
+            });
+
+            const reviewsSwiper = new Swiper('.reviews__swiper', {
+            direction: 'horizontal',
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            pagination: {
+                el: '.reviews__swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.reviews__slider-button-next',
+                prevEl: '.reviews__slider-button-prev',
+            },
+            breakpoints: {
+                715: {
+                    slidesPerView: 2,
+                    spaceBetween: 32,
+                },
+                991: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+            }
+        });
+
+            const photoGallerySwiper = new Swiper('.photo-gallery__swiper', {
+                direction: 'horizontal',
+            slidesPerView: 1,
+            spaceBetween: 40,
+            loop: true,
+            pagination: {
+                el: '.photo-gallery__pagination',
+            },
+            navigation: {
+                nextEl: '.photo-gallery__slider-button-next',
+                prevEl: '.photo-gallery__slider-button-prev',
+            },
+            breakpoints: {
+                991: {
+                    slidesPerView: 2,
+                    spaceBetween: 80,
+                },
+                715: {
+                    slidesPerView: 2,
+                },
+            }
+            });
+        </script>
+</body>
+
+</html>
