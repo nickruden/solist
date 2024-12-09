@@ -238,7 +238,7 @@
         background: url('../../assets/images/pages/ded-moroz/hero-section/background-mobile-img.svg');
         background-size: cover;
     }
-    .hero-section__button:last-child::after {
+    /* .hero-section__button:last-child::after {
         content: '';
 	    display: inline-block;
 	    position: absolute;
@@ -247,12 +247,12 @@
         right: 64px;
         border: 7px solid transparent;
         border-left: 10px solid #01AED8;
-    }
+    } */
     .hero-section__button-play {
-        display: none;
+        right: 17px;
     }
     .hero-section__button:last-child .custom-button-text {
-        left: 45%;
+        left: 42%;
     }
     .hero-section__title {
         margin-bottom: 50px;
