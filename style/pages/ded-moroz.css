@@ -907,7 +907,7 @@
     width: 100%;
 }
 .children-happy__swiper {
-    max-width: 1142px;
+    max-width: 1145px;
 }
 .children-happy__swiper-wrapper {
 }
@@ -927,6 +927,7 @@
     width: 100%;
     height: auto;
     display: block;
+    overflow: visible;
 }
 .children-happy__pagination {
 }
