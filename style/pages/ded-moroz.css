@@ -46,6 +46,7 @@
 .footer {
     background: url('../../assets/images/components/footer/ded-moroz/background-img-blue.svg');
     background-size: cover;
+    background-position: center top;
 }
 
 @media (max-width: 570px) {
@@ -313,6 +314,7 @@
     padding: 40px 0px 84px 0px;
     background: url('../../assets/images/pages/ded-moroz/new-years-magic/background-img.svg');
     background-size: cover;
+    background-position: center top;
 }
 .new-years-magic__container {
     display: flex;
@@ -506,6 +508,7 @@
     padding: 206px 0px 193px 0px;
     background: url('../../assets/images/pages/ded-moroz/where-work/background-img.svg');
     background-size: cover;
+    background-position: center top;
 }
 .where-work__container {
     display: flex;
@@ -619,6 +622,7 @@
     padding: 140px 0px 89px 0px;
     background: url('../../assets/images/pages/ded-moroz/congratulation-look/background-img.svg');
     background-size: cover;
+    background-position: center top;
 }
 .congratulation-look__container {
     display: flex;
@@ -885,6 +889,7 @@
     padding: 37px 0px 351px 0px;
     background: url('../../assets/images/pages/ded-moroz/children-happy/background-img.svg');
     background-size: cover;
+    background-position: center top;
 }
 .children-happy__container {
     display: flex;
@@ -1006,6 +1011,7 @@
     padding: 77px 0px 134px 0px;
     background: url("../../assets/images/pages/ded-moroz/price-list/background-img.svg");
     background-size: cover;
+    background-position: center top;
 }
 .price-list__container {
     display: flex;
@@ -1213,7 +1219,7 @@ th, td {
     padding: 165px 0px 180px 0px;
     background: url("../../assets/images/pages/ded-moroz/trial-lesson/background-img.svg");
     background-size: cover;
-    background-position-x: right;
+    background-position: center top;
 }
 .trial-lesson__container {
     display: flex;
@@ -1350,6 +1356,7 @@ th, td {
     padding: 104px 0px 152px 0px;
     background: url("../../assets/images/pages/ded-moroz/reviews/background-img.svg");
     background-size: cover;
+    background-position: center top;
 }
 .reviews__container {
     display: flex;
@@ -1461,6 +1468,7 @@ th, td {
     padding: 60px 0px 162px 0px;
     background: url('../../assets/images/pages/ded-moroz/photo-gallery/background-img.svg');
     background-size: cover;
+    background-position: center top;
 }
 .photo-gallery__container {
     display: flex;
