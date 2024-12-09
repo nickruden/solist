@@ -23,15 +23,14 @@
 
 @media (max-width: 768px) {
     .header {
-        padding: 76px 10px 25px 10px;
+        padding: 18px 10px 25px 10px;
         position: fixed;
         z-index: 1000;
         width: 100%;
     }
 
     .header::after {
-        height: 79px;
-        background-position-x: -30px;
+        display: none;
     }
 
     .header.open {
@@ -213,7 +212,7 @@
 
 @media (max-width: 768px) {
     .hero-section {
-        padding: calc(50px + 129px) 0px 94px 0px;
+        padding: calc(50px + 72px) 0px 94px 0px;
     }
     .hero-section__title {
         margin-bottom: 72px;
@@ -244,7 +243,7 @@
 
 @media (max-width: 570px) {
     .hero-section {
-        padding: calc(30px + 125px) 0px 80px 0px;
+        padding: calc(30px + 72px) 0px 80px 0px;
         background: url('../../assets/images/pages/ded-moroz/hero-section/background-mobile-img.svg');
         background-size: cover;
     }
@@ -286,7 +285,7 @@
 
 @media (max-width: 431px) {
     .hero-section {
-        padding: calc(30px + 125px) 0px 80px 0px;
+        padding: calc(30px + 72px) 0px 80px 0px;
     }
     .hero-section__title {
         margin-bottom: 50px;
