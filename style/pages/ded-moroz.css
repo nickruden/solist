@@ -907,6 +907,7 @@
     width: 100%;
 }
 .children-happy__swiper {
+    max-width: 1142px;
 }
 .children-happy__swiper-wrapper {
 }

@@ -2,6 +2,7 @@
     padding: 218px 0px 106px 0px;
     background: url('../../assets/images/components/footer/background-img.svg');
     background-size: cover;
+    background-position: center top;
 }
 .footer__container {
     display: flex;

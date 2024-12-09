@@ -2,7 +2,8 @@
     padding: 40px 0px 188px 0px;
     position: relative;
     background: url('../../assets/images/pages/main/top-block/background.png');
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center top;
 }
 .top-block__container {
     display: flex;
@@ -693,6 +694,7 @@
     padding: 117px 0px 325px 0px;
     background: url("../../assets/images/pages/main/every-lesson/background-img.svg");
     background-size: cover;
+    background-position: center top;
 }
 .every-lesson__container {
     display: flex;
@@ -801,6 +803,7 @@
     padding: 5px 0px 345px 0px;
     background: url("../../assets/images/pages/main/every-quarter/background-img.svg");
     background-size: cover;
+    background-position: center top;
 }
 .every-quarter__container {
     display: flex;
@@ -919,6 +922,7 @@
     padding: 137px 0px 260px 0px;
     background: url("../../assets/images/pages/main/every-six-months/background-img.svg");
     background-size: cover;
+    background-position: center top;
 }
 .every-six-months__container {
     display: flex;
@@ -1048,6 +1052,7 @@
     padding: 200px 0px 209px 0px;
     background: url("../../assets/images/pages/main/learn-from-us/background-img.svg");
     background-size: cover;
+    background-position: center top;
     overflow: hidden;
 }
 .learn-from-us__container {
@@ -1340,6 +1345,7 @@
     padding: 76px 0px 376px 0px;
     background: url("../../assets/images/pages/main/family-study/background-img.svg");
     background-size: cover;
+    background-position: center top;
 }
 .family-study__container {
     display: flex;
@@ -1458,6 +1464,7 @@
     padding: 27px 0px 110px 0px;
     background: url("../../assets/images/pages/main/active-students/background-img.svg");
     background-size: cover;
+    background-position: center top;
 }
 .active-students__container {
     display: flex;
@@ -1681,6 +1688,7 @@
     padding: 168px 0px 54px 0px;
     background: url("../../assets/images/pages/main/much-attention/background-img.svg");
     background-size: cover;
+    background-position: center top;
     overflow: hidden;
 }
 .much-attention__container {
@@ -1832,6 +1840,7 @@
     padding: 219px 0px 248px 0px;
     background: url("../../assets/images/pages/main/develop-talents/background-img.svg");
     background-size: cover;
+    background-position: center top;
     overflow: hidden;
 }
 .develop-talents__container {
@@ -2080,6 +2089,7 @@
     padding: 65px 0px 115px 0px;
     background: url("../../assets/images/pages/main/arts-centers/background-img.svg");
     background-size: cover;
+    background-position: center top;
 }
 .arts-centers__container {
     display: flex;
@@ -2241,6 +2251,7 @@
     padding: 170px 0px 134px 0px;
     background: url("../../assets/images/pages/main/professional-teachers/background-img.svg");
     background-size: cover;
+    background-position: center top;
 }
 .professional-teachers__container {
     display: flex;
@@ -2346,7 +2357,8 @@
 .advantages {
     padding-bottom: 35px;
     background: url("../../assets/images/pages/main/advantages/background-img.svg");
-    background-size: 100% 100%;
+    background-size: cover;
+    background-position: center top;
 }
 .advantages__container {
     display: flex;
@@ -2570,6 +2582,7 @@
     padding: 211px 0px;
     background: url("../../assets/images/pages/main/trial-lesson/background-img.svg");
     background-size: cover;
+    background-position: center top;
 }
 .trial-lesson__container {
     display: flex;
@@ -2747,6 +2760,7 @@
     padding: 35px 0px 338px 0px;
     background: url("../../assets/images/pages/main/reviews/background-img.svg");
     background-size: cover;
+    background-position: center top;
 }
 .reviews__container {
     display: flex;
