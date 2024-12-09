@@ -64,8 +64,17 @@
 .hero-section {
     padding: 18px 0px 152px 0px;
     background: url('../../assets/images/pages/ded-moroz/hero-section/background-img.svg');
-    background-size: cover;
+    background-size: cover; /* или background-size: auto; */
+    background-position: center top;
 }
+/* .hero-section__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+} */
 .hero-section__container {
     display: flex;
     flex-direction: column;
