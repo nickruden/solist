@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./style/UI/button.css">
     <link rel="stylesheet" href="./style/UI/input.css">
     <link rel="stylesheet" href="./style/UI/dropdown.css">
+    <link rel="stylesheet" href="./style/UI/select.css">
+    <link rel="stylesheet" href="./style/UI/checkbox.css">
     <link rel="stylesheet" href="./style/components/feedback-block.css">
     <link rel="stylesheet" href="./style/components/footer.css">
     <link rel="stylesheet" href="./style/components/header.css">
@@ -35,6 +37,49 @@
         </div>
     </div>
 
+    <div class="my-modal" id="formModal1">
+        <div class="my-modal__body">
+            <div class="my-modal__header"><span class="close">&times;</span></div>
+            <div class="my-modal__content">
+                <div class="feedback-block my-modal__feedback-block">
+                    <div class="feedback-block__title">чтобы записаться на пробное занятие, оставьте свои контактные данные</div>
+                    <form action="" class="feedback-form feedback-block__form">
+                        <input type="text" name="name-input" id="nameInput" class="my-input feedback-form__input" placeholder="Имя">
+                        <input type="tel" name="phone-input" id="phoneInput" class="my-input feedback-form__input" placeholder="+7 (999) 999-99-99">
+                        <label for="" class="my-select">
+                            <select name="" id="" class="my-select__element">
+                                <option value="">Сабурово Парк, ул. Южная, д. 9</option>
+                                <option value="">Сабурово Парк, ул. Южная, д. 9</option>
+                                <option value="">Сабурово Парк, ул. Южная, д. 9</option>
+                                <option value="">Сабурово Парк, ул. Южная, д. 9</option>
+                            </select>
+                            <div class="my-select-arrow"></div>
+                            <div class="my-select-text">Выберите филиал:</div>
+                        </label>
+                        <label for="agree-check" class="my-checkbox">
+                            <input type="checkbox" name="" id="agree-check" class="my-checkbox__old">
+                            <span class="my-checkbox__new"></span>
+                            <span class="my-checkbox__text">Я ознакомился (ась) c Политикой конфиденциальностии даю своё
+                                согласие на обработку персональных данных</span>
+                        </label>
+                        <button class="custom-button my-modal__button">
+                            <svg viewBox="0 0 393 80" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <clipPath id="myModalButtonClipPath">
+                                        <path d="M381.077 12.0693C373.476 4.37198 363.017 0.181254 352.204 0.500369L280.282 2.62295L206.722 5.68306L125.107 9.14834H31.2195C13.9774 9.14834 0 23.1258 0 40.3679C0 57.6099 13.9774 71.5874 31.2195 71.5874H125.107L206.722 74.3169L280.282 77.3771L350.747 79.4566C362.432 79.8015 373.683 75.0172 381.541 66.3622L382.201 65.6357C396.11 50.315 395.617 26.7934 381.077 12.0693Z" fill="#FF9900"/>
+                                    </clipPath>
+                                </defs>
+                                <rect width="393" height="80" fill="#FF9900" clip-path="url(#myModalButtonClipPath)" />
+                            </svg>
+                            <span class="custom-button-text my-modal__button-text">отправить заявку</span>
+                        </button>
+                    </form>
+                    <div class="feedback-block__text">Если вы сразу оплачиваете абонемент, то первое пробное занятие в группе дарим в подарок</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header class="header">
         <div class="my-container header__container">
             <div class="header__desktop">
@@ -43,9 +88,20 @@
                         <div class="my-dropdown header__phone-wrapper">
                             <a href="" id="header-dropdown-1" class="my-dropdown-control header__phone">8 (495) 766-18-23</a>
                             <ul class="my-dropdown-menu header__dropdown" data-id="header-dropdown-1">
-                                <li class="my-dropdown-item header__dropdown-item">Чёт тут будет</li>
-                                <li class="my-dropdown-item header__dropdown-item">Чёт тут будет</li>
-                                <li class="my-dropdown-item header__dropdown-item">Чёт тут будет</li>
+                                <div class="header__mobile-smd">
+                                    <a href="" class="header__mobile-smd-link"><img
+                                        src="../assets/images/social-media-icons/telegram-logo.svg" alt=""
+                                        class="header__mobile-smd-icon"></a>
+                                    <a href="" class="header__mobile-smd-link"><img
+                                            src="../assets/images/social-media-icons/whatsapp-icon-logo.svg" alt=""
+                                            class="header__mobile-smd-icon"></a>
+                                    <a href="" class="header__mobile-smd-link"><img
+                                            src="../assets/images/social-media-icons/vkcom-logo.svg" alt=""
+                                            class="header__mobile-smd-icon"></a>
+                                    <a href="" class="header__mobile-smd-link"><img
+                                            src="../assets/images/social-media-icons/page-icon.svg" alt=""
+                                            class="header__mobile-smd-icon"></a>
+                                </div>
                             </ul>
                         </div>
                         <div class="header__adress">Павшинская пойма, Подмосковный бульвар, д.6</div>
@@ -54,14 +110,25 @@
                         <div class="my-dropdown header__phone-wrapper">
                             <a href="" id="header-dropdown-2" class="my-dropdown-control header__phone">8 (977) 897-22-45</a>
                             <ul class="my-dropdown-menu header__dropdown" data-id="header-dropdown-2">
-                                <li class="my-dropdown-item header__dropdown-item">Чёт тут будет</li>
-                                <li class="my-dropdown-item header__dropdown-item">Чёт тут будет</li>
-                                <li class="my-dropdown-item header__dropdown-item">Чёт тут будет</li>
+                                <div class="header__mobile-smd">
+                                    <a href="" class="header__mobile-smd-link"><img
+                                        src="../assets/images/social-media-icons/telegram-logo.svg" alt=""
+                                        class="header__mobile-smd-icon"></a>
+                                    <a href="" class="header__mobile-smd-link"><img
+                                            src="../assets/images/social-media-icons/whatsapp-icon-logo.svg" alt=""
+                                            class="header__mobile-smd-icon"></a>
+                                    <a href="" class="header__mobile-smd-link"><img
+                                            src="../assets/images/social-media-icons/vkcom-logo.svg" alt=""
+                                            class="header__mobile-smd-icon"></a>
+                                    <a href="" class="header__mobile-smd-link"><img
+                                            src="../assets/images/social-media-icons/page-icon.svg" alt=""
+                                            class="header__mobile-smd-icon"></a>
+                                </div>
                             </ul>
                         </div>
                         <div class="header__adress">Сабурово Парк, <br> ул. Южная д.9, 2 этаж</div>
                     </div>
-                    <a href="./index.html" class="header__logo-link"><img src="./assets/images/logo.svg" alt=""
+                    <a href="./index.html" class="header__logo-link"><img src="../assets/images/logo.svg" alt=""
                             class="header__logo"></a>
                 </div>
                 <div class="header__nav">
@@ -104,7 +171,7 @@
                                 </li>
                                 <li class="header__mobile-menu-item"><a href="" class="header__mobile-menu-link">Организация праздников</a>
                                 </li>
-                                <li class="header__mobile-menu-item"><a href="" class="header__mobile-menu-link">О нас</a>
+                                <li class="header__mobile-menu-item"><a href="./index.html" class="header__mobile-menu-link">О нас</a>
                                 </li>
                                 <li class="header__mobile-menu-item"><a href="" class="header__mobile-menu-link">Вакансии</a>
                                 </li>
@@ -119,10 +186,10 @@
                                     д.68</span>
                                 <div class="header__mobile-smd">
                                     <a href="" class="header__mobile-smd-link"><img
-                                            src="./assets/images/social-media-icons/whatsapp-icon-logo.svg" alt=""
-                                            class="header__mobile-smd-icon"></a>
+                                        src="./assets/images/social-media-icons/telegram-logo.svg" alt=""
+                                        class="header__mobile-smd-icon"></a>
                                     <a href="" class="header__mobile-smd-link"><img
-                                            src="./assets/images/social-media-icons/telegram-logo.svg" alt=""
+                                            src="./assets/images/social-media-icons/whatsapp-icon-logo.svg" alt=""
                                             class="header__mobile-smd-icon"></a>
                                     <a href="" class="header__mobile-smd-link"><img
                                             src="./assets/images/social-media-icons/vkcom-logo.svg" alt=""
@@ -137,10 +204,10 @@
                                 <span class="header__mobile-address-text">Сабурово Парк, <br> ул. Южная д.9, 2 этаж</span>
                                 <div class="header__mobile-smd">
                                     <a href="" class="header__mobile-smd-link"><img
-                                            src="./assets/images/social-media-icons/whatsapp-icon-logo.svg" alt=""
-                                            class="header__mobile-smd-icon"></a>
+                                        src="./assets/images/social-media-icons/telegram-logo.svg" alt=""
+                                        class="header__mobile-smd-icon"></a>
                                     <a href="" class="header__mobile-smd-link"><img
-                                            src="./assets/images/social-media-icons/telegram-logo.svg" alt=""
+                                            src="./assets/images/social-media-icons/whatsapp-icon-logo.svg" alt=""
                                             class="header__mobile-smd-icon"></a>
                                     <a href="" class="header__mobile-smd-link"><img
                                             src="./assets/images/social-media-icons/vkcom-logo.svg" alt=""
@@ -197,7 +264,7 @@
                         <!-- <button class="top-block__button">
                             <span class="top-block__button-text"> Записаться на пробный урок</span>
                         </button> -->
-                        <button class="custom-button top-block__button">
+                        <button class="custom-button top-block__button" data-modal-target="#formModal1">
                             <svg viewBox="0 0 292 78" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
                                     <clipPath id="buttonClipPath">
@@ -824,11 +891,26 @@
                 </div>
                 <div class="trial-lesson__body">
                     <div class="feedback-block trial-lesson__feedback-block">
-                        <div class="feedback-block__title">оставьте ваши контактные данные, и мы ответим на все ваши вопросы
-                        </div>
+                        <div class="feedback-block__title"></div>
                         <form action="" class="feedback-form feedback-block__form">
                             <input type="text" name="name-input" id="nameInput" class="my-input feedback-form__input" placeholder="Имя">
                             <input type="tel" name="phone-input" id="phoneInput" class="my-input feedback-form__input" placeholder="+7 (999) 999-99-99">
+                            <label for="" class="my-select">
+                                <select name="" id="" class="my-select__element">
+                                    <option value="">Сабурово Парк, ул. Южная, д. 9</option>
+                                    <option value="">Сабурово Парк, ул. Южная, д. 9</option>
+                                    <option value="">Сабурово Парк, ул. Южная, д. 9</option>
+                                    <option value="">Сабурово Парк, ул. Южная, д. 9</option>
+                                </select>
+                                <div class="my-select-arrow"></div>
+                                <div class="my-select-text">Выберите филиал:</div>
+                            </label>
+                            <label for="agree-check" class="my-checkbox">
+                                <input type="checkbox" name="" id="agree-check" class="my-checkbox__old">
+                                <span class="my-checkbox__new"></span>
+                                <span class="my-checkbox__text">Я ознакомился (ась) с Политикой конфиденциальности и даю своё
+                                    согласие на обработку персональных данных</span>
+                            </label>
                             <button class="my-button feedback-form__button">отправить заявку</button>
                         </form>
                         <div class="feedback-block__text">Если вы сразу оплачиваете абонемент, то первое пробное занятие в

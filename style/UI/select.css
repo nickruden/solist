@@ -1,0 +1,145 @@
+.my-select {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 38px;
+    position: relative;
+}
+
+.my-select__element {
+    order: 2;
+    padding-bottom: 17px;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFF;
+    background: transparent;
+    border-bottom: 1px solid #FFF;
+    position: relative;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 30px;
+}
+
+.my-select-arrow {
+    position: absolute;
+    right: 90px;
+    bottom: 18px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 10px solid #FFF;
+    pointer-events: none;
+}
+
+.my-select__element option {
+    color: #000;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 400;
+}
+.my-select-text {
+    order: 1;
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 17px;
+}
+
+@media (max-width: 1317px) {
+    .my-select__element {
+        font-size: 17px;
+    }
+    .my-select__element option {
+        font-size: 17px;
+    }
+    .my-select-arrow {
+        right: 35px;
+        bottom: 19px;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 9px solid #FFF;
+    }
+    .my-select-text {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 991px) {
+    .my-select__element {
+        padding-bottom: 20px;
+    }
+    .my-select-arrow {
+        right: 13px;
+        bottom: 22px;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 9px solid #FFF;
+    }
+}
+
+@media (max-width: 768px) {
+    .my-select {
+        margin-bottom: 32px;
+    }
+    .my-select__element {
+        font-size: 16px;
+    }
+    .my-select__element option {
+        font-size: 16px;
+    }
+    .my-select-arrow {
+        right: auto;
+        left: 287px;
+        bottom: 21px;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 9px solid #FFF;
+    }
+    .my-select-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 570px) {
+    .my-select {
+        margin-bottom: 30px;
+    }
+    .my-select__element {
+        font-size: 15px;
+        padding-bottom: 23px;
+    }
+    .my-select__element option {
+        font-size: 15px;
+    }
+    .my-select-arrow {
+        right: auto;
+        left: 257px;
+        bottom: 23px;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 9px solid #FFF;
+    }
+    .my-select-text {
+        font-size: 17px;
+    }
+}
+
+@media (max-width: 431px) {
+    .my-select__element {
+        font-size: 14px;
+    }
+    .my-select__element option {
+        font-size: 14px;
+    }
+    .my-select-arrow {
+        right: auto;
+        left: 237px;
+        bottom: 23px;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 9px solid #FFF;
+    }
+    .my-select-text {
+        font-size: 14px;
+    }
+}

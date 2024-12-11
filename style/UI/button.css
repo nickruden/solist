@@ -27,6 +27,7 @@
 .my-button__text {
     display: block;
     transform: rotate(-0.33deg);
+    text-align: center;
 }
 
 /* ТАК РЕАЛИЗОВАНЫ ТОЛЬКО КНОПКИ В ВЕРХНЕМ БЛОКЕ ГЛАВНОЙ СТРАНИЦЫ И ДЕДА МОРОЗА  */

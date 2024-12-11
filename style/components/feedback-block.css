@@ -10,12 +10,9 @@
     max-width: 430px;
 }
 .feedback-block__form {
-    margin-bottom: 65px;
+    margin-bottom: 45px;
 }
 .feedback-form__input {
-}
-.feedback-form__input[name="phone-input"] {
-    margin-bottom: 56px;
 }
 .feedback-form__button {
 }
@@ -38,9 +35,6 @@
     }
     .feedback-block__form {
         margin-bottom: 31px;
-    }
-    .feedback-form__input[name="phone-input"] {
-        margin-bottom: 51px;
     }
     .feedback-form__button {
         width: 338px;
@@ -69,9 +63,6 @@
     }
     .feedback-form__input {
     }
-    .feedback-form__input[name="phone-input"] {
-        margin-bottom: 42px;
-    }
     .feedback-form__button {
         width: 305px;
         height: 71px;
@@ -99,9 +90,6 @@
         margin-bottom: 31px;
     }
     .feedback-form__input {
-    }
-    .feedback-form__input[name="phone-input"] {
-        margin-bottom: 42px;
     }
     .feedback-form__button {
         width: 322px;
@@ -134,9 +122,6 @@
         margin-bottom: 31px;
     }
     .feedback-form__input {
-    }
-    .feedback-form__input[name="phone-input"] {
-        margin-bottom: 42px;
     }
     .feedback-form__button {
         width: 305px;
