@@ -114,9 +114,9 @@
         z-index: 1000;
         width: 100%;
     }
-    .header.open {
+    /* .header.open {
         padding-top: 30px;
-    }
+    } */
     .header__contacts {
         padding-top: 0px;
     }
@@ -255,6 +255,9 @@
         width: 22px;
         height: 15px;
     }
+    .header__mobile-burger-button.open {
+        width: 22px;
+    }
     .header__mobile-burger-button.open span:first-child {
         transform: translateY(7px) rotate(45deg);
     }
@@ -302,6 +305,9 @@
 
 @media (max-width: 431px) {
     .header__mobile-burger-button {
+        width: 18px;
+    }
+    .header__mobile-burger-button.open {
         width: 18px;
     }
 }
