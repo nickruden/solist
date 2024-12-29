@@ -130,11 +130,6 @@ button {
     height: 100%;
 }
 
-.swiper-slide {
-    height: auto!important;
-    align-self: stretch;
-}
-
 .swiper-pagination {
     display: none;
 }

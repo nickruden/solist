@@ -1380,16 +1380,16 @@ th, td {
     align-items: flex-start;
 }
 .reviews__swiper-slide {
-    max-width: 360px;
-    border: 1px solid #E8E8E8;
-    border-radius: 24px;
-    background: #FFF;
 }
 .reviews__slide {
     display: flex;
     align-items: center;
     padding: 25px;
     height: auto;
+    max-width: 360px;
+    border: 1px solid #E8E8E8;
+    border-radius: 24px;
+    background: #FFF;
 }
 .reviews__slide-img-wrap {
     max-width: 310px;
@@ -1460,6 +1460,10 @@ th, td {
 @media (max-width: 431px) {
     .reviews {
         padding: 56px 0px;
+    }
+    .reviews__swiper-slide {
+        display: flex;
+        justify-content: center;
     }
 }
 

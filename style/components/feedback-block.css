@@ -1,5 +1,25 @@
 .feedback-block {
-    max-width: 430px;
+    max-width: 410px;
+}
+.feedback-block._black * {
+    color: #494949;
+}
+.feedback-block._black .feedback-form__input::placeholder {
+    color: #494949;
+}
+.feedback-block._black .feedback-form__input, .feedback-block._black .my-select__element, .feedback-block._black .my-select__element > .my-select-arrow {
+    border-color: #494949;
+}
+.feedback-block._black .my-select-arrow {
+    border-top-color: #494949;
+}
+.feedback-block._black .my-checkbox > .my-checkbox__new, .feedback-block._black .my-checkbox > .my-checkbox__old:checked + .my-checkbox__new::before {
+    border-color: #494949;
+    color: #494949;
+}
+
+.feedback-form__button._orange {
+    color: #FFF;
 }
 .feedback-block__title {
     font-size: 18px;
@@ -41,6 +61,14 @@
         height: 77px;
         font-size: 17px;
     }
+    .feedback-form__button._orange {
+        width: 393px;
+        height: 91px;
+        background: url('../../assets/images/button-orange.svg');
+        color: #FFF;
+        filter: drop-shadow(3px 6px 0px #FFC671);
+    }
+
     .feedback-block__text {
         font-size: 15px;
     }

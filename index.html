@@ -10,17 +10,26 @@
     <link rel="stylesheet" href="./assets/libs/fancybox/fancybox.css">
 
 
+    <!-- ФАЙЛ ОБЯЗАТЕЛЬНО ПОДКЛЮЧАЕТСЯ ПЕРВЫМ -->
     <link rel="stylesheet" href="./style/reset.css">
+
+    
     <link rel="stylesheet" href="./style/UI/button.css">
     <link rel="stylesheet" href="./style/UI/input.css">
     <link rel="stylesheet" href="./style/UI/dropdown.css">
     <link rel="stylesheet" href="./style/UI/select.css">
     <link rel="stylesheet" href="./style/UI/checkbox.css">
+
     <link rel="stylesheet" href="./style/components/feedback-block.css">
     <link rel="stylesheet" href="./style/components/footer.css">
     <link rel="stylesheet" href="./style/components/header.css">
     <link rel="stylesheet" href="./style/components/modal.css">
 
+    <link rel="stylesheet" href="./style/components/blocks/reviews.css">
+    <link rel="stylesheet" href="./style/components/blocks/trial-lesson.css">
+
+
+    <!-- ФАЙЛ ОБЯЗАТЕЛЬНО ПОДКЛЮЧАЕТСЯ ПОСЛЕДНИМ -->
     <link rel="stylesheet" href="./style/pages/main.css">
 </head>
 
@@ -37,6 +46,7 @@
         </div>
     </div>
 
+    <!-- МОДАЛЬНОЕ ОКНО С ФОРМОЙ СТИЛИ ОТДЕЛЬНО -->
     <div class="my-modal" id="formModal1">
         <div class="my-modal__body">
             <div class="my-modal__header"><span class="close">&times;</span></div>
@@ -80,6 +90,7 @@
         </div>
     </div>
 
+    <!-- ХЕДЕР СТИЛИ ОТДЕЛЬНО -->
     <header class="header">
         <div class="my-container header__container">
             <div class="header__desktop">
@@ -90,16 +101,16 @@
                             <ul class="my-dropdown-menu header__dropdown" data-id="header-dropdown-1">
                                 <div class="header__mobile-smd">
                                     <a href="" class="header__mobile-smd-link"><img
-                                        src="../assets/images/social-media-icons/telegram-logo.svg" alt=""
+                                        src="./assets/images/social-media-icons/telegram-logo.svg" alt=""
                                         class="header__mobile-smd-icon"></a>
                                     <a href="" class="header__mobile-smd-link"><img
-                                            src="../assets/images/social-media-icons/whatsapp-icon-logo.svg" alt=""
+                                            src="./assets/images/social-media-icons/whatsapp-icon-logo.svg" alt=""
                                             class="header__mobile-smd-icon"></a>
                                     <a href="" class="header__mobile-smd-link"><img
-                                            src="../assets/images/social-media-icons/vkcom-logo.svg" alt=""
+                                            src="./assets/images/social-media-icons/vkcom-logo.svg" alt=""
                                             class="header__mobile-smd-icon"></a>
                                     <a href="" class="header__mobile-smd-link"><img
-                                            src="../assets/images/social-media-icons/page-icon.svg" alt=""
+                                            src="./assets/images/social-media-icons/page-icon.svg" alt=""
                                             class="header__mobile-smd-icon"></a>
                                 </div>
                             </ul>
@@ -112,29 +123,29 @@
                             <ul class="my-dropdown-menu header__dropdown" data-id="header-dropdown-2">
                                 <div class="header__mobile-smd">
                                     <a href="" class="header__mobile-smd-link"><img
-                                        src="../assets/images/social-media-icons/telegram-logo.svg" alt=""
+                                        src="./assets/images/social-media-icons/telegram-logo.svg" alt=""
                                         class="header__mobile-smd-icon"></a>
                                     <a href="" class="header__mobile-smd-link"><img
-                                            src="../assets/images/social-media-icons/whatsapp-icon-logo.svg" alt=""
+                                            src="./assets/images/social-media-icons/whatsapp-icon-logo.svg" alt=""
                                             class="header__mobile-smd-icon"></a>
                                     <a href="" class="header__mobile-smd-link"><img
-                                            src="../assets/images/social-media-icons/vkcom-logo.svg" alt=""
+                                            src="./assets/images/social-media-icons/vkcom-logo.svg" alt=""
                                             class="header__mobile-smd-icon"></a>
                                     <a href="" class="header__mobile-smd-link"><img
-                                            src="../assets/images/social-media-icons/page-icon.svg" alt=""
+                                            src="./assets/images/social-media-icons/page-icon.svg" alt=""
                                             class="header__mobile-smd-icon"></a>
                                 </div>
                             </ul>
                         </div>
                         <div class="header__adress">Сабурово Парк, <br> ул. Южная д.9, 2 этаж</div>
                     </div>
-                    <a href="./index.html" class="header__logo-link"><img src="../assets/images/logo.svg" alt=""
+                    <a href="./index.html" class="header__logo-link"><img src="./assets/images/logo.svg" alt=""
                             class="header__logo"></a>
                 </div>
                 <div class="header__nav">
                     <nav class="header__menu">
                         <ul class="header__menu-list">
-                            <li class="header__menu-item"><a href="" class="header__menu-link">Направления</a></li>
+                            <li class="header__menu-item"><a href="./pages/directions.html" class="header__menu-link">Направления</a></li>
                             <li class="header__menu-item"><a href="./pages/ded-moroz.html" class="header__menu-link">Мероприятия</a></li>
                             <li class="header__menu-item"><a href="" class="header__menu-link">Наши звезды</a></li>
                             <li class="header__menu-item"><a href="" class="header__menu-link">Организация праздников</a>
@@ -163,7 +174,7 @@
                     <div class="header__mobile-body">
                         <nav class="header__mobile-menu">
                             <ul class="header__mobile-menu-list">
-                                <li class="header__mobile-menu-item"><a href="" class="header__mobile-menu-link">Направления</a>
+                                <li class="header__mobile-menu-item"><a href="./pages/directions.html" class="header__mobile-menu-link">Направления</a>
                                 </li>
                                 <li class="header__mobile-menu-item"><a href="./pages/ded-moroz.html" class="header__mobile-menu-link">Мероприятия</a>
                                 </li>
@@ -224,7 +235,10 @@
             </div>
         </div>
     </header>
+
+
     <div class="overlay"></div>
+
     <main class="main">
         <section class="top-block">
             <div class="my-container top-block__container">
@@ -883,6 +897,8 @@
             </div>
             </div>
         </section>
+
+        <!-- ПОВТОРЯЕТСЯ НА ТРЁХ ЭКРАНАХ (ВЫНЕС СТИЛИ ОТДЕЛЬНО) -->
         <section class="trial-lesson">
             <div class="my-container trial-lesson__container">
                 <div class="trial-lesson__titles">
@@ -890,6 +906,8 @@
                     <div class="block-title trial-lesson__title-2">запишитесь <br> на пробный урок!</div>
                 </div>
                 <div class="trial-lesson__body">
+
+                    <!-- СТИЛИ ФОРМЫ(БЛОКА) ОТДЕЛЬНО -->
                     <div class="feedback-block trial-lesson__feedback-block">
                         <div class="feedback-block__title"></div>
                         <form action="" class="feedback-form feedback-block__form">
@@ -908,7 +926,7 @@
                             <label for="agree-check" class="my-checkbox">
                                 <input type="checkbox" name="" id="agree-check" class="my-checkbox__old">
                                 <span class="my-checkbox__new"></span>
-                                <span class="my-checkbox__text">Я ознакомился (ась) с Политикой конфиденциальности и даю своё
+                                <span class="my-checkbox__text">Я ознакомился (ась) с Политикой конфиденциальности и даю своё
                                     согласие на обработку персональных данных</span>
                             </label>
                             <button class="my-button feedback-form__button">отправить заявку</button>
@@ -919,6 +937,8 @@
                 </div>
             </div>
         </section>
+
+        <!-- ПОВТОРЯЕТСЯ НА ТРЁХ ЭКРАНАХ (ВЫНЕС СТИЛИ ОТДЕЛЬНО) -->
         <section class="reviews">
             <div class="my-container reviews__container">
                 <div class="block-title reviews__title">отзывы</div>
@@ -990,6 +1010,9 @@
             </div>
         </section>
     </main>
+
+
+    <!-- ФУТЕР СТИЛИ ОТДЕЛЬНО -->
     <footer class="footer">
         <div class="my-container footer__container">
             <div class="footer__left">
@@ -1060,6 +1083,9 @@
             </nav>
         </div>
     </footer>
+
+
+
 
     <script src="./assets/libs/swiper/swiper-bundle.min.js"></script>
     <script src="./assets/libs/fancybox/fancybox.umd.js"></script>
