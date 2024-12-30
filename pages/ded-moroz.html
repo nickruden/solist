@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="../style/components/footer.css">
     <link rel="stylesheet" href="../style/components/header.css">
     <link rel="stylesheet" href="../style/components/modal.css">
+    <link rel="stylesheet" href="../style/components/button-up.css">
 
     <link rel="stylesheet" href="../style/pages/ded-moroz.css">
 </head>
@@ -38,7 +39,58 @@
             </div>
         </div>
     </div>
+    
+    <!-- МОДАЛЬНОЕ ОКНО С ФОРМОЙ СТИЛИ ОТДЕЛЬНО -->
+    <div class="my-modal" id="formModal1">
+        <div class="my-modal__body">
+            <div class="my-modal__header"><span class="close">&times;</span></div>
+            <div class="my-modal__content">
+                <div class="feedback-block my-modal__feedback-block">
+                    <div class="feedback-block__title">чтобы записаться на пробное занятие, оставьте свои контактные данные
+                    </div>
+                    <form action="" class="feedback-form feedback-block__form">
+                        <input type="text" name="name-input" id="nameInput" class="my-input feedback-form__input"
+                            placeholder="Имя">
+                        <input type="tel" name="phone-input" id="phoneInput" class="my-input feedback-form__input"
+                            placeholder="+7 (999) 999-99-99">
+                        <label for="" class="my-select">
+                            <select name="" id="" class="my-select__element">
+                                <option value="">Сабурово Парк, ул. Южная, д. 9</option>
+                                <option value="">Сабурово Парк, ул. Южная, д. 9</option>
+                                <option value="">Сабурово Парк, ул. Южная, д. 9</option>
+                                <option value="">Сабурово Парк, ул. Южная, д. 9</option>
+                            </select>
+                            <div class="my-select-arrow"></div>
+                            <div class="my-select-text">Выберите филиал:</div>
+                        </label>
+                        <label for="agree-check-modal" class="my-checkbox">
+                            <input type="checkbox" name="" id="agree-check-modal" class="my-checkbox__old">
+                            <span class="my-checkbox__new"></span>
+                            <span class="my-checkbox__text">Я ознакомился (ась) c Политикой конфиденциальностии даю своё
+                                согласие на обработку персональных данных</span>
+                        </label>
+                        <button class="custom-button my-modal__button">
+                            <svg viewBox="0 0 393 80" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <clipPath id="myModalButtonClipPath">
+                                        <path
+                                            d="M381.077 12.0693C373.476 4.37198 363.017 0.181254 352.204 0.500369L280.282 2.62295L206.722 5.68306L125.107 9.14834H31.2195C13.9774 9.14834 0 23.1258 0 40.3679C0 57.6099 13.9774 71.5874 31.2195 71.5874H125.107L206.722 74.3169L280.282 77.3771L350.747 79.4566C362.432 79.8015 373.683 75.0172 381.541 66.3622L382.201 65.6357C396.11 50.315 395.617 26.7934 381.077 12.0693Z"
+                                            fill="#FF9900" />
+                                    </clipPath>
+                                </defs>
+                                <rect width="393" height="80" fill="#FF9900" clip-path="url(#myModalButtonClipPath)" />
+                            </svg>
+                            <span class="custom-button-text my-modal__button-text">отправить заявку</span>
+                        </button>
+                    </form>
+                    <div class="feedback-block__text">Если вы сразу оплачиваете абонемент, то первое пробное занятие в
+                        группе дарим в подарок</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- ХЕДЕР СТИЛИ ОТДЕЛЬНО -->
     <header class="header">
         <div class="my-container header__container">
             <div class="header__desktop">
@@ -93,12 +145,12 @@
                 <div class="header__nav">
                     <nav class="header__menu">
                         <ul class="header__menu-list">
-                            <li class="header__menu-item"><a href="" class="header__menu-link">Направления</a></li>
+                            <li class="header__menu-item"><a href="./directions.html" class="header__menu-link">Направления</a></li>
                             <li class="header__menu-item"><a href="./ded-moroz.html" class="header__menu-link">Мероприятия</a></li>
                             <li class="header__menu-item"><a href="" class="header__menu-link">Наши звезды</a></li>
                             <li class="header__menu-item"><a href="" class="header__menu-link">Организация праздников</a>
                             </li>
-                            <li class="header__menu-item"><a href="" class="header__menu-link">О нас</a></li>
+                            <li class="header__menu-item"><a href="../index.html" class="header__menu-link">О нас</a></li>
                             <li class="header__menu-item"><a href="" class="header__menu-link">Вакансии</a></li>
                             <li class="header__menu-item"><a href="" class="header__menu-link">Блог</a></li>
                         </ul>
@@ -122,7 +174,7 @@
                     <div class="header__mobile-body">
                         <nav class="header__mobile-menu">
                             <ul class="header__mobile-menu-list">
-                                <li class="header__mobile-menu-item"><a href="" class="header__mobile-menu-link">Направления</a>
+                                <li class="header__mobile-menu-item"><a href="./directions.html" class="header__mobile-menu-link">Направления</a>
                                 </li>
                                 <li class="header__mobile-menu-item"><a href="./ded-moroz.html" class="header__mobile-menu-link">Мероприятия</a>
                                 </li>
@@ -183,7 +235,19 @@
             </div>
         </div>
     </header>
+
+
+    <!-- ОВЕРЛЕЙ И КНОПКА НАВЕРХ -->
     <div class="overlay"></div>
+    <a href="" class="button-up">
+        <span class="button-up__img">
+            <svg viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.668967 13.0043L14 1" stroke="#FF9900" />
+                <path d="M27.2344 13.0044L13.5 1" stroke="#FF9900" />
+            </svg>
+        </span>
+    </a>
+
     <main class="main">
         <section class="hero-section">
             <div class="my-container hero-section__container">
@@ -1113,6 +1177,9 @@
             </div>
         </section>
     </main>
+
+
+    <!-- ФУТЕР СТИЛИ ОТДЕЛЬНО -->
     <footer class="footer">
         <div class="my-container footer__container">
             <div class="footer__left">
@@ -1168,7 +1235,7 @@
                     <li class="footer__menu-item"><a href="" class="footer__menu-link">балет</a></li>
                 </ul>
                 <ul class="footer__menu-list">
-                    <li class="footer__menu-link"><a href="" class="footer__menu-link">о центре</a></li>
+                    <li class="footer__menu-link"><a href="../index.html" class="footer__menu-link">о центре</a></li>
                     <li class="footer__menu-link"><a href="./ded-moroz.html" class="footer__menu-link">мероприятия</a></li>
                     <li class="footer__menu-link"><a href="" class="footer__menu-link">наши звезды</a></li>
                     <li class="footer__menu-link"><a href="" class="footer__menu-link">вакансии</a></li>
@@ -1192,6 +1259,7 @@
     <script src="../assets/js/dropdown.js"></script>
     <script src="../assets/js/phone-mask.js"></script>
     <script src="../assets/js/modal.js"></script>
+    <script src="../assets/js/button-up.js"></script>
 
 
     <script>
