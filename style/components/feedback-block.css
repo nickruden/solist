@@ -32,8 +32,6 @@
 .feedback-block__form {
     margin-bottom: 45px;
 }
-.feedback-form__input {
-}
 .feedback-form__button {
 }
 .feedback-block__text {
@@ -118,6 +116,13 @@
         margin-bottom: 31px;
     }
     .feedback-form__input {
+        font-weight: 400;
+    }
+    .feedback-form__input::placeholder {
+        font-weight: 400;
+    }
+    .my-checkbox__text {
+        font-weight: 400;
     }
     .feedback-form__button {
         width: 322px;

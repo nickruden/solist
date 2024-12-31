@@ -118,7 +118,7 @@
         position: relative;
         z-index: 10;
     }
-    .trial-lesson__titles::before {
+    /* .trial-lesson__titles::before {
         content: url('../../../assets/images/pages/main/trial-lesson/background-mobile-star.svg');
         display: block;
         max-width: 157px;
@@ -126,7 +126,7 @@
         top: -4px;
         left: -61px;
         z-index: 5;
-    }
+    } */
     .trial-lesson__title-1 {
         margin-bottom: 24px;
         font-size: 52px;
@@ -142,14 +142,14 @@
         position: relative;
         z-index: 10;
     }
-    .trial-lesson__body::before {
+    /* .trial-lesson__body::before {
         content: url('../../../assets/images/pages/main/trial-lesson/background-mobile-star.svg');
         display: block;
         max-width: 157px;
         position: absolute;
         bottom: -94px;;
         right: -26px;
-    }
+    } */
     .trial-lesson__feedback-block {
         margin-left: 10px;
         position: relative;
