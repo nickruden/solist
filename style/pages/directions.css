@@ -1,5 +1,5 @@
-.header {
-    padding: 23px 0px 10px 0px;
+/* .header {
+    padding: 18px 0px 10px 0px;
 }
 .header__underline {
     height: 1px;
@@ -16,7 +16,7 @@
     .header {
         padding: 18px 10px 25px 10px;
     }
-}
+} */
 
 
 /* ПЕРВЫЙ БЛОК */
@@ -1754,7 +1754,6 @@
 
 
 .trial-lesson {
-    padding: 211px 0px;
     background: url("../../assets/images/pages/directions/trial-lesson/background-img.svg");
     background-size: cover;
     background-position: center top;
@@ -1762,7 +1761,6 @@
 
 @media (max-width: 570px) {
     .trial-lesson {
-        padding: 104px 0px 107px 0px;
         background: url("../../assets/images/pages/directions/trial-lesson/background-mobile-img.svg");
         background-size: cover;
         overflow: visible;

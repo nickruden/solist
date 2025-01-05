@@ -67,14 +67,6 @@
     background-size: cover; /* или background-size: auto; */
     background-position: center top;
 }
-/* .hero-section__background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-} */
 .hero-section__container {
     display: flex;
     flex-direction: column;
@@ -137,7 +129,7 @@
 .hero-section__button {
 }
 .hero-section__button {
-    filter: drop-shadow(4px 8px 0px #BDF2FF);
+    filter: drop-shadow(3px 6px 0px #BDF2FF);
 }
 
 .hero-section__button:hover {

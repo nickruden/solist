@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Солист</title>
+
+    <link rel="stylesheet" href="../assets/libs/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/libs/fancybox/fancybox.css">
+
+
+    <!-- ФАЙЛ ОБЯЗАТЕЛЬНО ПОДКЛЮЧАЕТСЯ ПЕРВЫМ -->
+    <link rel="stylesheet" href="../style/reset.css">
+
+
+    <link rel="stylesheet" href="../style/UI/button.css">
+    <link rel="stylesheet" href="../style/UI/input.css">
+    <link rel="stylesheet" href="../style/UI/dropdown.css">
+    <link rel="stylesheet" href="../style/UI/select.css">
+    <link rel="stylesheet" href="../style/UI/checkbox.css">
+
+    <link rel="stylesheet" href="../style/components/feedback-block.css">
+    <link rel="stylesheet" href="../style/components/footer.css">
+    <link rel="stylesheet" href="../style/components/header.css">
+    <link rel="stylesheet" href="../style/components/modal.css">
+    <link rel="stylesheet" href="../style/components/button-up.css">
+
+    <link rel="stylesheet" href="../style/components/blocks/reviews.css">
+    <link rel="stylesheet" href="../style/components/blocks/trial-lesson.css">
+
+
+    <!-- ФАЙЛ ОБЯЗАТЕЛЬНО ПОДКЛЮЧАЕТСЯ ПОСЛЕДНИМ -->
+    <link rel="stylesheet" href="../style/pages/branch.css">
+</head>
+
+<body>
+    <div class="my-modal" id="videoModal1">
+        <div class="my-modal__body">
+            <div class="my-modal__header"><span class="close">&times;</span></div>
+            <div class="my-modal__content">
+                <video controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    Ваш браузер не поддерживает видео.
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <!-- МОДАЛЬНОЕ ОКНО С ФОРМОЙ СТИЛИ ОТДЕЛЬНО -->
+    <div class="my-modal" id="formModal1">
+        <div class="my-modal__body">
+            <div class="my-modal__header"><span class="close">&times;</span></div>
+            <div class="my-modal__content">
+                <div class="feedback-block my-modal__feedback-block">
+                    <div class="feedback-block__title">чтобы записаться на пробное занятие, оставьте свои контактные
+                        данные</div>
+                    <form action="" class="feedback-form feedback-block__form">
+                        <input type="text" name="name-input" id="nameInput" class="my-input feedback-form__input"
+                            placeholder="Имя">
+                        <input type="tel" name="phone-input" id="phoneInput" class="my-input feedback-form__input"
+                            placeholder="+7 (999) 999-99-99">
+                        <label for="" class="my-select">
+                            <select name="" id="" class="my-select__element">
+                                <option value="">Сабурово Парк, ул. Южная, д. 9</option>
+                                <option value="">Сабурово Парк, ул. Южная, д. 9</option>
+                                <option value="">Сабурово Парк, ул. Южная, д. 9</option>
+                                <option value="">Сабурово Парк, ул. Южная, д. 9</option>
+                            </select>
+                            <div class="my-select-arrow"></div>
+                            <div class="my-select-text">Выберите филиал:</div>
+                        </label>
+                        <label for="agree-check-modal" class="my-checkbox">
+                            <input type="checkbox" name="" id="agree-check-modal" class="my-checkbox__old">
+                            <span class="my-checkbox__new"></span>
+                            <span class="my-checkbox__text">Я ознакомился (ась) c Политикой конфиденциальностии даю своё
+                                согласие на обработку персональных данных</span>
+                        </label>
+                        <button class="custom-button my-modal__button">
+                            <svg viewBox="0 0 393 80" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <clipPath id="myModalButtonClipPath">
+                                        <path
+                                            d="M381.077 12.0693C373.476 4.37198 363.017 0.181254 352.204 0.500369L280.282 2.62295L206.722 5.68306L125.107 9.14834H31.2195C13.9774 9.14834 0 23.1258 0 40.3679C0 57.6099 13.9774 71.5874 31.2195 71.5874H125.107L206.722 74.3169L280.282 77.3771L350.747 79.4566C362.432 79.8015 373.683 75.0172 381.541 66.3622L382.201 65.6357C396.11 50.315 395.617 26.7934 381.077 12.0693Z"
+                                            fill="#FF9900" />
+                                    </clipPath>
+                                </defs>
+                                <rect width="393" height="80" fill="#FF9900" clip-path="url(#myModalButtonClipPath)" />
+                            </svg>
+                            <span class="custom-button-text my-modal__button-text">отправить заявку</span>
+                        </button>
+                    </form>
+                    <div class="feedback-block__text">Если вы сразу оплачиваете абонемент, то первое пробное занятие в
+                        группе дарим в подарок</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ХЕДЕР СТИЛИ ОТДЕЛЬНО -->
+    <header class="header _underline">
+        <div class="my-container header__container">
+            <div class="header__desktop">
+                <div class="header__top">
+                    <div class="header__contacts">
+                        <div class="my-dropdown header__phone-wrapper">
+                            <a href="" id="header-dropdown-1" class="my-dropdown-control header__phone">8 (495) 766-18-23</a>
+                            <ul class="my-dropdown-menu header__dropdown" data-id="header-dropdown-1">
+                                <div class="header__mobile-smd">
+                                    <a href="" class="header__mobile-smd-link"><img
+                                        src="../assets/images/social-media-icons/telegram-logo.svg" alt=""
+                                        class="header__mobile-smd-icon"></a>
+                                    <a href="" class="header__mobile-smd-link"><img
+                                            src="../assets/images/social-media-icons/whatsapp-icon-logo.svg" alt=""
+                                            class="header__mobile-smd-icon"></a>
+                                    <a href="" class="header__mobile-smd-link"><img
+                                            src="../assets/images/social-media-icons/vkcom-logo.svg" alt=""
+                                            class="header__mobile-smd-icon"></a>
+                                    <a href="" class="header__mobile-smd-link"><img
+                                            src="../assets/images/social-media-icons/page-icon.svg" alt=""
+                                            class="header__mobile-smd-icon"></a>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="header__adress">Павшинская пойма, Подмосковный бульвар, д.6</div>
+                    </div>
+                    <div class="header__contacts">
+                        <div class="my-dropdown header__phone-wrapper">
+                            <a href="" id="header-dropdown-2" class="my-dropdown-control header__phone">8 (977) 897-22-45</a>
+                            <ul class="my-dropdown-menu header__dropdown" data-id="header-dropdown-2">
+                                <div class="header__mobile-smd">
+                                    <a href="" class="header__mobile-smd-link"><img
+                                        src="../assets/images/social-media-icons/telegram-logo.svg" alt=""
+                                        class="header__mobile-smd-icon"></a>
+                                    <a href="" class="header__mobile-smd-link"><img
+                                            src="../assets/images/social-media-icons/whatsapp-icon-logo.svg" alt=""
+                                            class="header__mobile-smd-icon"></a>
+                                    <a href="" class="header__mobile-smd-link"><img
+                                            src="../assets/images/social-media-icons/vkcom-logo.svg" alt=""
+                                            class="header__mobile-smd-icon"></a>
+                                    <a href="" class="header__mobile-smd-link"><img
+                                            src="../assets/images/social-media-icons/page-icon.svg" alt=""
+                                            class="header__mobile-smd-icon"></a>
+                                </div>
+                            </ul>
+                        </div>
+                        <div class="header__adress">Сабурово Парк, <br> ул. Южная д.9, 2 этаж</div>
+                    </div>
+                    <a href="../index.html" class="header__logo-link"><img src="../assets/images/logo.svg" alt=""
+                            class="header__logo"></a>
+                </div>
+                <div class="header__nav">
+                    <nav class="header__menu">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item"><a href="./directions.html" class="header__menu-link">Направления</a></li>
+                            <li class="header__menu-item"><a href="./ded-moroz.html" class="header__menu-link">Мероприятия</a></li>
+                            <li class="header__menu-item"><a href="" class="header__menu-link">Наши звезды</a></li>
+                            <li class="header__menu-item"><a href="" class="header__menu-link">Организация праздников</a>
+                            </li>
+                            <li class="header__menu-item"><a href="" class="header__menu-link">О нас</a></li>
+                            <li class="header__menu-item"><a href="" class="header__menu-link">Вакансии</a></li>
+                            <li class="header__menu-item"><a href="" class="header__menu-link">Блог</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header__underline"></div>
+            </div>
+            <div class="header__mobile">
+                <div class="header__mobile-main">
+                    <div class="header__main-mobile-addresses">
+                        <a href="" class="header__main-mobile-adress">Филиал <br> в Павшинской пойме</a>
+                        <a href="" class="header__main-mobile-adress">Филиал <br> в Сабурово Парк</a>
+                    </div>
+                    <button class="header__mobile-burger-button" data-id="mobile-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="header__mobile-content" id="mobile-menu">
+                    <div class="my-container header__mobile-container">
+                    <div class="header__mobile-body">
+                        <nav class="header__mobile-menu">
+                            <ul class="header__mobile-menu-list">
+                                <li class="header__mobile-menu-item"><a href="./directions.html" class="header__mobile-menu-link">Направления</a>
+                                </li>
+                                <li class="header__mobile-menu-item"><a href="./ded-moroz.html" class="header__mobile-menu-link">Мероприятия</a>
+                                </li>
+                                <li class="header__mobile-menu-item"><a href="" class="header__mobile-menu-link">Наши звезды</a>
+                                </li>
+                                <li class="header__mobile-menu-item"><a href="" class="header__mobile-menu-link">Организация праздников</a>
+                                </li>
+                                <li class="header__mobile-menu-item"><a href="../index.html" class="header__mobile-menu-link">О нас</a>
+                                </li>
+                                <li class="header__mobile-menu-item"><a href="" class="header__mobile-menu-link">Вакансии</a>
+                                </li>
+                                <li class="header__mobile-menu-item"><a href="" class="header__mobile-menu-link">Блог</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__mobile-addresses">
+                            <div class="header__mobile-address">
+                                <a href="tel:+74957661823" class="header__mobile-address-phone">8 (495) 766-18-23</a>
+                                <span class="header__mobile-address-text">Павшинская пойма, <br> Подмосковный бульвар,
+                                    д.68</span>
+                                <div class="header__mobile-smd">
+                                    <a href="" class="header__mobile-smd-link"><img
+                                        src="../assets/images/social-media-icons/telegram-logo.svg" alt=""
+                                        class="header__mobile-smd-icon"></a>
+                                    <a href="" class="header__mobile-smd-link"><img
+                                            src="../assets/images/social-media-icons/whatsapp-icon-logo.svg" alt=""
+                                            class="header__mobile-smd-icon"></a>
+                                    <a href="" class="header__mobile-smd-link"><img
+                                            src="../assets/images/social-media-icons/vkcom-logo.svg" alt=""
+                                            class="header__mobile-smd-icon"></a>
+                                    <a href="" class="header__mobile-smd-link"><img
+                                            src="../assets/images/social-media-icons/page-icon.svg" alt=""
+                                            class="header__mobile-smd-icon"></a>
+                                </div>
+                            </div>
+                            <div class="header__mobile-address">
+                                <a href="tel:+79778972245" class="header__mobile-address-phone">8 (977) 897-22-45</a>
+                                <span class="header__mobile-address-text">Сабурово Парк, <br> ул. Южная д.9, 2 этаж</span>
+                                <div class="header__mobile-smd">
+                                    <a href="" class="header__mobile-smd-link"><img
+                                        src="../assets/images/social-media-icons/telegram-logo.svg" alt=""
+                                        class="header__mobile-smd-icon"></a>
+                                    <a href="" class="header__mobile-smd-link"><img
+                                            src="../assets/images/social-media-icons/whatsapp-icon-logo.svg" alt=""
+                                            class="header__mobile-smd-icon"></a>
+                                    <a href="" class="header__mobile-smd-link"><img
+                                            src="../assets/images/social-media-icons/vkcom-logo.svg" alt=""
+                                            class="header__mobile-smd-icon"></a>
+                                    <a href="" class="header__mobile-smd-link"><img
+                                            src="../assets/images/social-media-icons/page-icon.svg" alt=""
+                                            class="header__mobile-smd-icon"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- ОВЕРЛЕЙ И КНОПКА НАВЕРХ -->
+    <div class="overlay"></div>
+    <a href="" class="button-up">
+        <span class="button-up__img">
+            <svg viewBox="0 0 28 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.668967 13.0043L14 1" stroke="#FF9900" />
+                <path d="M27.2344 13.0044L13.5 1" stroke="#FF9900" />
+            </svg>
+        </span>
+    </a>
+
+    <main class="main">
+
+    </main>
+
+    <!-- ФУТЕР СТИЛИ ОТДЕЛЬНО -->
+    <footer class="footer">
+        <div class="my-container footer__container">
+            <div class="footer__left">
+                <a href="../index.html" class="footer__logo"><img src="../assets/images/logo.svg" alt=""
+                        class="footer__logo-icon"></a>
+                <div class="footer__addresses">
+                    <div class="footer__address">
+                        <span class="footer__address-text">Павшинская пойма, <br> Подмосковный бульвар,
+                            д.68</span>
+                        <a href="tel:+74957661823" class="footer__address-phone">8 (495) 766-18-23</a>
+                        <div class="footer__smd">
+                            <a href="" class="footer__smd-link"><img
+                                    src="../assets/images/social-media-icons/whatsapp-icon-logo.svg" alt=""
+                                    class="footer__smd-icon"></a>
+                            <a href="" class="footer__smd-link"><img
+                                    src="../assets/images/social-media-icons/telegram-logo.svg" alt=""
+                                    class="footer__smd-icon"></a>
+                            <a href="" class="footer__smd-link"><img
+                                    src="../assets/images/social-media-icons/vkcom-logo.svg" alt=""
+                                    class="footer__smd-icon"></a>
+                            <a href="" class="footer__smd-link"><img
+                                    src="../assets/images/social-media-icons/page-icon.svg" alt=""
+                                    class="footer__smd-icon"></a>
+                        </div>
+                    </div>
+                    <div class="footer__address">
+                        <span class="footer__address-text">Сабурово Парк, <br> ул. Южная д.9, 2 этаж</span>
+                        <a href="tel:+79778972245" class="footer__address-phone">8 (977) 897-22-45</a>
+                        <div class="footer__smd">
+                            <a href="" class="footer__smd-link"><img
+                                    src="../assets/images/social-media-icons/whatsapp-icon-logo.svg" alt=""
+                                    class="footer__smd-icon"></a>
+                            <a href="" class="footer__smd-link"><img
+                                    src="../assets/images/social-media-icons/telegram-logo.svg" alt=""
+                                    class="footer__smd-icon"></a>
+                            <a href="" class="footer__smd-link"><img
+                                    src="../assets/images/social-media-icons/vkcom-logo.svg" alt=""
+                                    class="footer__smd-icon"></a>
+                            <a href="" class="footer__smd-link"><img
+                                    src="../assets/images/social-media-icons/page-icon.svg" alt=""
+                                    class="footer__smd-icon"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="footer__menu">
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-item"><a href="./branch.html" class="footer__menu-link">вокал</a></li>
+                    <li class="footer__menu-item"><a href="./branch.html" class="footer__menu-link">фортепиано</a></li>
+                    <li class="footer__menu-item"><a href="./branch.html" class="footer__menu-link">гитара</a></li>
+                    <li class="footer__menu-item"><a href="./branch.html" class="footer__menu-link">барабаны</a></li>
+                    <li class="footer__menu-item"><a href="./branch.html" class="footer__menu-link">брейк-данс</a></li>
+                    <li class="footer__menu-item"><a href="./branch.html" class="footer__menu-link">актерское
+                            мастерство</a></li>
+                    <li class="footer__menu-item"><a href="./branch.html" class="footer__menu-link">танцы</a></li>
+                    <li class="footer__menu-item"><a href="./branch.html" class="footer__menu-link">изобразительное
+                            искусство</a></li>
+                    <li class="footer__menu-item"><a href="./branch.html" class="footer__menu-link">шахматы</a></li>
+                    <li class="footer__menu-item"><a href="./branch.html" class="footer__menu-link">флейта</a></li>
+                    <li class="footer__menu-item"><a href="./branch.html" class="footer__menu-link">балет</a></li>
+                </ul>
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-link"><a href="../index.html" class="footer__menu-link">о центре</a></li>
+                    <li class="footer__menu-link"><a href="./ded-moroz.html" class="footer__menu-link">мероприятия</a>
+                    </li>
+                    <li class="footer__menu-link"><a href="./achievements.html" class="footer__menu-link">наши
+                            звезды</a></li>
+                    <li class="footer__menu-link"><a href="./vacancies.html" class="footer__menu-link">вакансии</a></li>
+                    <li class="footer__menu-link"><a href="" class="footer__menu-link">блог</a></li>
+                </ul>
+                <ul class="footer__menu-list">
+                    <li class="footer__menu-item"><a href="" class="footer__menu-link">политика обработки персональных
+                            данных</a></li>
+                    <li class="footer__menu-item"><a href="" class="footer__menu-link">наш INSTAGRAM*</a> <span
+                            class="footer__inst-text">*продукт
+                            компании Meta, организации, признанной экстремистской и запрещенной в Российской
+                            Федерации.</span></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
+
+
+    <script src="../assets/libs/swiper/swiper-bundle.min.js"></script>
+    <script src="../assets/libs/fancybox/fancybox.umd.js"></script>
+
+
+    <script src="../assets/js/header.js"></script>
+    <script src="../assets/js/dropdown.js"></script>
+    <script src="../assets/js/phone-mask.js"></script>
+    <script src="../assets/js/modal.js"></script>
+    <script src="../assets/js/button-up.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            Fancybox.bind('[data-fancybox="every-quarter-gallery"]', {
+
+            });
+
+            Fancybox.bind('[data-fancybox="every-six-months-gallery"]', {
+
+            });
+
+            Fancybox.bind('[data-fancybox="much-attention-gallery"]', {
+
+            });
+
+            Fancybox.bind('[data-fancybox="reviews-gallery"]', {
+
+            });
+        });
+    </script>
+
+    <script>
+        const directionsSwiper = new Swiper('.directions__swiper', {
+            direction: 'horizontal',
+            slidesPerView: 2,
+            spaceBetween: 14,
+            initialSlide: 1,
+            loop: false,
+            centeredSlides: false,
+            pagination: {
+                el: '.directions__swiper-pagination',
+            },
+            breakpoints: {
+                632: {
+                    slidesPerView: 3,
+                    spaceBetween: 19,
+                },
+                941: {
+                    slidesPerView: 4,
+                    spaceBetween: 24,
+                },
+            }
+        });
+
+        const everyQuarterSwiper = new Swiper('.every-quarter__swiper', {
+            direction: 'horizontal',
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            pagination: {
+                el: '.every-quarter__pagination',
+            },
+            navigation: {
+                nextEl: '.every-quarter__slider-button-next',
+                prevEl: '.every-quarter__slider-button-prev',
+            },
+            breakpoints: {
+                715: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+            }
+        });
+
+        const everySixMonthsSwiper = new Swiper('.every-six-months__swiper', {
+            direction: 'horizontal',
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            pagination: {
+                el: '.every-six-months__pagination',
+            },
+            navigation: {
+                nextEl: '.every-six-months__slider-button-next',
+                prevEl: '.every-six-months__slider-button-prev',
+            },
+            breakpoints: {
+                715: {
+                    slidesPerView: 2,
+                    spaceBetween: 40,
+                },
+            }
+        });
+
+        const muchAttentionSwiper = new Swiper('.much-attention__swiper', {
+            direction: 'horizontal',
+            slidesPerView: 1,
+            spaceBetween: 24,
+            initialSlide: 1,
+            loop: true,
+            pagination: {
+                el: '.much-attention__swiper-pagination',
+            },
+            breakpoints: {
+                715: {
+                    spaceBetween: 40,
+                    loop: false,
+                },
+            }
+        });
+
+        const reviewsSwiper = new Swiper('.reviews__swiper', {
+            direction: 'horizontal',
+            slidesPerView: 1,
+            spaceBetween: 24,
+            loop: true,
+            pagination: {
+                el: '.reviews__swiper-pagination',
+            },
+            navigation: {
+                nextEl: '.reviews__slider-button-next',
+                prevEl: '.reviews__slider-button-prev',
+            },
+            breakpoints: {
+                571: {
+                    slidesPerView: 2,
+                    spaceBetween: 32,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+            }
+        });
+    </script>
+</body>
+
+</html>

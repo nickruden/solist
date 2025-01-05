@@ -1,0 +1,167 @@
+/* ПЯТЫЙ БЛОК */
+.our-advantages {
+    padding: 143px 0px 124px 0px;
+    background: url("../../assets/images/pages/branch/our-advantages/background-img.svg");
+}
+
+@media (max-width: 1318px) {
+    .our-advantages {
+        padding: 124px 0px 117px 0px;
+    }
+}
+
+@media (max-width: 991px) {
+    .our-advantages {
+        padding: 108px 0px 98px 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .our-advantages {
+        padding: 92px 0px 74px 0px;
+        background-position: center top;
+    }
+}
+
+@media (max-width: 570px) {
+    .our-advantages {
+        padding: 76px 0px 28px 0px;
+    }
+}
+
+@media (max-width: 431px) {
+    .our-advantages {
+        padding: 60px 0px 5px 0px;
+    }
+}
+
+
+/* ШЕСТОЙ БЛОК */
+.more-photos {
+    padding: 163px 0px 73px 0px;
+    background: url("../../assets/images/pages/branch/more-photos/background-img.svg");
+    background-size: cover;
+    background-position: center top;
+    overflow: hidden;
+}
+.more-photos__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 30px;
+}
+.more-photos__title {
+    text-align: center;
+    margin-bottom: 100px;
+}
+.more-photos__slider {
+    max-height: 462px;
+    max-width: 659px;
+    position: relative;
+    width: 100%;
+}
+.more-photos__swiper {
+    overflow: visible;
+}
+.more-photos__swiper-wrapper {
+}
+.more-photos__swiper-slide {
+    max-width: 659px;
+}
+.more-photos__slide {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.more-photos__slide-img-wrap {
+    width: 100%;
+    max-width: 659px;
+    height: auto;
+    position: relative;
+}
+.more-photos__slide-img-wrap svg {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.more-photos__swiper-pagination {
+}
+
+@media (min-width: 1318px) {
+    .more-photos__slide-img-wrap {
+        width: 659px;
+        height: 462px;
+    }
+}
+
+@media (max-width: 1318px) {
+    .more-photos {
+        padding: 144px 0px 61px 0px;
+    }
+    .more-photos__title {
+        margin-bottom: 84px;
+    }
+}
+
+@media (max-width: 991px) {
+    .more-photos {
+        padding: 125px 0px 55px 0px;
+    }
+    .more-photos__title {
+        margin-bottom: 87px;
+    }
+}
+
+@media (max-width: 768px) {
+    .more-photos {
+        padding: 106px 0px 42px 0px;
+    }
+    .more-photos__title {
+        margin-bottom: 61px;
+    }
+    .more-photos__swiper {
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 570px) {
+    .more-photos {
+        padding: 87px 0px 30px 0px;
+        background: url("../../assets/images/pages/branch/more-photos/background-mobile-img.svg");
+        background-size: cover;
+        background-position: center top;
+    }
+    .more-photos__title {
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 431px) {
+    .more-photos {
+        padding: 68px 0px 20px 0px;
+    }
+    .more-photos__title {
+        margin-bottom: 24px;
+    }
+}
+
+
+.trial-lesson {
+    background: url("../../assets/images/pages/branch/trial-lesson/background-img.svg");
+    background-size: cover;
+    background-position: center top;
+}
+
+@media (max-width: 570px) {
+    .trial-lesson {
+        background: url("../../assets/images/pages/branch/trial-lesson/background-mobile-img.svg");
+        background-size: cover;
+        overflow: visible;
+    }
+    .trial-lesson__titles::before {
+        content: '';
+    }
+    .trial-lesson__body::before {
+        content: '';
+    }
+}

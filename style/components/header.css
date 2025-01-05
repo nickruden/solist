@@ -3,6 +3,29 @@
     background: #FF9900;
     overflow: visible;
 }
+.header .header__underline {
+    display: none;
+}
+.header._underline {
+    padding: 18px 0px 10px 0px;
+}
+.header._underline .header__underline {
+    display: block;
+    height: 1px;
+    width: 462px;
+    background: linear-gradient(to left, #FF9900, #FFF, #FF9900);
+}
+
+@media (max-width: 1318px) {
+    .header._underline {
+        padding: 18px 0px 10px 0px;
+    }
+}
+@media (max-width: 768px) {
+    .header._underline {
+        padding: 18px 10px 25px 10px;
+    }
+}
 .header__container {
 }
 .header__desktop {
@@ -44,6 +67,7 @@
 .header__adress {
     font-size: 14px;
     font-weight: 700;
+    display: block;
 }
 .header__logo-link {
     display: block;

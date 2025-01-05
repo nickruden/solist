@@ -1,6 +1,6 @@
 /* ЧЕТЫРНАДЦАТЫЙ БЛОК */
 .trial-lesson {
-    padding: 211px 0px;
+    padding: 167px 0px;
     background: url("../../../assets/images/pages/main/trial-lesson/background-img.svg");
     background-size: cover;
     background-position: center top;
@@ -31,7 +31,7 @@
 
 @media (max-width: 1318px) {
     .trial-lesson {
-        padding: 183px 0px;
+        padding: 143px 0px;
     }
     .trial-lesson__container {
         gap: 78px;

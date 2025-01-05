@@ -123,7 +123,7 @@
 }
 
 .top-block__button:last-child .custom-button-text {
-    left: 40%;
+    left: 46%;
 }
 
 .top-block__button-text {
@@ -1747,7 +1747,7 @@
 
 @media (max-width: 1318px) {
     .much-attention {
-        padding: 132px 0px 47px 0px;
+        padding: 141px 0px 47px 0px;
     }
     .much-attention__title {
         margin-bottom: 84px;
@@ -1763,7 +1763,7 @@
 
 @media (max-width: 991px) {
     .much-attention {
-        padding: 104px 0px 40px 0px;
+        padding: 126px 0px 40px 0px;
     }
     .much-attention__title {
         margin-bottom: 87px;
@@ -1778,7 +1778,7 @@
 
 @media (max-width: 768px) {
     .much-attention {
-        padding: 78px 0px 36px 0px;
+        padding: 105px 0px 34px 0px;
         background: none;
     }
     .much-attention__title {
@@ -1791,22 +1791,11 @@
     .much-attention__swiper {
         overflow: hidden;
     }
-    .much-attention__slider::before {
-        content: url('../../assets/images/pages/main/much-attention/background-mobile-img.svg');
-        position: absolute;
-        bottom: -26px;
-        left: -29px;
-        display: block;
-        height: 135px;
-    }
-    .much-attention__title-2 {
-        max-width: 530px;
-    }
 }
 
 @media (max-width: 570px) {
     .much-attention {
-        padding: 31px 0px 28px 0px;
+        padding: 84px 0px 26px 0px;
     }
     .much-attention__title {
         margin-bottom: 35px;
@@ -1822,7 +1811,7 @@
 
 @media (max-width: 431px) {
     .much-attention {
-        padding: 18px 0px 23px 0px;
+        padding: 64px 0px 20px 0px;
     }
     .much-attention__title {
         margin-bottom: 24px;
