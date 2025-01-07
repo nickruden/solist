@@ -1,0 +1,156 @@
+.hero-section {
+    padding: 60px 0px 88px 0px;
+    background: url('../../../assets/images/pages/vacancies/hero-section/background-img.svg');
+    background-size: cover;
+    background-position: center top;
+}
+.hero-section__container {
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.hero-section__texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.hero-section__title {
+    text-align: center;
+}
+.hero-section__text {
+    font-size: 24px;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    text-align: center;
+}
+.hero-section__img-wrap {
+    max-width: 850px;
+    width: 100%;
+    max-height: 430px;
+}
+.hero-section__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.hero-section__buttons {
+}
+.hero-section__button {
+    width: 445px;
+    height: 78px;
+}
+.hero-section__button-text {
+}
+
+@media (max-width: 1318px) {
+    .hero-section {
+        padding: 56px 0px 83px 0px;
+    }
+    .hero-section__container {
+        gap: 35px;
+    }
+    .hero-section__texts {
+        gap: 20px;
+    }
+    .hero-section__text {
+        font-size: 22px;
+    }
+    .hero-section__img-wrap {
+        max-width: 780px;
+    }
+    .hero-section__button {
+        width: 400px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero-section {
+        padding: 56px 0px 78px 0px;
+    }
+    .hero-section__container {
+        gap: 32px;
+    }
+    .hero-section__texts {
+        gap: 17px;
+    }
+    .hero-section__text {
+        font-size: 20px;
+    }
+    .hero-section__img-wrap {
+        max-width: 710px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: calc(60px + 62px) 0px 73px 0px;
+    }
+    .hero-section__container {
+        gap: 36px;
+    }
+    .hero-section__texts {
+        gap: 20px;
+    }
+    .hero-section__title {
+        max-width: 600px;
+    }
+    .hero-section__text {
+        max-width: 300px;
+    }
+    .hero-section__img-wrap {
+        max-width: 580px;
+    }
+}
+
+@media (max-width: 570px) {
+    .hero-section {
+        padding: calc(50px + 71px) 0px 68px 0px;
+        background: url('../../../assets/images/pages/vacancies/hero-section/background-mobile-img.svg');
+        background-size: cover;
+    }
+    .hero-section__container {
+        gap: 28px;
+    }
+    .hero-section__texts {
+        gap: 15px;
+    }
+    .hero-section__text {
+        font-size: 17px;
+        max-width: 266px;
+    }
+    .hero-section__img-wrap {
+        max-width: 450px;
+    }
+    .hero-section__button {
+        width: 360px;
+        height: 62px;
+    }
+}
+
+@media (max-width: 431px) {
+    .hero-section {
+        padding: calc(50px + 71px) 0px 66px 0px;
+    }
+
+    .hero-section__container {
+        gap: 24px;
+    }
+
+    .hero-section__texts {
+        gap: 10px;
+    }
+
+    .hero-section__text {
+        font-size: 14px;
+        max-width: 250px;
+    }
+
+    .hero-section__button {
+        width: 316px;
+        height: 55px;
+    }
+}

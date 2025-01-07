@@ -1,0 +1,466 @@
+.hero-section {
+    padding: 60px 0px 88px 0px;
+    background: url('../../assets/images/pages/vacancies/hero-section/background-img.svg');
+    background-size: cover;
+    background-position: center top;
+}
+.hero-section__container {
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+.hero-section__texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+.hero-section__title {
+    text-align: center;
+}
+.hero-section__text {
+    font-size: 24px;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    text-align: center;
+}
+.hero-section__img-wrap {
+    max-width: 850px;
+    width: 100%;
+    max-height: 430px;
+}
+.hero-section__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.hero-section__buttons {
+}
+.hero-section__button {
+    width: 445px;
+    height: 78px;
+}
+.hero-section__button-text {
+}
+
+@media (max-width: 1318px) {
+    .hero-section {
+        padding: 56px 0px 83px 0px;
+    }
+    .hero-section__container {
+        gap: 35px;
+    }
+    .hero-section__texts {
+        gap: 20px;
+    }
+    .hero-section__text {
+        font-size: 22px;
+    }
+    .hero-section__img-wrap {
+        max-width: 780px;
+    }
+    .hero-section__button {
+        width: 400px;
+        height: 70px;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero-section {
+        padding: 56px 0px 78px 0px;
+    }
+    .hero-section__container {
+        gap: 32px;
+    }
+    .hero-section__texts {
+        gap: 17px;
+    }
+    .hero-section__text {
+        font-size: 20px;
+    }
+    .hero-section__img-wrap {
+        max-width: 710px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: calc(60px + 62px) 0px 73px 0px;
+    }
+    .hero-section__container {
+        gap: 36px;
+    }
+    .hero-section__texts {
+        gap: 20px;
+    }
+    .hero-section__title {
+        max-width: 600px;
+    }
+    .hero-section__text {
+        max-width: 300px;
+    }
+    .hero-section__img-wrap {
+        max-width: 580px;
+    }
+}
+
+@media (max-width: 570px) {
+    .hero-section {
+        padding: calc(50px + 71px) 0px 68px 0px;
+        background: url('../../assets/images/pages/vacancies/hero-section/background-mobile-img.svg');
+        background-size: cover;
+    }
+    .hero-section__container {
+        gap: 28px;
+    }
+    .hero-section__texts {
+        gap: 15px;
+    }
+    .hero-section__text {
+        font-size: 17px;
+        max-width: 266px;
+    }
+    .hero-section__img-wrap {
+        max-width: 450px;
+    }
+    .hero-section__button {
+        width: 360px;
+        height: 62px;
+    }
+}
+
+@media (max-width: 431px) {
+    .hero-section {
+        padding: calc(50px + 71px) 0px 66px 0px;
+    }
+        .hero-section__container {
+            gap: 24px;
+        }
+        .hero-section__texts {
+            gap: 10px;
+        }
+        .hero-section__text {
+            font-size: 14px;
+            max-width: 250px;
+        }
+    .hero-section__button {
+        width: 316px;
+        height: 55px;
+    }
+}
+
+
+/* ВТОРОЙ БЛОК */
+.info-block {
+    padding: 140px 0px 136px 0px;
+    background: url('../../assets/images/pages/vacancies/info-block/background-img.svg');
+    background-size: cover;
+    background-position: center top;
+}
+.info-block__container {
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.info-block__texts {
+    margin-bottom: 100px;
+    display: flex;
+    gap: 100px;
+}
+.info-block__text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    max-width: 463px;
+}
+.info-block__img-wrap {
+    max-width: 888px;
+    width: 100%;
+    max-height: 585px;
+}
+.info-block__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1318px) {
+    .info-block {
+        padding: 121px 0px 116px 0px;
+    }
+    .info-block__texts {
+        margin-bottom: 80px;
+        gap: 80px;
+    }
+    .info-block__text {
+        max-width: 463px;
+    }
+    .info-block__img-wrap {
+        max-width: 807px;
+    }
+}
+
+@media (max-width: 991px) {
+    .info-block {
+        padding: 107px 0px 98px 0px;
+    }
+    .info-block__texts {
+        margin-bottom: 60px;
+        gap: 60px;
+    }
+    .info-block__text {
+        font-size: 16px;
+        max-width: 410px;
+    }
+    .info-block__img-wrap {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 768px) {
+    .info-block {
+        padding: 86px 0px 81px 0px;
+    }
+    .info-block__texts {
+        margin-bottom: 50px;
+        flex-direction: column;
+        gap: 40px;
+        max-width: 617px;
+    }
+    .info-block__text {
+        font-size: 18px;
+        max-width: none;
+    }
+    .info-block__img-wrap {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 570px) {
+    .info-block {
+        padding: 72px 0px;
+        background: none;
+    }
+    .info-block__texts {
+        margin-bottom: 38px;
+        flex-direction: column;
+        gap: 31px;
+        max-width: 400px;
+    }
+    .info-block__text {
+        font-size: 16px;
+        max-width: none;
+    }
+    .info-block__img-wrap {
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 431px) {
+    .info-block {
+        padding: 60px 0px;
+    }
+    .info-block__texts {
+        margin-bottom: 24px;
+        flex-direction: column;
+        gap: 24px;
+        max-width: 310px;
+    }
+    .info-block__text {
+        font-size: 14px;
+    }
+    .info-block__img-wrap {
+        max-width: 310px;
+    }
+}
+
+
+/* ТРЕТИЙ БЛОК */
+.trial-lesson {
+    padding: 141px 0px 130px 0px;
+    background: url("../../assets/images/pages/vacancies/feedback-block/background-img.svg");
+    background-size: cover;
+    background-position: center top;
+}
+.trial-lesson__container {
+    padding: 0px 30px;
+    gap: 180px;
+    align-items: flex-start;
+    justify-content: center;
+}
+.trial-lesson__titles {
+    margin-left: 0px;
+}
+.trial-lesson__title {
+    margin-bottom: 0px;
+}
+.feedback-block__title {
+    margin-bottom: 33px;
+}
+.feedback-form__input {
+    margin-bottom: 35px;
+}
+.my-checkbox {
+    margin-bottom: 60px;
+}
+.feedback-block__form {
+    margin-bottom: 0px;
+}
+
+@media (max-width: 1318px) {
+    .trial-lesson {
+        padding: 128px 0px 120px 0px;
+    }
+    .trial-lesson__container {
+        gap: 100px;
+    }
+    .trial-lesson__title {
+        font-size: 85px;
+        line-height: 88px;
+        max-width: 510px;
+        margin-bottom: 0px;
+    }
+    .trial-lesson__body {
+        padding-right: 20px;
+    }
+    .feedback-block__form {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 991px) {
+    .trial-lesson {
+        padding: 115px 0px 107px 0px;
+    }
+    .trial-lesson__container {
+        gap: 51px;
+    }
+    .trial-lesson__title {
+        font-size: 76px;
+        line-height: 73px;
+        max-width: 464px;
+    }
+    .feedback-form__input[name="name-input"] {
+        margin-bottom: 32px;
+    }
+    .feedback-form__input[name="phone-input"] {
+        margin-bottom: 37px;
+    }
+    .my-checkbox {
+        margin-bottom: 40px;
+    }
+    .feedback-block__form {
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .trial-lesson {
+        padding: 102px 0px 92px 0px;
+        background-position-x: right;
+    }
+    .trial-lesson__container {
+        gap: 58px;
+        flex-direction: column;
+    }
+    .trial-lesson__title {
+        align-self: flex-start;
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 0px;
+    }
+    .trial-lesson__feedback-block {
+        padding-top: 0px;
+        margin-left: 0px;
+    }
+    .trial-lesson__pre-title {
+        display: none;
+    }
+    .trial-lesson__title > br {
+        display: none;
+    }
+    .trial-lesson__body {
+        margin: 0px;
+        width: 100%;
+    }
+    .feedback-block__title {
+        max-width: 329px;
+    }
+    .feedback-block__text {
+        display: block;
+    }
+    .feedback-form__input {
+        margin-bottom: 38px;
+    }
+    .my-checkbox {
+        margin-bottom: 42px;
+    }
+}
+
+@media (max-width: 570px) {
+    .trial-lesson {
+        padding: 89px 0px 80px 0px;
+        background: url("../../assets/images/pages/vacancies/feedback-block/backgriund-mobile-img.svg");
+        background-size: cover;
+    }
+    .trial-lesson__container {
+        gap: 50px;
+    }
+    .trial-lesson__titles {
+        margin-bottom: 0px;
+    }
+    .trial-lesson__title  {
+        font-size: 52px;
+        line-height: 50px;
+    }
+    .trial-lesson__body {
+        position: relative;
+        z-index: 10;
+    }
+    .trial-lesson__feedback-block {
+        position: relative;
+        z-index: 5;
+    }
+    .feedback-form__input {
+        margin-bottom: 35px;
+    }
+    .my-checkbox {
+        margin-bottom: 39px;
+    }
+}
+
+@media (max-width: 431px) {
+    .trial-lesson {
+        padding: 76px 0px 68px 0px;
+    }
+    .trial-lesson__container {
+        gap: 40px;
+    }
+    .trial-lesson__title  {
+        font-size: 44px;
+        line-height: 42px;
+        max-width: 271px;
+    }
+    .feedback-block__title {
+        margin-bottom: 30px;    
+        max-width: 224px;
+    }
+    .feedback-block__form {
+        max-width: 274px;
+    }
+    .feedback-form__input {
+        margin-bottom: 30px;
+    }
+    .feedback-form__input[name="phone-input"] {
+        margin-bottom: 40px;
+    }
+    .my-checkbox {
+        margin-bottom: 16px;
+    }
+    .my-checkbox__text {
+        max-width: 300px;
+    }
+}

@@ -45,6 +45,7 @@
 
 /* ТАК РЕАЛИЗОВАНЫ ТОЛЬКО КНОПКИ В ВЕРХНЕМ БЛОКЕ ГЛАВНОЙ СТРАНИЦЫ И ДЕДА МОРОЗА  */
 .custom-button {
+    display: block;
     background: none;
     position: relative;
     transition: transform 0.3s ease, filter 0.3s ease;

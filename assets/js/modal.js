@@ -1,8 +1,11 @@
 document.addEventListener('DOMContentLoaded', function() {
     const modalTriggers = document.querySelectorAll('[data-modal-target]');
+    const body = document.body;
 
     function openModal(modal) {
         modal.style.display = 'flex';
+        body.style.overflow = 'hidden';
+        body.style.height = '100%';
         modal.querySelector('.close').addEventListener('click', () => closeModal(modal));
         window.addEventListener('click', (event) => {
             if (event.target === modal) {
@@ -13,6 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function closeModal(modal) {
         modal.style.display = 'none';
+        body.style.overflow = '';
+        body.style.height = '';
     }
 
     modalTriggers.forEach(trigger => {

@@ -154,7 +154,7 @@
 
 @media (max-width: 768px) {
     .hero-section {
-        padding: calc(50px + 72px) 0px 94px 0px;
+        padding: calc(72px + 62px) 0px 94px 0px;
     }
     .hero-section__title {
         margin-bottom: 72px;
@@ -206,7 +206,7 @@
 
 @media (max-width: 570px) {
     .hero-section {
-        padding: calc(30px + 72px) 0px 80px 0px;
+        padding: calc(60px + 71px) 0px 80px 0px;
         background: url('../../assets/images/pages/directions/hero-section/background-mobile-img.svg');
         background-size: cover;
     }
@@ -576,14 +576,10 @@
 }
 .teachers__swiper-slide:nth-of-type(even) .teachers__slide-img-wrap {
     order: 2;
-    right: -36px;
+    right: -30px;
 }
 .teachers__swiper-slide:nth-of-type(3) .teachers__slide-img-wrap {
-    max-width: 324px;
-    right: 33px;
-}
-.teachers__swiper-slide:nth-of-type(4) .teachers__slide-img-wrap {
-    max-width: 458px;
+    right: 10px;
 }
 .teachers__slide {
     max-width: 806px;
@@ -691,10 +687,6 @@
     }
     .teachers__swiper-slide:nth-of-type(3) .teachers__slide-img-wrap {
         right: auto;
-        max-width: 271px;
-    }
-    .teachers__swiper-slide:nth-of-type(4) .teachers__slide-img-wrap {
-        max-width: 368px;
     }
     .teachers__slide {
         max-width: 806px;
@@ -769,8 +761,8 @@
         display: flex;
         justify-content: center;
     }
-    .teachers__swiper-slide:nth-of-type(4) .teachers__slide-img-wrap {
-        max-width: 340px;
+    .teachers__slide-img-wrap {
+        max-width: 337px;
     }
 }
 
@@ -786,6 +778,9 @@
     }
     .teachers__slide {
         max-width: 383px;
+    }
+    .teachers__slide-img-wrap {
+        max-width: 315px;
     }
     .teachers__slide-title {
         font-size: 16px;
@@ -823,12 +818,6 @@
     }
     .teachers__swiper {
         max-height: 695px;
-    }
-    .teachers__swiper-slide:nth-of-type(3) .teachers__slide-img-wrap {
-        max-width: 271px;
-    }
-    .teachers__swiper-slide:nth-of-type(4) .teachers__slide-img-wrap {
-        max-width: 458px;
     }
     .teachers__slide {
         max-width: 695px;
@@ -1750,6 +1739,13 @@
         height: 14px;
         width: 100%;
     }
+}
+
+
+.our-advantages {
+    background: url("../../assets/images/pages/directions/our-advantages/background-img.svg");
+    background-size: cover;
+    background-position: center top;
 }
 
 

@@ -4,6 +4,11 @@
     background-size: cover;
     background-position: center top;
 }
+.footer.bgColor_beige {
+    background: url('../../assets/images/components/footer/background-beige-img.svg');
+    background-size: cover;
+    background-position: center top;
+}
 .footer__container {
     display: flex;
     justify-content: space-between;
@@ -164,6 +169,10 @@
     .footer {
         padding: 122px 0px 54px 0px;
         background: url('../../assets/images/components/footer/background-mobile-img.svg');
+        background-size: cover;
+    }
+    .footer.bgColor_beige {
+        background: url('../../assets/images/components/footer/background-mobile-beige-img.svg');
         background-size: cover;
     }
     .footer__addresses {

@@ -34,6 +34,13 @@
 }
 .feedback-form__button {
 }
+.feedback-form__button._orange {
+    width: 391px;
+    height: 91px;
+    background: url('../../assets/images/button-orange.svg');
+    color: #FFF;
+    filter: drop-shadow(3px 6px 0px #FFC671);
+}
 .feedback-block__text {
     font-size: 18px;
     text-transform: uppercase;
@@ -60,11 +67,9 @@
         font-size: 17px;
     }
     .feedback-form__button._orange {
-        width: 393px;
-        height: 91px;
-        background: url('../../assets/images/button-orange.svg');
-        color: #FFF;
-        filter: drop-shadow(3px 6px 0px #FFC671);
+        width: 334px;
+        height: 77px;
+        font-size: 17px;
     }
 
     .feedback-block__text {
@@ -90,6 +95,11 @@
     .feedback-form__input {
     }
     .feedback-form__button {
+        width: 305px;
+        height: 71px;
+        font-size: 14px;
+    }
+    .feedback-form__button._orange {
         width: 305px;
         height: 71px;
         font-size: 14px;
@@ -129,6 +139,11 @@
         height: 75px;
         font-size: 15px;
     }
+    .feedback-form__button._orange {
+        width: 322px;
+        height: 75px;
+        font-size: 15px;
+    }
     .feedback-block__text {
         font-size: 16px;
         max-width: 420px;
@@ -157,6 +172,11 @@
     .feedback-form__input {
     }
     .feedback-form__button {
+        width: 305px;
+        height: 71px;
+        font-size: 14px;
+    }
+    .feedback-form__button._orange {
         width: 305px;
         height: 71px;
         font-size: 14px;
