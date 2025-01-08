@@ -1039,6 +1039,7 @@
     <script src="../assets/js/phone-mask.js"></script>
     <script src="../assets/js/modal.js"></script>
     <script src="../assets/js/button-up.js"></script>
+    <script src="../assets/js/direction-link-block.js"></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -1057,37 +1058,28 @@
     </script>
 
     <script>
-        const slider = document.querySelector('.directions-link-block__slider');
-        const expandButton = document.querySelector('.directions-link-block__button');
-        const buttonText = expandButton.querySelector('.custom-button-text');
-
-        expandButton.addEventListener('click', () => {
-            if (slider.classList.contains('open')) {
-                slider.classList.remove('open');
-                buttonText.textContent = 'все направления';
-            } else {
-                slider.classList.add('open');
-                buttonText.textContent = 'меньше направлений';
-            }
-        });
-
         const directionsLinkBlockSwiper = new Swiper('.directions-link-block__swiper', {
             direction: 'horizontal',
             slidesPerView: 1,
             spaceBetween: 25,
+            allowTouchMove: true,
             pagination: {
                 el: '.directions-link-block__swiper-pagination',
             },
             breakpoints: {
                 570: {
+                    allowTouchMove: true,
                     slidesPerView: 2,
                     spaceBetween: 31,
                 },
                 991: {
-                    allowTouchMove: false,
+                    allowTouchMove: true,
                     slidesPerView: 3,
                     spaceBetween: 40,
                 },
+                1317: {
+                    allowTouchMove: false,
+                }
             }
         });
 

@@ -427,12 +427,96 @@
                                         </div>
                                     </a>
                                 </div>
+                                <div class="swiper-slide directions-link-block__swiper-slide">
+                                    <a href="" class="directions-link-block__link">
+                                        <div class="directions-link-block__slide">
+                                            <div class="directions-link-block__slide-top">
+                                                <div class="directions-link-block__slide-title">вокал</div>
+                                                <img src="../assets/images/arrow-link.svg" alt=""
+                                                    class="directions-link-block__slide-link">
+                                            </div>
+                                            <div class="directions-link-block__slide-img-wrap"><img
+                                                    src="../assets/images/components/directions-inner-block/item-img-1.png"
+                                                    alt="" class="directions-link-block__slide-img"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide directions-link-block__swiper-slide">
+                                    <a href="" class="directions-link-block__link">
+                                        <div class="directions-link-block__slide">
+                                            <div class="directions-link-block__slide-top">
+                                                <div class="directions-link-block__slide-title">фортепиано</div>
+                                                <img src="../assets/images/arrow-link.svg" alt=""
+                                                    class="directions-link-block__slide-link">
+                                            </div>
+                                            <div class="directions-link-block__slide-img-wrap"><img
+                                                    src="../assets/images/components/directions-inner-block/item-img-2.png"
+                                                    alt="" class="directions-link-block__slide-img"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide directions-link-block__swiper-slide">
+                                    <a href="" class="directions-link-block__link">
+                                        <div class="directions-link-block__slide">
+                                            <div class="directions-link-block__slide-top">
+                                                <div class="directions-link-block__slide-title">гитара</div>
+                                                <img src="../assets/images/arrow-link.svg" alt=""
+                                                    class="directions-link-block__slide-link">
+                                            </div>
+                                            <div class="directions-link-block__slide-img-wrap"><img
+                                                    src="../assets/images/components/directions-inner-block/item-img-3.png"
+                                                    alt="" class="directions-link-block__slide-img"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide directions-link-block__swiper-slide">
+                                    <a href="" class="directions-link-block__link">
+                                        <div class="directions-link-block__slide">
+                                            <div class="directions-link-block__slide-top">
+                                                <div class="directions-link-block__slide-title">барабаны</div>
+                                                <img src="../assets/images/arrow-link.svg" alt=""
+                                                    class="directions-link-block__slide-link">
+                                            </div>
+                                            <div class="directions-link-block__slide-img-wrap"><img
+                                                    src="../assets/images/components/directions-inner-block/item-img-4.png"
+                                                    alt="" class="directions-link-block__slide-img"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide directions-link-block__swiper-slide">
+                                    <a href="" class="directions-link-block__link">
+                                        <div class="directions-link-block__slide">
+                                            <div class="directions-link-block__slide-top">
+                                                <div class="directions-link-block__slide-title">актерское мастерство</div>
+                                                <img src="../assets/images/arrow-link.svg" alt=""
+                                                    class="directions-link-block__slide-link">
+                                            </div>
+                                            <div class="directions-link-block__slide-img-wrap"><img
+                                                    src="../assets/images/components/directions-inner-block/item-img-5.png"
+                                                    alt="" class="directions-link-block__slide-img"></div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="swiper-slide directions-link-block__swiper-slide">
+                                    <a href="" class="directions-link-block__link">
+                                        <div class="directions-link-block__slide">
+                                            <div class="directions-link-block__slide-top">
+                                                <div class="directions-link-block__slide-title">танцы</div>
+                                                <img src="../assets/images/arrow-link.svg" alt=""
+                                                    class="directions-link-block__slide-link">
+                                            </div>
+                                            <div class="directions-link-block__slide-img-wrap"><img
+                                                    src="../assets/images/components/directions-inner-block/item-img-6.png"
+                                                    alt="" class="directions-link-block__slide-img"></div>
+                                        </div>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                         <div class="swiper-pagination directions-link-block__swiper-pagination"></div>
                     </div>
                     <div class="directions-link-block__buttons">
-                        <a href="./directions-link-block.html" class="custom-button directions-link-block__button">
+                        <button class="custom-button directions-link-block__button">
                             <svg viewBox="0 0 379 77" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
                                     <clipPath id="directions-link-blockButtonClipPath">
@@ -441,11 +525,10 @@
                                             fill="#FF9900" />
                                     </clipPath>
                                 </defs>
-                                <rect width="379" height="77" fill="#FF9900"
-                                    clip-path="url(#directions-link-blockButtonClipPath)" />
+                                <rect width="379" height="77" fill="#FF9900" clip-path="url(#directions-link-blockButtonClipPath)" />
                             </svg>
                             <span class="custom-button-text directions-link-block__button-text">все направления</span>
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -680,6 +763,8 @@
     <script src="../assets/js/phone-mask.js"></script>
     <script src="../assets/js/modal.js"></script>
     <script src="../assets/js/button-up.js"></script>
+    <script src="../assets/js/direction-link-block.js"></script>
+
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -694,18 +779,24 @@
             direction: 'horizontal',
             slidesPerView: 1,
             spaceBetween: 25,
+            allowTouchMove: true,
             pagination: {
                 el: '.directions-link-block__swiper-pagination',
             },
             breakpoints: {
                 570: {
+                    allowTouchMove: true,
                     slidesPerView: 2,
                     spaceBetween: 31,
                 },
                 991: {
+                    allowTouchMove: true,
                     slidesPerView: 3,
                     spaceBetween: 40,
                 },
+                1317: {
+                    allowTouchMove: false,
+                }
             }
         });
 
