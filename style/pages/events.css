@@ -338,3 +338,115 @@
         max-width: 295px;
     }
 }
+
+
+/* ВОСЬМОЙ БЛОК */
+.much-more {
+    padding: 215px 0px 140px 0px;
+    background: url("../../assets/images/pages/events/much-more/background-img.svg");
+    background-size: cover;
+    background-position: center top;
+}
+.much-more__container {
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.much-more__title {
+    color: #FFF;
+    margin-bottom: 100px;
+    text-align: center;
+    max-width: 750px;
+}
+.much-more__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.much-more__slider {
+    margin-bottom: 40px;
+}
+.slider-block-duo__swiper-muchMore-pagination {
+}
+.slider-block-duo__swiper-muchMore-button-next path, .slider-block-duo__swiper-muchMore-button-prev path {
+    fill: #FFF;
+}   
+.slider-block-duo__swiper-muchMore-button-next {
+}
+.slider-block-duo__swiper-muchMore-button-prev {
+}
+.much-more__buttons {
+}
+.much-more__button {
+}
+
+@media (max-width: 1318px) {
+    .much-more {
+        padding: 175px 0px 136px 0px;
+    }
+    .much-more__title {
+        margin-bottom: 92px;
+        max-width: 662px;
+    }
+    .much-more__slider {
+        margin-bottom: 35px;
+    }
+}
+
+@media (max-width: 991px) {
+    .much-more {
+        padding: 146px 0px 114px 0px;
+    }
+    .much-more__title {
+        margin-bottom: 74px;
+    }   
+}
+
+@media (max-width: 768px) {
+    .much-more {
+        padding: 121px 0px 110px 0px;
+    }
+    .much-more__title {
+        margin-bottom: 58px;
+        max-width: 417px;
+    }
+    .much-more__title br {
+        display: none;
+    }
+    .much-more__slider {
+        margin-bottom: 60px;
+    }
+    .slider-block-duo__swiper-muchMore-pagination {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 570px) {
+    .much-more {
+        padding: 94px 0px 98px 0px;
+        background: url("../../assets/images/pages/events/much-more/backgroind-mobile-img.svg");
+        background-size: cover;
+    }
+    .much-more__title {
+        margin-bottom: 24px;
+        max-width: 364px;
+    }
+    .much-more__slider {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 431px) {
+    .much-more {
+        padding: 64px 0px 88px 0px;
+    }
+    .much-more__title {
+        max-width: 315px;
+        margin-bottom: 24px;
+    }
+    .much-more__slider {
+        margin-bottom: 20px;
+    }
+}
