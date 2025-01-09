@@ -151,13 +151,6 @@
 .hero-section__button:last-child {
     position: relative;
 }
-.hero-section__button-play {
-    display: inline-block;
-	position: absolute;
-    top: 50%;
-    right: 24px;
-    transform: translateY(-50%);
-}
 .hero-section__button:last-child .custom-button-text {
     left: 40%;
 }
