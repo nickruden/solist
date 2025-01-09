@@ -10,11 +10,17 @@
     .hero-section {
         padding: 56px 0px 83px 0px;
     }
+    .hero-section__img-wrap {
+        max-width: 724px;
+    }
 }
 
 @media (max-width: 991px) {
     .hero-section {
         padding: 56px 0px 78px 0px;
+    }
+    .hero-section__img-wrap {
+        max-width: 653px;
     }
 }
 

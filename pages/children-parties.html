@@ -28,10 +28,13 @@
 
     <link rel="stylesheet" href="../style/components/blocks/reviews.css">
     <link rel="stylesheet" href="../style/components/blocks/trial-lesson.css">
+    <link rel="stylesheet" href="../style/components/blocks/inner-hero-section.css">
+    <link rel="stylesheet" href="../style/components/blocks/our-advantages.css">
+    <link rel="stylesheet" href="../style/components/blocks/directions-link-block.css">
 
 
     <!-- ФАЙЛ ОБЯЗАТЕЛЬНО ПОДКЛЮЧАЕТСЯ ПОСЛЕДНИМ -->
-    <link rel="stylesheet" href="../style/pages/branch.css">
+    <link rel="stylesheet" href="../style/pages/children-parties.css">
 </head>
 
 <body>
@@ -170,6 +173,7 @@
                 <div class="header__mobile-main">
                     <div class="header__main-mobile-addresses">
                         <a href="./branch.html" class="header__main-mobile-adress">Филиал <br> в Павшинской пойме</a>
+                        <img src="../assets/images/pages/children-parties/header/devider-star.svg" alt="" class="header__main-mobile-address-devider">
                         <a href="./branch.html" class="header__main-mobile-adress">Филиал <br> в Сабурово Парк</a>
                     </div>
                     <button class="header__mobile-burger-button" data-id="mobile-menu">
@@ -260,7 +264,141 @@
     </a>
 
     <main class="main">
-        
+        <!-- ВЫНЕС СТИЛИ ОТДЕЛЬНО -->
+        <section class="hero-section">
+            <div class="my-container hero-section__container">
+                <div class="hero-section__texts">
+                    <div class="hero-section-title hero-section__title">Детские праздники и дни рождения!</div>
+                    <div class="hero-section__text">организуем под ключ или сдадим помещение в аренду</div>
+                </div>
+                <div class="hero-section__img-wrap"><img src="../assets/images/pages/children-parties/hero-section/block-img.png"
+                        alt="" class="hero-section__img"></div>
+                <div class="hero-section__buttons">
+                    <button class="custom-button hero-section__button custom-button_color_white" data-modal-target="#formModal1">
+                        <svg viewBox="0 0 292 78" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <clipPath id="buttonClipPath">
+                                    <path
+                                        d="M284.383 16.1751C276.736 5.47651 264.158 -0.578906 251.026 0.116704L207.645 2.41463L157.339 6.63636L102.294 8.81818L29.5495 9.81471C13.1647 10.0392 0 23.3855 0 39.7718C0 56.3182 13.4135 69.7317 29.9599 69.7317H103.211L157.339 72.4545L211.983 76.0732L250.05 77.9262C263.752 78.5933 276.815 72.0848 284.534 60.7443L284.888 60.2254C293.967 46.8871 293.766 29.3021 284.383 16.1751Z"
+                                        fill="#FF9900" />
+                                </clipPath>
+                            </defs>
+                            <rect width="292" height="78" fill="#FF9900" clip-path="url(#buttonClipPath)" />
+                        </svg>
+                        <span class="custom-button-text hero-section__button-text">узнать подробнее</span>
+                    </button>
+                    <button class="custom-button hero-section__button custom-button_color_white" data-modal-target="#videoModal1">
+                        <svg viewBox="0 0 292 78" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <clipPath id="buttonClipPath">
+                                    <path
+                                        d="M284.383 16.1751C276.736 5.47651 264.158 -0.578906 251.026 0.116704L207.645 2.41463L157.339 6.63636L102.294 8.81818L29.5495 9.81471C13.1647 10.0392 0 23.3855 0 39.7718C0 56.3182 13.4135 69.7317 29.9599 69.7317H103.211L157.339 72.4545L211.983 76.0732L250.05 77.9262C263.752 78.5933 276.815 72.0848 284.534 60.7443L284.888 60.2254C293.967 46.8871 293.766 29.3021 284.383 16.1751Z"
+                                        fill="#FF9900" />
+                                </clipPath>
+                            </defs>
+                            <rect width="292" height="78" fill="#FF9900" clip-path="url(#buttonClipPath)" />
+                        </svg>
+                        <span class="custom-button-text hero-section__button-text">поСМОТРЕТЬ ВИДЕО</span>
+                        <img src="../assets/images/pages/children-parties/hero-section/button-play.png" alt=""
+                            class="custom-button-play hero-section__button-play">
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="decorate-room">
+            <div class="my-container decorate-room__container">
+                <div class="decorate-room__inner">
+                    <div class="block-title decorate-room__title">оформляем помещение под тематику праздника</div>
+                    <div class="decorate-room__img-wrap">
+                        <img src="../assets/images/pages/children-parties/decorate-room/block-img.png" alt=""
+                            class="decorate-room__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="invite-cheerful">
+            <div class="my-container invite-cheerful__container">
+                <div class="invite-cheerful__inner">
+                    <div class="block-title invite-cheerful__title">приглашаем весёлых и энергичных аниматоров</div>
+                    <div class="invite-cheerful__img-wrap">
+                        <img src="../assets/images/pages/children-parties/invite-cheerful/block-img.png" alt=""
+                            class="invite-cheerful__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="birthday-cake">
+            <div class="my-container birthday-cake__container">
+                <div class="birthday-cake__inner">
+                    <div class="block-title birthday-cake__title">организуем праздничный торт <br> в желаемом стиле!</div>
+                    <div class="birthday-cake__img-wrap">
+                        <img src="../assets/images/pages/children-parties/birthday-cake/block-img.png" alt=""
+                            class="birthday-cake__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fiery-dances">
+            <div class="my-container fiery-dances__container">
+                <div class="fiery-dances__inner">
+                    <div class="block-title fiery-dances__title">зажигательные танцы, опыты и конкурсы!</div>
+                    <div class="fiery-dances__img-wrap">
+                        <img src="../assets/images/pages/children-parties/fiery-dances/block-img.png" alt=""
+                            class="fiery-dances__img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="rent-room">
+            <div class="my-container rent-room__container">
+                <div class="block-title rent-room__title1">хотите сами организовать день рождения для ребёнка?</div>
+                <div class="block-title rent-room__title2">можем сдать помещение в аренду!</div>
+            </div>
+            <img src="../assets/images/pages/children-parties/rent-room/block-img-1.png" alt="" class="rent-room__bg-img1">
+            <img src="../assets/images/pages/children-parties/rent-room/block-img-2.png" alt="" class="rent-room__bg-img2">
+        </section>
+        <section class="how-order">
+            <div class="my-container how-order__container">
+                <div class="how-order__inner">
+                    <div class="how-order__texts">
+                        <div class="block-title how-order__title">как заказать</div>
+                        <div class="how-order__desc">
+                            <p class="how-order__text">чтобы заказать организацию праздника под ключ или арендовать зал для детского дня рождения, оставьте ваши контактные данные.</p>
+                            <p class="how-order__text">наш администратор свяжется с вами в ближайшее время, чтобы уточнить все подробности.</p>
+                        </div>
+                    </div>
+                    <div class="feedback-block how-order__feedback-block _black">
+                        <div class="feedback-block__title">чтобы заказать организацию праздника под ключ или арендовать зал для детского дня рождения, оставьте ваши контактные данные.</div>
+                        <form action="" class="feedback-form feedback-block__form">
+                            <input type="text" name="name-input" id="nameInput" class="my-input feedback-form__input"
+                                placeholder="Имя">
+                            <input type="tel" name="phone-input" id="phoneInput" class="my-input feedback-form__input"
+                                placeholder="+7 (999) 999-99-99">
+                            <label for="" class="my-select">
+                                <select name="" id="" class="my-select__element">
+                                    <option value="">Сабурово Парк, ул. Южная, д. 9</option>
+                                    <option value="">Сабурово Парк, ул. Южная, д. 9</option>
+                                    <option value="">Сабурово Парк, ул. Южная, д. 9</option>
+                                    <option value="">Сабурово Парк, ул. Южная, д. 9</option>
+                                </select>
+                                <div class="my-select-arrow"></div>
+                                <div class="my-select-text">Выберите филиал:</div>
+                            </label>
+                            <label for="agree-check" class="my-checkbox">
+                                <input type="checkbox" name="" id="agree-check" class="my-checkbox__old">
+                                <span class="my-checkbox__new"></span>
+                                <span class="my-checkbox__text">Я ознакомился (ась) с Политикой конфиденциальности
+                                    и даю своё
+                                    согласие на обработку персональных данных</span>
+                            </label>
+                            <button class="my-button feedback-form__button _orange">отправить заявку</button>
+                        </form>
+                        <div class="feedback-block__text">наш администратор свяжется с вами в ближайшее время, чтобы уточнить все подробности.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- ФУТЕР СТИЛИ ОТДЕЛЬНО -->
@@ -345,7 +483,6 @@
             </nav>
         </div>
     </footer>
-
 
 
     <script src="../assets/libs/swiper/swiper-bundle.min.js"></script>
