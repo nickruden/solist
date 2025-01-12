@@ -571,6 +571,7 @@
 }
 .teachers__swiper-slide {
     max-width: 806px;
+    min-height: 440px;
 }
 .teachers__swiper-slide:nth-of-type(even) {
     align-self: flex-end;
@@ -679,6 +680,9 @@
     .teachers__swiper-wrapper {
         display: flex;
         align-items: flex-end;
+    }
+    .teachers__swiper-slide {
+        min-height: none;
     }
     .teachers__swiper-slide:nth-of-type(even) .teachers__slide-img-wrap {
         order: 1;
@@ -1547,6 +1551,7 @@
     display: flex;
 }
 .active-students__list-item-img {
+    max-width: 265px;
 }
 .active-students__list-item-text-wrap {
     max-width: 263px;
