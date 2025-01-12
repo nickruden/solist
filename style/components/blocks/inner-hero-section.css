@@ -1,6 +1,7 @@
 .hero-section {
     padding: 60px 0px 88px 0px;
     background: url('../../../assets/images/pages/vacancies/hero-section/background-img.svg');
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
 }
@@ -110,6 +111,7 @@
     .hero-section {
         padding: calc(50px + 71px) 0px 68px 0px;
         background: url('../../../assets/images/pages/vacancies/hero-section/background-mobile-img.svg');
+        background-repeat: no-repeat;
         background-size: cover;
     }
     .hero-section__container {

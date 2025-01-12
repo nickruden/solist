@@ -37,6 +37,7 @@
     .hero-section {
         padding: calc(50px + 71px) 0px 68px 0px;
         background: url("../../assets/images/pages/about/hero-section/background-mobile-img.svg");
+        background-repeat: no-repeat;
         background-size: cover;
     }
     .hero-section__img-wrap {

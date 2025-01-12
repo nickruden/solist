@@ -2,6 +2,7 @@
     padding: 40px 0px 188px 0px;
     position: relative;
     background: url('../../assets/images/pages/main/top-block/background.png');
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
 }
@@ -336,6 +337,7 @@
     .top-block {
         padding: calc(60px + 40px) 0px 80px 0px;
         background: url('../../assets/images/pages/main/top-block/background-mobile-img.svg');
+        background-repeat: no-repeat;
         background-size: cover;
     }
     .top-block__title {
@@ -1336,11 +1338,12 @@
         max-width: 164px;
     }
     .learn-from-us__button-wrap:last-child .learn-from-us__button {
-        width: 157px !important;
-        height: 50px !important;
+        width: 188px !important;
+        height: 60px !important;
     }
     .learn-from-us__button-wrap:last-child .learn-from-us__button .learn-from-us__button-text {
         max-width: 130px;
+        line-height: 16px;
     }
 }
 
@@ -1491,6 +1494,7 @@
     display: flex;
 }
 .active-students__list-item-img {
+    max-width: 265px;
 }
 .active-students__list-item-text-wrap {
     max-width: 263px;

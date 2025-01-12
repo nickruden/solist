@@ -141,9 +141,6 @@
         max-width: 624px;
         margin-bottom: 58px;
     }
-    .slider-block-duo__title br {
-        display: none;
-    }
     .slider-block-duo__swiper-slide {
         max-width: none;
         display: flex;
@@ -184,7 +181,7 @@
     }
     .slider-block-duo__title {
         text-align: center;
-        max-width: 315px;
+        max-width: 302px;
         margin-bottom: 24px;
     }
 }
@@ -335,14 +332,14 @@
     }
     .slider-large-block__title {
         margin-bottom: 24px;
-        max-width: 295px;
+        max-width: 317px;
     }
 }
 
 
 /* ВОСЬМОЙ БЛОК */
 .much-more {
-    padding: 215px 0px 140px 0px;
+    padding: 215px 0px 146px 0px;
     background: url("../../assets/images/pages/events/much-more/background-img.svg");
     background-size: cover;
     background-position: center top;

@@ -2,6 +2,7 @@
 .hero-section {
     padding: 56px 0px 90px 0px;
     background: url('../../assets/images/pages/branch/hero-section/background-img.svg');
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
 }
@@ -198,6 +199,7 @@
     .hero-section {
         padding: calc(50px + 71px) 0px 80px 0px;
         background: url('../../assets/images/pages/branch/hero-section/background-mobile-img.svg');
+        background-repeat: no-repeat;
         background-size: cover;
     }
     .hero-section__title {

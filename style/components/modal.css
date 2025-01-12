@@ -126,9 +126,32 @@
     .my-modal__feedback-block .my-checkbox {
         margin-bottom: 35px;
     }
+    .my-modal__feedback-block .my-checkbox__text {
+        max-width: 225px
+    }
+    .my-modal__feedback-block .my-checkbox__new {
+        width: 20px;
+    }
 }
 @media (max-width: 431px) {
     .my-modal__button {
         width: 273px;
+    }
+    .my-modal__feedback-block .my-checkbox__text {
+        max-width: 235px
+    }
+    .my-modal__feedback-block .my-checkbox__new {
+        width: 20px;
+    }
+}
+@media (max-width: 370px) {
+    .my-modal__button {
+        width: 273px;
+    }
+    .my-modal__feedback-block .my-checkbox__text {
+        max-width: 217px
+    }
+    .my-modal__feedback-block .my-checkbox__new {
+        width: 20px;
     }
 }
