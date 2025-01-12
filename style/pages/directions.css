@@ -1521,7 +1521,7 @@
 /* ДЕВЯТЫЙ БЛОК */
 .active-students {
     padding: 27px 0px 110px 0px;
-    background: url("../../assets/images/pages/directions/active-students/background-img.svg");
+    background: url("../../assets/images/pages/main/active-students/background-img.svg");
     background-size: cover;
     background-position: center top;
 }
@@ -1742,24 +1742,17 @@
 }
 
 
-.our-advantages {
+/* .our-advantages {
     background: url("../../assets/images/pages/directions/our-advantages/background-img.svg");
     background-size: cover;
     background-position: center top;
-}
+} */
 
-
-.trial-lesson {
-    background: url("../../assets/images/pages/directions/trial-lesson/background-img.svg");
-    background-size: cover;
-    background-position: center top;
-}
 
 @media (max-width: 570px) {
     .trial-lesson {
         background: url("../../assets/images/pages/directions/trial-lesson/background-mobile-img.svg");
         background-size: cover;
-        overflow: visible;
     }
     .trial-lesson__titles::before {
         content: '';
