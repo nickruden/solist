@@ -561,6 +561,7 @@
     max-height: 1992px;
     max-width: 1268px;
     width: 100%;
+    min-height: 437px;
 }
 .teachers__swiper {
     max-height: 1992px;
@@ -669,6 +670,7 @@
     .teachers__slider {
         max-height: 768px;
         max-width: none;
+        min-height: none;
     }
     .teachers__swiper {
         max-height: 768px;
