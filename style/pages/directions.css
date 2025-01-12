@@ -775,6 +775,7 @@
 @media (max-width: 570px) {
     .teachers {
         padding: 87px 0px 117px 0px;
+        background: none;
     }
     .teachers__texts {
         margin-bottom: 64px;
@@ -1554,7 +1555,7 @@
     max-width: 265px;
 }
 .active-students__list-item-text-wrap {
-    max-width: 263px;
+    max-width: 380px;
 }
 .active-students__list-item-text {
     font-family: 'Montserrat';
@@ -1717,7 +1718,7 @@
         max-width: 141px;
     }
     .active-students__list-item-text-wrap {
-        max-width: 185px;
+        max-width: 240px;
     }
     .active-students__list-item-text-img {
         height: 19px;
@@ -1737,7 +1738,7 @@
         max-width: 130px;
     }
     .active-students__list-item-text-wrap {
-        max-width: 129px;
+        max-width: 180;
     }
     .active-students__list-item-text {
         font-size: 14px;
@@ -1747,13 +1748,6 @@
         width: 100%;
     }
 }
-
-
-/* .our-advantages {
-    background: url("../../assets/images/pages/directions/our-advantages/background-img.svg");
-    background-size: cover;
-    background-position: center top;
-} */
 
 
 @media (max-width: 570px) {
