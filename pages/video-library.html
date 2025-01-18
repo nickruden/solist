@@ -273,29 +273,47 @@
         </section>
         <div class="page-links">
             <div class="my-container page-links__container">
-                <ul class="page-links__list">
-                    <li class="page-links__list-item">
-                        <a href="./photo-gallery.html" class="page-links__item-link">отчетные концерты</a>
-                    </li>
-                    <li class="page-links__list-item">
-                        <a href="./photo-gallery.html" class="page-links__item-link">отчетные концерты</a>
-                    </li>
-                    <li class="page-links__list-item">
-                        <a href="./photo-gallery.html" class="page-links__item-link">отчетные концерты</a>
-                    </li>
-                    <li class="page-links__list-item">
-                        <a href="./photo-gallery.html" class="page-links__item-link">отчетные концерты</a>
-                    </li>
-                    <li class="page-links__list-item">
-                        <a href="./photo-gallery.html" class="page-links__item-link">отчетные концерты</a>
-                    </li>
-                    <li class="page-links__list-item">
-                        <a href="./photo-gallery.html" class="page-links__item-link">отчетные концерты</a>
-                    </li>
-                    <li class="page-links__list-item">
-                        <a href="./photo-gallery.html" class="page-links__item-link">отчетные концерты</a>
-                    </li>
-                </ul>
+                <div class="page-links__slider">
+                    <div class="swiper page-links__swiper">
+                        <div class="swiper-wrapper page-links__swiper-wrapper">
+                            <div class="swiper-slide page-links__swiper-slide">
+                                <div class="page-links__link-item">
+                                    <a href="./photo-gallery.html" class="page-links__link _active">отчетные концерты</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide page-links__swiper-slide">
+                                <div class="page-links__link-item">
+                                    <a href="./photo-gallery.html" class="page-links__link">отчетные концерты</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide page-links__swiper-slide">
+                                <div class="page-links__link-item">
+                                    <a href="./photo-gallery.html" class="page-links__link">отчетные концерты</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide page-links__swiper-slide">
+                                <div class="page-links__link-item">
+                                    <a href="./photo-gallery.html" class="page-links__link">отчетные концерты</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide page-links__swiper-slide">
+                                <div class="page-links__link-item">
+                                    <a href="./photo-gallery.html" class="page-links__link">отчетные концерты</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide page-links__swiper-slide">
+                                <div class="page-links__link-item">
+                                    <a href="./photo-gallery.html" class="page-links__link">отчетные концерты</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide page-links__swiper-slide">
+                                <div class="page-links__link-item">
+                                    <a href="./photo-gallery.html" class="page-links__link">квартирники</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <section class="galery">
@@ -766,9 +784,23 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            Fancybox.bind('[data-fancybox="slider-brightСoncerts-gallery"]', {
-
-            });
+            const directionsLinkBlockSwiper = new Swiper('.page-links__swiper', {
+            direction: 'horizontal',
+            slidesPerView: 2,
+            spaceBetween: 10,
+            breakpoints: {
+                570: {
+                    allowTouchMove: false,
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                },
+                1317: {
+                    slidesPerView: 4,
+                    allowTouchMove: false,
+                    spaceBetween: 0,
+                }
+            }
+        });
         });
     </script>
 </body>
