@@ -147,6 +147,11 @@
     flex-direction: column;
     justify-content: center;
 }
+.galery__item-title:hover {
+    color: #be7200;
+    border: 1px solid #be7200;
+    cursor: pointer;
+}
 .galery__item-title span {
     display: -webkit-box; /* Используем flexbox для ограничения строк */
     -webkit-box-orient: vertical; /* Вертикальное направление */
