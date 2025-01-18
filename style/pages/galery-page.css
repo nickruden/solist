@@ -1,7 +1,7 @@
 /* ПЕРВЫЙ БЛОК */
 .hero-section {
     padding: 60px 0px;
-    background: url('../../assets/images/pages/galery-page/background-img.svg');
+    background: url('../../assets/images/pages/galery-page/hero-section/background-img.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center top;
