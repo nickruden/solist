@@ -153,10 +153,10 @@
     cursor: pointer;
 }
 .galery__item-title span {
-    display: -webkit-box; /* Используем flexbox для ограничения строк */
-    -webkit-box-orient: vertical; /* Вертикальное направление */
-    -webkit-line-clamp: 2; /* Ограничиваем до двух строк */
-    overflow: hidden; /* Скрываем всё, что выходит за пределы */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
     text-overflow: ellipsis;
 }
 
