@@ -541,6 +541,7 @@
     background: url("../../assets/images/pages/directions/teachers/background-img.svg");
     background-size: cover;
     background-position: center top;
+    background-repeat: no-repeat;
 }
 .teachers__container {
     display: flex;
@@ -562,19 +563,20 @@
     text-align: center;
 }
 .teachers__slider {
-    max-height: 1992px;
+    /* max-height: 1992px; */
     max-width: 1268px;
     width: 100%;
     min-height: 437px;
 }
 .teachers__swiper {
-    max-height: 1992px;
+    /* max-height: 1992px; */
     overflow: visible;
 }
 .teachers__swiper-wrapper {
 }
 .teachers__swiper-slide {
     max-width: 806px;
+    max-height: 440px;
 }
 .teachers__swiper-slide:nth-of-type(even) {
     align-self: flex-end;
