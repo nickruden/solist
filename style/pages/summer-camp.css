@@ -1570,18 +1570,11 @@
 }
 
 
-@media (max-width: 570px) {
-    .trial-lesson {
-        background: url("/solist/new/assets/images/pages/directions/trial-lesson/background-mobile-img.svg");
-        background-size: cover;
-        overflow: visible;
-    }
+/* БЛОК С ФОРМОЙ */
+.trial-lesson__container {
+    gap: 73px;
+}
 
-    .trial-lesson__titles::before {
-        content: '';
-    }
-
-    .trial-lesson__body::before {
-        content: '';
-    }
+.trial-lesson__title-1 {
+    margin-bottom: 0px !important;
 }
