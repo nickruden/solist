@@ -1,0 +1,1587 @@
+.hero-section {
+    padding: 60px 0px 102px 0px;
+}
+
+.hero-section__img-wrap {
+    max-width: 791px;
+    max-height: 416px;
+}
+
+@media (max-width: 1318px) {
+    .hero-section {
+        padding: 56px 0px 83px 0px;
+    }
+
+    .hero-section__img-wrap {
+        max-width: 760px;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero-section {
+        padding: 56px 0px 78px 0px;
+    }
+
+    .hero-section__img-wrap {
+        max-width: 723px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: calc(60px + 62px) 0px 73px 0px;
+    }
+
+    .hero-section__img-wrap {
+        max-width: 593px;
+    }
+}
+
+@media (max-width: 570px) {
+    .hero-section {
+        padding: calc(50px + 71px) 0px 68px 0px;
+        background: url("/solist/new/assets/images/pages/about/hero-section/background-mobile-img.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .hero-section__img-wrap {
+        max-width: 463px;
+    }
+
+    .hero-section__text {
+        max-width: 280px;
+    }
+}
+
+@media (max-width: 431px) {
+    .hero-section {
+        padding: calc(50px + 71px) 0px 66px 0px;
+    }
+}
+
+
+/* ВТОРОЙ БЛОК */
+.arts-centers {
+    padding: 41px 0px 80px 0px;
+    background: url("/solist/new/assets/images/pages/directions/arts-centers/background-img.svg");
+    background-size: cover;
+    background-position: center top;
+    background-position-y: -76px;
+}
+
+.arts-centers__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.arts-centers__title {
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.arts-centers__body {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    width: 100%;
+}
+
+.arts-centers__video-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: 100%;
+    flex: 1 1 50%;
+    max-width: 550px;
+}
+
+.arts-centers__video-poster {
+    max-width: 550px;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+}
+
+.arts-centers__video-poster svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+.arts-centers__video-poster:hover .play-button path {
+    fill: #d8d8d8;
+}
+
+.arts-centers__video-title {
+    max-width: 389px;
+}
+
+.arts-centers__video-title>br {
+    display: none;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    height: 20%;
+    max-width: 87px;
+    max-height: 87px;
+    cursor: pointer;
+    z-index: 20;
+}
+
+.play-button svg {
+    width: 100%;
+    height: 100%;
+}
+
+.arts-centers__video-title {
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: .04em;
+    color: #FF9900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+@media (max-width: 1318px) {
+    .arts-centers {
+        padding: 136px 0px 76px 0px;
+    }
+
+    .arts-centers__title {
+        margin-bottom: 85px;
+    }
+
+    .arts-centers__body {
+        padding: 0px 30px;
+        gap: 40px;
+    }
+
+    .arts-centers__video-title {
+        font-size: 21px;
+        line-height: 25px;
+        max-width: 276px;
+    }
+}
+
+@media (max-width: 991px) {
+    .arts-centers {
+        padding: 110px 0px 72px 0px;
+    }
+
+    .arts-centers__title {
+        margin-bottom: 67px;
+    }
+
+    .arts-centers__body {
+        padding: 19px;
+        gap: 19px;
+    }
+}
+
+@media (max-width: 768px) {
+    .arts-centers {
+        padding: 94px 0px 68px 0px;
+    }
+
+    .arts-centers__title {
+        margin-bottom: 58px;
+    }
+
+    .arts-centers__body {
+        padding: 0px;
+        align-items: center;
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    .arts-centers__video-wrap {
+        flex: 1 1 100%;
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .arts-centers__video-title {
+        font-size: 24px;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 570px) {
+    .arts-centers {
+        padding: 75px 0px 63px 0px;
+        background: none;
+    }
+
+    .arts-centers__title {
+        margin-bottom: 42px;
+    }
+
+    .arts-centers__video-title {
+        font-size: 18px;
+        max-width: 227px;
+    }
+
+    .arts-centers__video-title>br {
+        display: block;
+    }
+}
+
+@media (max-width: 431px) {
+    .arts-centers {
+        padding: 60px 0px 59px 0px;
+    }
+
+    .arts-centers__title {
+        margin-bottom: 24px;
+    }
+
+    .arts-centers__video-wrap {
+        gap: 15px;
+        max-width: 315px;
+        width: 100%;
+    }
+
+    .arts-centers__video-title {
+        font-size: 14px;
+    }
+}
+
+
+/* ТРЕТИЙ БЛОК */
+.how-teach {
+    padding: 155px 0px 151px 0px;
+    background: url("/solist/new/assets/images/pages/directions/how-teach/background-img.svg");
+    background-size: cover;
+    background-position: center top;
+    counter-reset: teach-counter;
+}
+
+.how-teach__container {
+    padding: 0px 30px;
+}
+
+.how-teach__title {
+    margin-bottom: 100px;
+    text-align: center;
+    color: #FFF;
+}
+
+.how-teach__item-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.how-teach__item {
+    flex: 1 1 33.333%;
+    max-width: 380px;
+    height: 163px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #000;
+    padding: 35px 38px 25px 80px;
+    border-radius: 60px;
+    background: #FFF;
+    position: relative;
+}
+
+.how-teach__item::before {
+    counter-increment: teach-counter;
+    content: counter(teach-counter);
+    position: absolute;
+    left: 30px;
+    top: 18px;
+    font-family: 'Nozhik';
+    font-size: 90px;
+    font-weight: 700;
+    color: #FFB240;
+}
+
+@media (max-width: 1318px) {
+    .how-teach {
+        padding: 140px 0px 141px 0px;
+    }
+
+    .how-teach__title {
+        margin-bottom: 84px;
+    }
+}
+
+@media (max-width: 991px) {
+    .how-teach {
+        padding: 125px 0px 132px 0px;
+    }
+
+    .how-teach__title {
+        margin-bottom: 67px;
+    }
+
+    .how-teach__item-list {
+        gap: 27px;
+    }
+
+    .how-teach__item {
+        font-size: 17px;
+        padding: 27px 38px 25px 80px;
+        display: flex;
+        align-items: center;
+    }
+
+    .how-teach__item::before {
+        left: 36px;
+        top: 41px;
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .how-teach {
+        padding: 110px 0px 120px 0px;
+    }
+
+    .how-teach__title {
+        margin-bottom: 45px;
+    }
+
+    .how-teach__item-list {
+        gap: 24px;
+    }
+
+    .how-teach__item {
+        flex: 1 1 100%;
+        max-width: none;
+        height: 130px;
+        padding: 25px 30px 25px 80px;
+    }
+
+    .how-teach__item::before {
+        left: 38px;
+        top: 29px;
+    }
+}
+
+@media (max-width: 570px) {
+    .how-teach {
+        padding: 95px 0px 113px 0px;
+        background: url('/solist/new/assets/images/pages/directions/how-teach/background-mobile-img.svg');
+        background-size: cover;
+        background-position: center top;
+    }
+
+    .how-teach__title {
+        margin-bottom: 31px;
+    }
+
+    .how-teach__item-list {
+        gap: 20px;
+    }
+
+    .how-teach__item {
+        height: 120px;
+        font-size: 16px;
+        padding: 25px 27px 25px 75px;
+    }
+
+    .how-teach__item::before {
+        left: 36px;
+        top: 34px;
+        font-size: 48px;
+        line-height: 48px;
+    }
+}
+
+@media (max-width: 431px) {
+    .how-teach {
+        padding: 80px 0px 102px 0px;
+    }
+
+    .how-teach__title {
+        margin-bottom: 24px;
+    }
+
+    .how-teach__item {
+        height: 116px;
+        font-size: 14px;
+    }
+
+    .how-teach__item::before {
+        left: 34px;
+        top: 31px;
+    }
+}
+
+/* ЧЕТВЁРТЫЙ БЛОК */
+.entertainment-program {
+    padding: 150px 0px 151px 0px;
+    background: url("/solist/new/assets/images/pages/summer-camp/entertainment-program/background-img_white.svg");
+    background-size: cover;
+    background-position: center top;
+}
+
+.entertainment-program__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.entertainment-program__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 182px;
+    max-width: 1280px;
+    width: 100%;
+}
+
+.entertainment-program__title {
+    max-width: 562px;
+    margin-bottom: 0px;
+    order: 2;
+}
+
+.entertainment-program__img-wrap {
+    max-width: 458px;
+    max-height: 490px;
+    order: 1;
+}
+
+.entertainment-program__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1317px) {
+    .entertainment-program {
+        padding: 125px 0px 102px 0px;
+    }
+
+    .entertainment-program__inner {
+        gap: 110px;
+        max-width: 1003px;
+    }
+
+    .entertainment-program__title {
+        max-width: 450px;
+    }
+
+    .entertainment-program__img-wrap {
+        max-width: 436px;
+    }
+}
+
+@media (max-width: 991px) {
+    .entertainment-program {
+        padding: 107px 0px 91px 0px;
+    }
+
+    .entertainment-program__inner {
+        gap: 75px;
+        max-width: 810px;
+    }
+
+    .entertainment-program__title {
+        max-width: 350px;
+    }
+
+    .entertainment-program__img-wrap {
+        max-width: 365px;
+    }
+}
+
+@media (max-width: 768px) {
+    .entertainment-program {
+        padding: 92px 0px 83px 0px;
+    }
+
+    .entertainment-program__inner {
+        gap: 74px;
+        max-width: 625px;
+        flex-direction: column;
+        align-items: flex-start;
+        order: 1;
+    }
+
+    .entertainment-program__title {
+        max-width: 460px;
+        order: 1;
+    }
+
+    .entertainment-program__img-wrap {
+        max-width: 430px;
+        align-self: flex-end;
+        order: 2;
+    }
+}
+
+@media (max-width: 570px) {
+    .entertainment-program {
+        padding: 76px 0px;
+        background: none;
+    }
+
+    .entertainment-program__inner {
+        gap: 47px;
+        max-width: 625px;
+    }
+
+    .entertainment-program__title {
+        max-width: 390px;
+    }
+
+    .entertainment-program__img-wrap {
+        max-width: 338px;
+    }
+}
+
+@media (max-width: 431px) {
+    .entertainment-program {
+        padding: 60px 0px;
+    }
+
+    .entertainment-program__inner {
+        gap: 24px;
+        max-width: 625px;
+    }
+
+    .entertainment-program__title {
+        max-width: 320px;
+        margin-right: -10px;
+        text-align: center;
+        align-self: center;
+    }
+
+    .entertainment-program__img-wrap {
+        max-width: 315px;
+        align-self: center;
+    }
+}
+
+
+/* ПЯТЫЙ БЛОК */
+.fresh-air {
+    padding: 177px 0px 184px 0px;
+    background: url("/solist/new/assets/images/pages/summer-camp/fresh-air/background-img.svg");
+    background-size: cover;
+    background-position: center top;
+}
+
+.fresh-air__container {
+    display: flex;
+    justify-content: center;
+    padding: 0px 30px;
+}
+
+.fresh-air__inner {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    max-width: 1280px;
+    width: 100%;
+}
+
+.fresh-air__title {
+    max-width: 562px;
+    margin-bottom: 0px;
+}
+
+.fresh-air__img-wrap {
+    max-width: 567px;
+    max-height: 433px;
+}
+
+.fresh-air__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1317px) {
+    .fresh-air {
+        padding: 152px 0px 167px 0px;
+    }
+
+    .fresh-air__inner {
+        gap: 41px;
+        max-width: 1003px;
+    }
+
+    .fresh-air__title {
+        max-width: 450px;
+    }
+
+    .fresh-air__img-wrap {
+        max-width: 495px;
+    }
+}
+
+@media (max-width: 991px) {
+    .fresh-air {
+        padding: 124px 0px 117px 0px;
+    }
+
+    .fresh-air__inner {
+        gap: 35px;
+        max-width: 810px;
+    }
+
+    .fresh-air__title {
+        max-width: 347px;
+    }
+
+    .fresh-air__img-wrap {
+        max-width: 394px;
+    }
+}
+
+@media (max-width: 768px) {
+    .fresh-air {
+        padding: 105px 0px 96px 0px;
+    }
+
+    .fresh-air__inner {
+        gap: 74px;
+        max-width: none;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .fresh-air__title {
+        max-width: 390px;
+        align-self: flex-end;
+    }
+
+    .fresh-air__img-wrap {
+        max-width: 497px;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 570px) {
+    .fresh-air {
+        padding: 93px 0px;
+        background: none;
+    }
+
+    .fresh-air__inner {
+        gap: 47px;
+    }
+
+    .fresh-air__title {
+        max-width: 322px;
+    }
+
+    .fresh-air__img-wrap {
+        max-width: 376px;
+    }
+}
+
+@media (max-width: 431px) {
+    .fresh-air {
+        padding: 80px 0px;
+    }
+
+    .fresh-air__inner {
+        gap: 24px;
+    }
+
+    .fresh-air__title {
+        max-width: 320px;
+        margin-right: -10px;
+        text-align: center;
+        align-self: center;
+    }
+
+    .fresh-air__img-wrap {
+        max-width: 315px;
+        align-self: center;
+    }
+}
+
+
+/* ШЕСТОЙ БЛОК */
+.space-without-gadgets {
+    padding: 150px 0px 151px 0px;
+    background: url("/solist/new/assets/images/pages/summer-camp/entertainment-program/background-img_white.svg");
+    background-size: cover;
+    background-position: center top;
+}
+
+.space-without-gadgets__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.space-without-gadgets__inner {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    max-width: 1280px;
+    width: 100%;
+}
+
+.space-without-gadgets__title {
+    max-width: 562px;
+    margin-bottom: 0px;
+    order: 2;
+}
+
+.space-without-gadgets__img-wrap {
+    margin-top: 23px;
+    max-width: 545px;
+    max-height: 416px;
+    order: 1;
+}
+
+.space-without-gadgets__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1317px) {
+    .space-without-gadgets {
+        padding: 125px 0px 102px 0px;
+    }
+
+    .space-without-gadgets__inner {
+        gap: 74px;
+        max-width: 1003px;
+    }
+
+    .space-without-gadgets__title {
+        max-width: 425px;
+    }
+
+    .space-without-gadgets__img-wrap {
+        max-width: 460px;
+    }
+}
+
+@media (max-width: 991px) {
+    .space-without-gadgets {
+        padding: 107px 0px 91px 0px;
+    }
+
+    .space-without-gadgets__inner {
+        gap: 60px;
+        max-width: 810px;
+    }
+
+    .space-without-gadgets__title {
+        max-width: 335px;
+    }
+
+    .space-without-gadgets__img-wrap {
+        max-width: 394px;
+    }
+}
+
+@media (max-width: 768px) {
+    .space-without-gadgets {
+        padding: 92px 0px 83px 0px;
+    }
+
+    .space-without-gadgets__inner {
+        gap: 74px;
+        max-width: 625px;
+        flex-direction: column;
+        align-items: flex-start;
+        order: 1;
+    }
+
+    .space-without-gadgets__title {
+        max-width: 460px;
+        order: 1;
+    }
+
+    .space-without-gadgets__img-wrap {
+        max-width: 478px;
+        align-self: flex-end;
+        order: 2;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 570px) {
+    .space-without-gadgets {
+        padding: 76px 0px;
+        background: none;
+    }
+
+    .space-without-gadgets__inner {
+        gap: 47px;
+        max-width: 625px;
+    }
+
+    .space-without-gadgets__title {
+        max-width: 390px;
+    }
+
+    .space-without-gadgets__img-wrap {
+        max-width: 358px;
+    }
+}
+
+@media (max-width: 431px) {
+    .space-without-gadgets {
+        padding: 60px 0px;
+    }
+
+    .space-without-gadgets__inner {
+        gap: 24px;
+        max-width: 625px;
+    }
+
+    .space-without-gadgets__title {
+        max-width: 320px;
+        margin-right: -10px;
+        text-align: center;
+        align-self: center;
+    }
+
+    .space-without-gadgets__img-wrap {
+        max-width: 315px;
+        align-self: center;
+    }
+}
+
+
+/* СЕДЬМОЙ БЛОК */
+.interesting-entertainment {
+    padding: 150px 0px 301px 0px;
+    background: url("/solist/new/assets/images/pages/summer-camp/interesting-entertainment/background-img.svg");
+    background-size: cover;
+    background-position: center top;
+}
+
+.interesting-entertainment__container {
+    display: flex;
+    justify-content: center;
+    padding: 0px 30px;
+}
+
+.interesting-entertainment__inner {
+    display: flex;
+    justify-content: center;
+    gap: 37px;
+    max-width: 1280px;
+    width: 100%;
+}
+
+.interesting-entertainment__title {
+    max-width: 605px;
+    margin-bottom: 0px;
+}
+
+.interesting-entertainment__img-wrap {
+    max-width: 564px;
+    max-height: 419px;
+}
+
+.interesting-entertainment__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1317px) {
+    .interesting-entertainment {
+        padding: 134px 0px 270px 0px;
+    }
+
+    .interesting-entertainment__inner {
+        gap: 30px;
+        max-width: 1003px;
+    }
+
+    .interesting-entertainment__title {
+        max-width: 492px;
+    }
+
+    .interesting-entertainment__img-wrap {
+        max-width: 495px;
+    }
+}
+
+@media (max-width: 991px) {
+    .interesting-entertainment {
+        padding: 110px 0px 204px 0px;
+    }
+
+    .interesting-entertainment__inner {
+        gap: 24px;
+        max-width: 810px;
+    }
+
+    .interesting-entertainment__title {
+        max-width: 385px;
+    }
+
+    .interesting-entertainment__img-wrap {
+        max-width: 365px;
+    }
+}
+
+@media (max-width: 768px) {
+    .interesting-entertainment {
+        padding: 100px 0px 153px 0px;
+    }
+
+    .interesting-entertainment__inner {
+        gap: 74px;
+        max-width: none;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .interesting-entertainment__title {
+        max-width: 390px;
+        align-self: flex-end;
+    }
+
+    .interesting-entertainment__img-wrap {
+        max-width: 497px;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 570px) {
+    .interesting-entertainment {
+        padding: 93px 0px;
+        background: none;
+    }
+
+    .interesting-entertainment__inner {
+        gap: 47px;
+    }
+
+    .interesting-entertainment__title {
+        max-width: 335px;
+    }
+
+    .interesting-entertainment__img-wrap {
+        max-width: 376px;
+    }
+}
+
+@media (max-width: 431px) {
+    .interesting-entertainment {
+        padding: 80px 0px;
+    }
+
+    .interesting-entertainment__inner {
+        gap: 24px;
+    }
+
+    .interesting-entertainment__title {
+        max-width: 320px;
+        margin-right: -10px;
+        text-align: center;
+        align-self: center;
+    }
+
+    .interesting-entertainment__img-wrap {
+        max-width: 315px;
+        align-self: center;
+    }
+}
+
+
+/* ВОСЬМОЙ БЛОК */
+.your-child-waiting {
+    padding: 27px 0px 133px 0px;
+    background: url("/solist/new/assets/images/pages/summer-camp/your-child-waiting/background-img.svg");
+    background-size: cover;
+    background-position: center top;
+}
+
+.your-child-waiting__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.your-child-waiting__title {
+    margin-bottom: 92px;
+    align-self: center;
+    text-align: center;
+}
+
+.your-child-waiting__body {}
+
+.your-child-waiting__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.your-child-waiting__list-item {
+    display: flex;
+}
+
+.your-child-waiting__list-item-img {
+    max-width: 265px;
+}
+
+.your-child-waiting__list-item-text-wrap {
+    max-width: 380px;
+}
+
+.your-child-waiting__list-item-text {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: .04em;
+    color: #FF9900;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+
+.your-child-waiting__list-item-text-img {}
+
+@media (min-width: 769px) {
+    .your-child-waiting__list-item:nth-of-type(1) {
+        margin-bottom: 178px;
+    }
+
+    .your-child-waiting__list-item:nth-of-type(1) .your-child-waiting__list-item-img {
+        margin-right: 32px;
+    }
+
+    .your-child-waiting__list-item:nth-of-type(1) .your-child-waiting__list-item-text-wrap {
+        margin-top: 37px;
+    }
+
+    .your-child-waiting__list-item:nth-of-type(2) {
+        position: relative;
+    }
+
+    .your-child-waiting__list-item:nth-of-type(2) .your-child-waiting__list-item-img {
+        order: 2;
+    }
+
+    .your-child-waiting__list-item:nth-of-type(2) .your-child-waiting__list-item-text-wrap {
+        position: relative;
+        top: -10px;
+        order: 1;
+    }
+
+    .your-child-waiting__list-item:nth-of-type(3) {
+        position: absolute;
+        bottom: 61px;
+        right: 0;
+    }
+
+    .your-child-waiting__list-item:nth-of-type(3) .your-child-waiting__list-item-img {
+        order: 2;
+    }
+
+    .your-child-waiting__list-item:nth-of-type(3) .your-child-waiting__list-item-text-wrap {
+        position: relative;
+        top: -48px;
+        order: 1;
+    }
+}
+
+@media (max-width: 1317px) {
+    .your-child-waiting {
+        padding: 27px 0px 117px 0px;
+    }
+
+    .your-child-waiting__title {
+        margin-bottom: 62px;
+        align-self: center;
+        text-align: center;
+    }
+
+    .your-child-waiting__list-item-img {
+        max-width: 243px;
+    }
+
+    .your-child-waiting__list-item:nth-of-type(1) {
+        margin-bottom: 91px;
+    }
+
+    .your-child-waiting__list-item:nth-of-type(2) {
+        position: relative;
+        margin-left: 20px;
+    }
+
+    .your-child-waiting__list-item-text-img {
+        height: 37px;
+        width: 216px;
+    }
+}
+
+@media (max-width: 991px) {
+    .your-child-waiting {
+        padding: 38px 0px 95px 0px;
+    }
+
+    .your-child-waiting__list-item-img {
+        max-width: 185px;
+    }
+
+    .your-child-waiting__list-item:nth-of-type(2) {
+        margin-left: 129px;
+    }
+
+    .your-child-waiting__list-item:nth-of-type(3) {
+        bottom: 105px;
+    }
+
+    .your-child-waiting__list-item:nth-of-type(3) .your-child-waiting__list-item-text-wrap {
+        top: -13px;
+    }
+
+    .your-child-waiting__list-item-text {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .your-child-waiting__list-item-text-img {
+        width: 175px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .your-child-waiting {
+        padding: 54px 0px 89px 0px;
+    }
+
+    .your-child-waiting__title {
+        margin-bottom: 48px;
+    }
+
+    .your-child-waiting__list-item {
+        align-items: center;
+    }
+
+    .your-child-waiting__list-item-img {
+        margin-right: 27px;
+    }
+
+    .your-child-waiting__list-item:nth-of-type(even) {
+        align-self: flex-end;
+    }
+
+    .your-child-waiting__list-item:nth-of-type(even) .your-child-waiting__list-item-img {
+        margin-left: 28px;
+        margin-right: 0px;
+    }
+
+    .your-child-waiting__list-item:nth-of-type(1) {
+        margin-bottom: 0px;
+    }
+
+    .your-child-waiting__list-item:nth-of-type(2) {
+        margin-bottom: 0px;
+        margin-left: 0px;
+    }
+
+    .your-child-waiting__list-item:nth-of-type(2) .your-child-waiting__list-item-img {
+        order: 2;
+    }
+
+    .your-child-waiting__list-item:nth-of-type(2) .your-child-waiting__list-item-text-wrap {
+        order: 1;
+    }
+
+    .your-child-waiting__list-item-img {
+        max-width: 152px;
+    }
+
+    .your-child-waiting__list-item-text-wrap {
+        max-width: 263px;
+    }
+
+    .your-child-waiting__list-item-text {
+        font-size: 21px;
+        line-height: 1.2;
+        margin-bottom: 8px;
+    }
+
+    .your-child-waiting__list-item-text-img {
+        height: 27px;
+    }
+}
+
+@media (max-width: 570px) {
+    .your-child-waiting {
+        padding: 74px 0px 74px 0px;
+        background: url("/solist/new/assets/images/pages/directions/your-child-waiting/background-mobile-img.svg");
+        background-size: cover;
+    }
+
+    .your-child-waiting__title {
+        margin-bottom: 26px;
+    }
+
+    .your-child-waiting__list-item-text {
+        font-size: 18px;
+    }
+
+    .your-child-waiting__list-item-img {
+        max-width: 141px;
+    }
+
+    .your-child-waiting__list-item-text-wrap {
+        max-width: 240px;
+    }
+
+    .your-child-waiting__list-item-text-img {
+        height: 19px;
+    }
+
+}
+
+@media (max-width: 431px) {
+    .your-child-waiting {
+        padding: 60px 0px 60px 0px;
+    }
+
+    .your-child-waiting__title {
+        margin-bottom: 17px;
+        max-width: 235px;
+    }
+
+    .your-child-waiting__list-item-img {
+        max-width: 130px;
+    }
+
+    .your-child-waiting__list-item-text-wrap {
+        max-width: 180px;
+    }
+
+    .your-child-waiting__list-item-text {
+        font-size: 14px;
+    }
+
+    .your-child-waiting__list-item-text-img {
+        height: 14px;
+        width: 100%;
+    }
+}
+
+
+/* ДЕВЯТЫЙ БЛОК */
+.starting-camp {
+    padding: 132px 0px 246px 0px;
+    background: url("/solist/new/assets/images/pages/summer-camp/starting-camp/background-img.svg");
+    background-size: cover;
+    background-position: center top;
+}
+
+.starting-camp__container {
+    display: flex;
+    justify-content: center;
+    padding: 0px 30px;
+}
+
+.starting-camp__inner {
+    display: flex;
+    justify-content: center;
+    gap: 136px;
+    max-width: 1280px;
+    width: 100%;
+}
+
+.starting-camp__title {
+    margin-top: 17px;
+    max-width: 476px;
+    margin-bottom: 0px;
+}
+
+.starting-camp__img-wrap {
+    max-width: 569px;
+    max-height: 410px;
+}
+
+.starting-camp__img {
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1317px) {
+    .starting-camp {
+        padding: 124px 0px 225px 0px;
+    }
+
+    .starting-camp__inner {
+        gap: 106px;
+        max-width: 1003px;
+    }
+
+    .starting-camp__title {
+        max-width: 492px;
+    }
+
+    .starting-camp__img-wrap {
+        max-width: 505px;
+    }
+}
+
+@media (max-width: 991px) {
+    .starting-camp {
+        padding: 112px 0px 192px 0px;
+    }
+
+    .starting-camp__inner {
+        gap: 90px;
+        max-width: 810px;
+    }
+
+    .starting-camp__title {
+        max-width: 306px;
+    }
+
+    .starting-camp__img-wrap {
+        max-width: 367px;
+    }
+}
+
+@media (max-width: 768px) {
+    .starting-camp {
+        padding: 104px 0px 165px 0px;
+    }
+
+    .starting-camp__inner {
+        gap: 74px;
+        max-width: none;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .starting-camp__title {
+        max-width: 297px;
+        align-self: flex-end;
+        margin-top: 0px;
+    }
+
+    .starting-camp__img-wrap {
+        max-width: 492px;
+    }
+}
+
+@media (max-width: 570px) {
+    .starting-camp {
+        padding: 93px 0px;
+        background: none;
+    }
+
+    .starting-camp__inner {
+        gap: 47px;
+    }
+
+    .starting-camp__title {
+        max-width: 216px;
+    }
+
+    .starting-camp__img-wrap {
+        max-width: 378px;
+    }
+}
+
+@media (max-width: 431px) {
+    .starting-camp {
+        padding: 80px 0px;
+    }
+
+    .starting-camp__inner {
+        gap: 24px;
+    }
+
+    .starting-camp__title {
+        max-width: 307px;
+        margin-right: -10px;
+        text-align: center;
+        align-self: center;
+    }
+
+    .starting-camp__img-wrap {
+        max-width: 315px;
+        align-self: center;
+    }
+}
+
+
+/* ДЕСЯТЫЙ БЛОК */
+.pricing-info {
+    padding: 127px 0px 100px 0px;
+    background: url("/solist/new/assets/images/pages/summer-camp/pricing-info/background-img.svg");
+    background-size: cover;
+    background-position: center top;
+}
+
+.pricing-info__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.pricing-info__inner {
+    display: flex;
+    justify-content: center;
+    gap: 81px;
+    max-width: 1280px;
+    width: 100%;
+}
+
+.pricing-info__title {
+    margin-top: 23px;
+    max-width: 618px;
+    margin-bottom: 0px;
+    order: 2;
+}
+
+.pricing-info__img-wrap {
+    max-width: 563px;
+    max-height: 596px;
+    order: 1;
+}
+
+.pricing-info__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 1317px) {
+    .pricing-info {
+        padding: 105px 0px 92px 0px;
+    }
+
+    .pricing-info__inner {
+        gap: 67px;
+        max-width: 1003px;
+    }
+
+    .pricing-info__title {
+        max-width: 425px;
+    }
+
+    .pricing-info__img-wrap {
+        max-height: 450px;
+    }
+}
+
+@media (max-width: 991px) {
+    .pricing-info {
+        padding: 94px 0px 86px 0px;
+    }
+
+    .pricing-info__inner {
+        gap: 62px;
+        max-width: 810px;
+    }
+
+    .pricing-info__title {
+        max-width: 335px;
+    }
+
+    .pricing-info__img-wrap {
+        max-width: 358px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-info {
+        padding: 83px 0px 78px 0px;
+    }
+
+    .pricing-info__inner {
+        gap: 74px;
+        max-width: 625px;
+        flex-direction: column;
+        align-items: flex-start;
+        order: 1;
+        margin-top: 0px;
+    }
+
+    .pricing-info__title {
+        max-width: 460px;
+        order: 1;
+    }
+
+    .pricing-info__img-wrap {
+        max-width: 450px;
+        align-self: flex-end;
+        order: 2;
+        margin-top: 0px;
+    }
+}
+
+@media (max-width: 570px) {
+    .pricing-info {
+        padding: 76px 0px;
+        background: none;
+    }
+
+    .pricing-info__inner {
+        gap: 47px;
+        max-width: 625px;
+    }
+
+    .pricing-info__title {
+        max-width: 390px;
+    }
+
+    .pricing-info__img-wrap {
+        max-width: 354px;
+    }
+}
+
+@media (max-width: 431px) {
+    .pricing-info {
+        padding: 60px 0px;
+    }
+
+    .pricing-info__inner {
+        gap: 24px;
+        max-width: 625px;
+    }
+
+    .pricing-info__title {
+        max-width: 320px;
+        margin-right: -10px;
+        text-align: center;
+        align-self: center;
+    }
+
+    .pricing-info__img-wrap {
+        max-width: 316px;
+        align-self: center;
+    }
+}
+
+
+@media (max-width: 570px) {
+    .trial-lesson {
+        background: url("/solist/new/assets/images/pages/directions/trial-lesson/background-mobile-img.svg");
+        background-size: cover;
+        overflow: visible;
+    }
+
+    .trial-lesson__titles::before {
+        content: '';
+    }
+
+    .trial-lesson__body::before {
+        content: '';
+    }
+}

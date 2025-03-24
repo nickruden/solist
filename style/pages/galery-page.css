@@ -99,13 +99,16 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    align-items: stretch;
 }
 .page-links__swiper-slide {
     flex: 0 1 calc(25% - 10px);
     max-width: 290px;
     width: 100%;
+    height: auto;
 }
 .page-links__link-item {
+    height: 100%;
 }
 .page-links__link {
     display: flex;
@@ -113,6 +116,7 @@
     align-items: center;
     text-align: center;
     width: 100%;
+    height: 100%;
     max-width: 290px;
     border-radius: 50px;
     border: 1px solid #FF9900;

@@ -38,7 +38,7 @@
 }
 
 .my-dropdown-menu.show {
-    display: block;
+    display: flex;
 }
 
 .my-dropdown-item {
